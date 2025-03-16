@@ -1,0 +1,814 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Myriad+Pro&display=swap');
+
+h2,
+h3,
+h4 {
+    font-size: 2.0rem;
+    line-height: 1.2;
+    color: var(--azul-celeste);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* Poppins-SemiBold */
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--azul-oscuro);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* Poppins-Bold */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Poppins-Regular */
+}
+
+li {
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+a {
+    font-family: 'Myriad Pro', sans-serif;
+    /* MyriadPro-Regular */
+}
+
+/*bloque 1*/
+/* Colores personalizados */
+:root {
+    --celeste: #87CEEB;
+    /* Celeste claro */
+    --blanco: #FFFFFF;
+    /* Blanco */
+    --azul-oscuro: #1E3A8A;
+    --azul-celeste: #0784f2;
+    /* Azul oscuro para contraste */
+}
+
+/* Fondo celeste */
+.bg-celeste {
+    background-color: var(--celeste);
+}
+
+/* Estilos para el texto */
+.text-white {
+    color: var(--blanco);
+}
+
+.size1 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Poppins-Regular */
+    line-height: 1.6;
+    color: var(--azul-oscuro);
+}
+
+/* Botones de descarga */
+.store-btn {
+    max-width: 150px;
+    transition: transform 0.3s ease;
+    background: linear-gradient(150deg, var(--celeste), var(--azul-celeste));
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.store-btn:hover {
+    transform: scale(1.1);
+    /* Efecto de escala al pasar el mouse */
+}
+
+/* Imagen */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .size1 {
+        font-size: 1rem;
+    }
+
+    .store-btn {
+        max-width: 120px;
+        /* Botones más pequeños en móviles */
+    }
+}
+
+/*bloque 2*/
+/* Contenedor General */
+
+.section-container {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Imágenes */
+.mobile-img {
+    max-width: 75%;
+    height: auto;
+    display: inline-block;
+}
+
+
+/*Título */
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Texto Importante */
+.highlight-text {
+
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Poppins-Regular */
+    margin-bottom: 15px;
+}
+
+/* Botón */
+.btn-register {
+    transition: transform 0.3s ease;
+    background: linear-gradient(180deg, var(--celeste), var(--azul-celeste));
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    transform: scale(1.07);
+}
+
+
+.shipping-icons img {
+    max-width: 150px;
+    margin-top: 25px;
+
+}
+
+.shipping-icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 30px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .mobile-img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .highlight-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-register {
+        width: 100%;
+    }
+
+    .shipping-icons img {
+        max-width: 120px;
+    }
+}
+
+/*bloque tres*/
+/* Contenedor */
+.cards-container {
+    padding: 50px 20px;
+}
+
+/* Estilos de cada tarjeta */
+.custom-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    height: 230px;
+    margin-bottom: 20px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: end;
+    height: auto;
+}
+
+/* Icono alineado arriba a la derecha */
+
+.icon-container {
+    background-color: #0784f2;
+    padding: 15px;
+    border-radius: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+}
+
+.icon-container2 {
+    border-radius: 0 10px 0 10px;
+    background-color: #0784f2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 90px;
+
+}
+
+.icon {
+    font-size: 2rem;
+    color: #f0f8ff;
+}
+
+/* Columna de texto */
+.text-container {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.text-container p {
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.text-container2 {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.h2 {
+    color: #007bff;
+}
+
+/* Animación de hover */
+.custom-card:hover,
+.custom-card:focus {
+    background-color: #007bff;
+    color: white;
+}
+.custom-card:hover h2{
+    color: #f0f8ff;
+}
+.custom-card:hover .icon-container,
+.card2:hover .icon-container2 {
+    background-color: white;
+    color: #007bff;
+}
+
+.custom-card:hover .icon {
+    color: #007bff;
+}
+
+.card2:hover,
+.custom-card:focus {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.card2:hover .h2 {
+    color: #FFFFFF;
+}
+
+.footer_blocl_3 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .custom-card {
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+
+    .custom-card {
+        flex-direction: row;
+        text-align: start;
+        height: auto;
+    }
+}
+
+/*Bloque 4*/
+.block4 {
+    line-height: 1.6;
+}
+
+.btn-register2 {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-register2:hover {
+    background-color: #0056b3;
+    /* Tonalidad más oscura en hover */
+}
+
+/*bloque 5*/
+.alianza-container {
+    margin-top: 3rem;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    background: transparent;
+    padding: 20px 0;
+    margin-top: 2.5rem;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.carousel-img {
+    width: 140px;
+    height: 60px;
+    margin: 0 15px;
+}
+
+/* Animación para mover las imágenes */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/*Bloque 6*/
+.space {
+    margin-top: 1.5rem;
+}
+
+/*Diseño de las card*/
+.icon2 {
+    color: #007bff;
+}
+
+.block6:hover {
+    background-color: #007bff;
+}
+
+.block6:hover p,
+.block6:hover .icon2 {
+    color: #FFFFFF;
+}
+
+/*Bloque 7*/
+.slider-container {
+    width: 50%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20rem;
+}
+
+.slider {
+    display: flex;
+    animation: slide 12s linear infinite;
+}
+
+.slide {
+    flex: 0 0 20%;
+    /* Ajusta el tamaño de cada slide al 20% del contenedor */
+    display: flex;
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    align-items: center;
+    /* Centra las imágenes verticalmente */
+    margin-right: 30px;
+    /* Espaciado de 15px entre las imágenes */
+    transition: 0.5s ease;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.block7-ico {
+    color: #007bff;
+}
+
+.block7-ico:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+.btn-register2:hover {
+    transform: scale(1.1);
+    background-color: var(--azul-oscuro);
+    color: #fffffd;
+}
+
+/* Animación para el slider */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsividad */
+
+@media (max-width: 764px) {
+    .slider-container {
+        width: 100%;
+        left: 0;
+    }
+
+    .slide {
+        flex: 0 0 50%;
+    }
+
+    .slide img {
+        height: 200px;
+    }
+
+    .slider {
+        margin-right: 200px;
+    }
+
+    .block7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 412px) {
+    .slider-container {
+        width: 100%;
+        left: 0;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        margin-right: 15px;
+    }
+
+    .slide img {
+        height: 200px;
+    }
+
+    .slider {
+        margin-right: 300px;
+    }
+
+    .block7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*Bloque 8*/
+/* Sección con altura suficiente */
+#mi-seccion {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Título con animación */
+.titulo1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#mi-seccion .aparece .titulo1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#mi-seccion .titulo1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contenedor con distribución uniforme */
+.row1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas con el mismo tamaño */
+.card3 {
+    width: 100%;
+    max-width: 350px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+    transition: transform 0.4s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    padding: 20px;
+    border: 2px solid transparent;
+    /* Borde transparente inicial */
+}
+
+/* Animación de aparición */
+.card3.aparece {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto de escala al pasar el mouse */
+.card3:hover {
+    transform: scale(1.07);
+    filter: brightness(1.2);
+    box-shadow: 0px 0px 20px 5px #007bff;
+    /* Resplandor azul en los bordes */
+    border-color: #007bff;
+    /* Color del borde al iluminar */
+}
+
+/* Logotipo dentro de la tarjeta */
+.logo {
+    width: 80px;
+
+}
+
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .row1 {
+        flex-direction: column;
+        /* Hace que las tarjetas se apilen en móviles */
+    }
+
+    .card3 {
+        max-width: 90%;
+        /* Las tarjetas ocupan el 90% del ancho */
+        margin: auto;
+    }
+
+    .titulo1 {
+        font-size: 2rem;
+        /* Ajustar tamaño del título en móviles */
+    }
+}
+
+/*Bloque9*/
+.hero-secction {
+    background: linear-gradient(150deg, #007bff, #0f025b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 90%;
+    /* Fijo */
+    max-width: 80%;
+    /* Adaptable */
+    min-width: 350px;
+}
+
+/* Estilo del título */
+.title3 {
+    font-size: 2.2rem;
+    animation: fadeIn 1.5s ease-in-out;
+    color: #FFFFFF
+}
+
+/* Estilo del texto */
+.description {
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeUp 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Estilo del botón */
+.download-btn {
+    color: #FFFFFF;
+    background-color: black;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: #f0f8ff;
+}
+
+/* Imagen del logo */
+.logo2-img {
+    max-width: 300px;
+    animation: scaleIn 1.5s ease-in-out;
+}
+
+/* Estilo de iconos sociales */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+/*Modal*/
+
+/* Estilos para los íconos circulares */
+.social-icons1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace el ícono circular */
+    background-color: #87CEEB; /* Color de fondo celeste */
+    color: white; /* Color del ícono */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .icon-circle:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+    background-color: #1E3A8A; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Colores específicos para cada ícono */
+  .icon-circle .fa-facebook {
+    color: #1877F2; /* Azul de Facebook */
+  }
+  
+  .icon-circle .fa-youtube {
+    color: #ff0000; /* Verde de WhatsApp */
+  }
+  
+  .icon-circle .fa-linkedin {
+    color: #0A66C2; /* Azul de LinkedIn */
+  }
+  
+  .icon-circle .fa-twitter {
+    color: #006AFF; /* Azul de Messenger */
+  }
+  
+  .icon-circle .fa-snapchat {
+    color: #FFFC00; /* Amarillo de Snapchat */
+  }
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .title3 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+    }
+
+    .logo2-img {
+        max-width: 250px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}

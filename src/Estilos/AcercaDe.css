@@ -1,0 +1,327 @@
+.animated-cards {
+    background-color: var(--gris-claro);
+    padding: 60px 0;
+  }
+  
+
+  .card5 {
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--blanco);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Efecto de círculo animado */
+  .circle-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background:  rgb(0, 166, 255);
+    border-radius: 25%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+    z-index: 0;
+    opacity: 0.15;
+  }
+  
+  .card5:hover .circle-animation {
+    width: 1300px;
+    height: 350px;
+  }
+  
+  /* Estilo del texto */
+  .card-body {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+  }
+  
+  .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-bottom: 15px; 
+    margin: 0;
+  }
+  .card-image {
+    width: 30%; 
+    height: 40%;
+    object-fit: cover; 
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  @media (max-width: 991.98px) {
+    .card-image {
+      width: 30%;
+      height: 50%;
+      
+    }
+    .card-image2 {
+        width: 30%; 
+        height: 50%;
+        
+      }
+    .card-title {
+        font-size: 1.2rem; 
+      }
+}
+
+@media (max-width: 767.98px) {
+    .card-header {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+    }
+  
+    .card-image {
+      width: 30%; 
+      height: 30%;
+      margin-left: 0; 
+    }
+    .card-image2 {
+        width: 30%; 
+        height: 30%;
+        margin-left: 0; 
+      }
+    .card-title {
+      font-size: 1.2rem; 
+    }
+  
+    .card-text {
+      font-size: 0.85rem; 
+    }
+  }
+
+  /*Bloque 2*/
+
+/* Estilos para la sección */
+.expandable-cards {
+  background-color: var(--gris-claro);
+  padding: 60px 0;
+}
+
+/* Estilos para las cards */
+.card4 {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card4:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--celeste);
+  color: var(--blanco);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border-radius: 10px 10px 20px 10px;
+}
+
+.card-header2:hover h3 {
+  color: var(--blanco);
+}
+.card-header2:hover {
+  background-color: var(--azul-oscuro);
+}
+
+
+.toggle-icon {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 1.5rem;
+}
+
+.card-body2 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 20px;
+}
+
+.card-body2 ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card-body2 li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.card-body2.open {
+  max-height: 1000px; /* Ajusta este valor según el contenido */
+  padding: 20px; /* Padding cuando está abierto */
+}
+
+/* Media Queries para Responsividad */
+
+
+@media (max-width: 991.98px) {
+
+  .card-body2 li {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 767.98px) {
+
+
+  .card-body2 li {
+    font-size: 0.85rem; 
+  }
+}
+
+/*Modal 2*/
+/* Estilos para la sección */
+.contact-section {
+  padding: 60px 0;
+}
+.c1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos para las cards */
+.card6 {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body5 {
+  padding: 20px;
+}
+
+.card-title5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 1.5rem;
+  color: #1E3A8A; /* Azul oscuro */
+  margin-bottom: 15px;
+}
+
+.card-text5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos para el formulario */
+.form-label {
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400; /* Medium */
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 0.7rem;
+}
+
+.btn-primary {
+  background-color: #87CEEB; /* Celeste */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1E3A8A; /* Azul oscuro */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon-circle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #87CEEB; /* Celeste */
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-circle2:hover {
+  transform: scale(1.1);
+  background-color: #1E3A8A; /* Azul oscuro */
+}
+
+/* Estilos para el modal */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #87CEEB; /* Celeste */
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 1.5rem;
+}
