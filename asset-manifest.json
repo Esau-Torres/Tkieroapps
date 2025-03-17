@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tkieroapps/static/css/main.9d7b1394.css",
-    "main.js": "/Tkieroapps/static/js/main.1b879bdf.js",
+    "main.css": "/Tkieroapps/static/css/main.f0583a17.css",
+    "main.js": "/Tkieroapps/static/js/main.8b78458d.js",
     "static/js/453.56ee17ea.chunk.js": "/Tkieroapps/static/js/453.56ee17ea.chunk.js",
     "static/media/img12.png": "/Tkieroapps/static/media/img12.0a36529b2e0b57835667.png",
     "static/media/img11.PNG": "/Tkieroapps/static/media/img11.56551c754e1752e30ce1.PNG",
@@ -12,23 +12,23 @@
     "static/media/Recurso5.png": "/Tkieroapps/static/media/Recurso5.5510aedb6447fea66455.png",
     "static/media/img10.png": "/Tkieroapps/static/media/img10.ff85ef7242b5e782ebbb.png",
     "static/media/img7.png": "/Tkieroapps/static/media/img7.f4b234a1b1081efd935e.png",
-    "static/media/Recurso 7.png": "/Tkieroapps/static/media/Recurso 7.9993cd234e28eaa7e203.png",
-    "static/media/img15.png": "/Tkieroapps/static/media/img15.e4c9b873b691870f1a51.png",
+    "static/media/Recurso 7.png": "/Tkieroapps/static/media/Recurso 7.11171afca2a2d57dbcdf.png",
     "static/media/img3.png": "/Tkieroapps/static/media/img3.bb4741c443c43b94c547.png",
     "static/media/img4.png": "/Tkieroapps/static/media/img4.265164b69cecfcd8d8f0.png",
     "static/media/img9.png": "/Tkieroapps/static/media/img9.fe0e1c8909b27ec54135.png",
+    "static/media/img15.png": "/Tkieroapps/static/media/img15.f800ec3a086ed33ebaf4.png",
     "static/media/img1.png": "/Tkieroapps/static/media/img1.1f05f4429f01d01e0736.png",
     "static/media/Recurso 6.png": "/Tkieroapps/static/media/Recurso 6.da758ba0dbbe2996cfc1.png",
     "static/media/img5.png": "/Tkieroapps/static/media/img5.9d209198dd0e06aebef8.png",
     "static/media/Recurso4.png": "/Tkieroapps/static/media/Recurso4.96c6bf9ab07783a4a6d7.png",
     "static/media/img8.png": "/Tkieroapps/static/media/img8.53c7b6920cff332fcc6d.png",
     "index.html": "/Tkieroapps/index.html",
-    "main.9d7b1394.css.map": "/Tkieroapps/static/css/main.9d7b1394.css.map",
-    "main.1b879bdf.js.map": "/Tkieroapps/static/js/main.1b879bdf.js.map",
+    "main.f0583a17.css.map": "/Tkieroapps/static/css/main.f0583a17.css.map",
+    "main.8b78458d.js.map": "/Tkieroapps/static/js/main.8b78458d.js.map",
     "453.56ee17ea.chunk.js.map": "/Tkieroapps/static/js/453.56ee17ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d7b1394.css",
-    "static/js/main.1b879bdf.js"
+    "static/css/main.f0583a17.css",
+    "static/js/main.8b78458d.js"
   ]
 }
