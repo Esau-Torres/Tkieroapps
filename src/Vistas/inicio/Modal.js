@@ -10,7 +10,7 @@ const ContactModal = () => {
     return (
         <>
             {/* Botón para abrir el modal */}
-            <button className="btn btn-primary btn-register5 mt-3" onClick={handleShow}>
+            <button className="btn btn-register mt-3" onClick={handleShow}>
                 Contáctanos
             </button>
 
@@ -48,9 +48,6 @@ const ContactModal = () => {
                 <Modal.Footer className="modal-footer-custom">
                     <Button variant="secondary" onClick={handleClose}>
                         Cerrar
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Regístrate gratis
                     </Button>
                 </Modal.Footer>
             </Modal>

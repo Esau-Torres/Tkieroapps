@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import logo from '../img/logo.png';
+import logo from '../img/logoheader.png';
 import '../Estilos/Header.css';
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-celeste text-white">
+        <header className="bg-header text-white">
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">

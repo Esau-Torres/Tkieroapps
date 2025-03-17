@@ -151,17 +151,18 @@ a {
 /* Botón */
 .btn-register {
     transition: transform 0.3s ease;
-    background: linear-gradient(180deg, var(--celeste), var(--azul-celeste));
-    color: white;
+    background: linear-gradient(50deg, var(--celeste), var(--azul-celeste));
+    color: #ffffff;
     border-radius: 30px;
     padding: 10px 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
 }
 
 .btn-register:hover {
     transform: scale(1.07);
+    color: #ffffff;
 }
 
 
@@ -230,14 +231,6 @@ a {
     margin-bottom: 20px;
 }
 
-.card2 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: end;
-    height: auto;
-}
-
 /* Icono alineado arriba a la derecha */
 
 .icon-container {
@@ -270,8 +263,9 @@ a {
 
 /* Columna de texto */
 .text-container {
-    margin-top: 50px;
+    margin-top: 40px;
     padding-left: 20px;
+    padding-right: 10px;
 }
 
 .text-container p {
@@ -284,6 +278,11 @@ a {
     margin-top: 30px;
     padding-left: 30px;
     padding-right: 20px;
+}
+.text-container3 {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .h2 {
@@ -300,7 +299,7 @@ a {
     color: #f0f8ff;
 }
 .custom-card:hover .icon-container,
-.card2:hover .icon-container2 {
+.custom2:hover .icon-container2 {
     background-color: white;
     color: #007bff;
 }
@@ -315,10 +314,6 @@ a {
     color: #ffffff;
 }
 
-.card2:hover .h2 {
-    color: #FFFFFF;
-}
-
 .footer_blocl_3 {
     margin-top: 50px;
     display: flex;
@@ -328,9 +323,12 @@ a {
 }
 
 /* Responsivo */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .custom-card {
-        height: 300px;
+        height: 320px;
+    }
+    .custom{
+        height: auto;
     }
 }
 @media (max-width: 768px) {
@@ -345,18 +343,6 @@ a {
 /*Bloque 4*/
 .block4 {
     line-height: 1.6;
-}
-
-.btn-register2 {
-    border-radius: 30px;
-    padding: 10px 20px;
-    border: none;
-    transition: background-color 0.3s;
-}
-
-.btn-register2:hover {
-    background-color: #0056b3;
-    /* Tonalidad más oscura en hover */
 }
 
 /*bloque 5*/
@@ -463,11 +449,7 @@ a {
     color: #ffcc00;
 }
 
-.btn-register2:hover {
-    transform: scale(1.1);
-    background-color: var(--azul-oscuro);
-    color: #fffffd;
-}
+
 
 /* Animación para el slider */
 @keyframes slide {
@@ -637,16 +619,14 @@ a {
 
 /*Bloque9*/
 .hero-secction {
-    background: linear-gradient(150deg, #007bff, #0f025b);
+    background: #007bffaf;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     padding: 40px 20px;
     width: 90%;
-    /* Fijo */
     max-width: 80%;
-    /* Adaptable */
     min-width: 350px;
 }
 

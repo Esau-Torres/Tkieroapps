@@ -23,7 +23,6 @@ const Contacto = () => {
 
   {/*Modal*/ }
   const [showModal, setShowModal] = useState(false);
-
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 
@@ -38,7 +37,7 @@ const Contacto = () => {
                 <div className="circle-animation"></div>
                 <div className="card-header">
                   <h3 className="card-title">Quiénes Somos</h3>
-                  <img src={logo} className="card-image2" />
+                  <img src={logo} className="card-image2" alt="logo" />
                 </div>
                 <p className="card-text">
                   Tkiero es una plataforma de tecnología financiera diseñada para ofrecer servicios financieros esenciales a personas que no tienen acceso a la banca tradicional. Estamos completamente regulados por el Banco Central de Reserva de El Salvador (BCR), la Superintendencia del Sistema Financiero (SSF) y la Unidad de Investigación Financiera (UIF). Cumplimos con estrictas normativas de Conozca a su Cliente (KYC) y Prevención de Lavado de Dinero (AML), garantizando un entorno seguro y transparente para todos nuestros usuarios.
@@ -53,7 +52,7 @@ const Contacto = () => {
                 <div className="circle-animation"></div>
                 <div className="card-header">
                   <h3 className="card-title">Nuestra Misión</h3>
-                  <img src={logo} className="card-image" />
+                  <img src={logo} className="card-image" alt="logo" />
                 </div>
                 <p className="card-text">
                   Nuestra misión es impulsar la inclusión financiera proporcionando herramientas seguras, accesibles y confiables, que permitan a las personas gestionar su dinero, pagar servicios y realizar transacciones de manera eficiente y a bajo costo.
@@ -69,7 +68,7 @@ const Contacto = () => {
                 <div className="circle-animation"></div>
                 <div className="card-header">
                   <h3 className="card-title">Nuestra Visión</h3>
-                  <img src={logo} className="card-image" />
+                  <img src={logo} className="card-image" alt="logo" />
                 </div>
                 <p className="card-text">
                   Nuestra visión es convertirnos en la principal plataforma financiera digital en América Latina, creando oportunidades para individuos y empresas al simplificar los pagos, expandir el acceso a servicios financieros y contribuir al crecimiento económico.
@@ -190,7 +189,7 @@ const Contacto = () => {
           {/* Card 1: Qué Hace Tkiero */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard1}>
-              <h3 className="card-title">Qué Hace Tkiero</h3>
+              <h3 className="card-title text-light">Qué Hace Tkiero</h3>
               <span className="toggle-icon">&nbsp;{isCard1Open ? '−' : '+'}&nbsp;</span>
             </div>
             <div className={`card-body2 justified-text ${isCard1Open ? "open" : ""}`}>
@@ -198,16 +197,16 @@ const Contacto = () => {
                 Tkiero ofrece una amplia gama de servicios destinados a simplificar la gestión financiera de los usuarios y permitir que las empresas alcancen nuevos segmentos de clientes. Aquí te contamos qué hacemos:
               </p>
               <ul>
-                <li><strong>Transferencias de Dinero:</strong> Nuestra plataforma permite transferencias de dinero instantáneas entre usuarios, tanto a nivel local como internacional.</li>
-                <li><strong>Pago de Servicios Públicos:</strong> Los usuarios pueden pagar servicios esenciales como electricidad, agua e internet, directamente desde la aplicación de Tkiero.</li>
-                <li><strong>Recargas Móviles:</strong> Tkiero permite la compra rápida y conveniente de recargas de saldo y paquetes de datos para teléfonos móviles.</li>
-                <li><strong>Pagos con Bitcoin Lightning Network: </strong>Tkiero soporta pagos a través de la red Lightning de Bitcoin, lo que permite pagos transfronterizos rápidos y económicos.</li>
-                <li><strong>Billetera Digital: </strong>Los usuarios pueden cargar fondos en su billetera Tkiero por varios métodos y retirar los fondos en moneda local o en dólares estadounidenses.</li>
-                <li><strong>Servicios de Documentos Legales:</strong> Tkiero facilita la solicitud de documentos legales como certificados de nacimiento, licencias de matrimonio, y más, con entrega internacional.</li>
-                <li><strong>Servicios Bancarios en EE. UU.: </strong>Ofrecemos acceso a servicios como transferencias ACH, transferencias bancarias (wire) y Zelle, permitiendo a los usuarios pagar servicios como Netflix y Amazon.</li>
-                <li><strong>Remesas:</strong> Tkiero proporciona un servicio de remesas seguro y de bajo costo para que los usuarios puedan enviar y recibir dinero.</li>
-                <li><strong>Pagos en Comercios:</strong> Los usuarios pueden pagar en supermercados, farmacias y otros comercios esenciales a través de nuestra plataforma.</li>
-                <li><strong>Envío de Documentos:</strong> Tkiero ofrece el envío global de documentos legales a través de transportistas confiables como UPS y DHL.</li>
+                <li><strong>Transferencias de Dinero:</strong> <br/> Nuestra plataforma permite transferencias de dinero instantáneas entre usuarios, tanto a nivel local como internacional.</li>
+                <li><strong>Pago de Servicios Públicos:</strong><br/> Los usuarios pueden pagar servicios esenciales como electricidad, agua e internet, directamente desde la aplicación de Tkiero.</li>
+                <li><strong>Recargas Móviles:</strong><br/> Tkiero permite la compra rápida y conveniente de recargas de saldo y paquetes de datos para teléfonos móviles.</li>
+                <li><strong>Pagos con Bitcoin Lightning Network: </strong><br/>Tkiero soporta pagos a través de la red Lightning de Bitcoin, lo que permite pagos transfronterizos rápidos y económicos.</li>
+                <li><strong>Billetera Digital: </strong><br/>Los usuarios pueden cargar fondos en su billetera Tkiero por varios métodos y retirar los fondos en moneda local o en dólares estadounidenses.</li>
+                <li><strong>Servicios de Documentos Legales:</strong><br/> Tkiero facilita la solicitud de documentos legales como certificados de nacimiento, licencias de matrimonio, y más, con entrega internacional.</li>
+                <li><strong>Servicios Bancarios en EE. UU.: </strong><br/>Ofrecemos acceso a servicios como transferencias ACH, transferencias bancarias (wire) y Zelle, permitiendo a los usuarios pagar servicios como Netflix y Amazon.</li>
+                <li><strong>Remesas:</strong><br/> Tkiero proporciona un servicio de remesas seguro y de bajo costo para que los usuarios puedan enviar y recibir dinero.</li>
+                <li><strong>Pagos en Comercios:</strong><br/> Los usuarios pueden pagar en supermercados, farmacias y otros comercios esenciales a través de nuestra plataforma.</li>
+                <li><strong>Envío de Documentos:</strong><br/> Tkiero ofrece el envío global de documentos legales a través de transportistas confiables como UPS y DHL.</li>
               </ul>
             </div>
           </div>
@@ -215,7 +214,7 @@ const Contacto = () => {
           {/* Card 2: Cómo Tkiero Beneficia al Consumidor */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard2}>
-              <h3 className="card-title">Cómo Tkiero Beneficia al Consumidor</h3>
+              <h3 className="card-title text-light">Cómo Tkiero Beneficia al Consumidor</h3>
               <span className="toggle-icon">&nbsp; {isCard2Open ? ' − ' : '+'} &nbsp;</span>
             </div>
             <div className={`card-body2 ${isCard2Open ? "open" : ""}`}>
@@ -234,7 +233,7 @@ const Contacto = () => {
           {/* Card 3: Por Qué Integrar Tkiero Beneficia a Su Empresa */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard3}>
-              <h3 className="card-title">Por Qué Integrar Tkiero Beneficia a Su Empresa</h3>
+              <h3 className="card-title text-light">Por Qué Integrar Tkiero Beneficia a Su Empresa</h3>
               <span className="toggle-icon">&nbsp; {isCard3Open ? ' − ' : '+'} &nbsp;</span>
             </div>
             <div className={`card-body2 ${isCard3Open ? "open" : ""}`}>

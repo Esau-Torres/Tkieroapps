@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Redirige todas las solicitudes a index.html
+    sessionStorage.redirect = location.href.split('/').pop();
+    window.location.href = '/Tkieroapps/';
+  </script>
+</head>
+<body>
+  <p>Redirigiendo...</p>
+</body>
+</html>

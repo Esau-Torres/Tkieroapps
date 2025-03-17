@@ -67,6 +67,7 @@
     align-items: flex-start; 
     margin-bottom: 15px; 
     margin: 0;
+    background: transparent;
   }
   .card-image {
     width: 30%; 
@@ -144,7 +145,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: var(--celeste);
+  background-color: #87CEEB;
   color: var(--blanco);
   cursor: pointer;
   transition: background-color 0.5s ease;
@@ -187,8 +188,8 @@
 }
 
 .card-body2.open {
-  max-height: 1000px; /* Ajusta este valor según el contenido */
-  padding: 20px; /* Padding cuando está abierto */
+  max-height: 1000px;
+  padding: 20px; 
 }
 
 /* Media Queries para Responsividad */
@@ -240,7 +241,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600; /* SemiBold */
   font-size: 1.5rem;
-  color: #1E3A8A; /* Azul oscuro */
+  color: #1E3A8A; 
   margin-bottom: 15px;
 }
 
@@ -269,7 +270,7 @@
 }
 
 .btn-primary {
-  background-color: #87CEEB; /* Celeste */
+  background-color: #87CEEB;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
@@ -280,7 +281,7 @@
 }
 
 .btn-primary:hover {
-  background-color: #1E3A8A; /* Azul oscuro */
+  background-color: #1E3A8A; 
 }
 
 /* Estilos para los íconos de redes sociales */

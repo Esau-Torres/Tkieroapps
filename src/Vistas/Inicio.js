@@ -63,15 +63,15 @@ const Inicio = () => {
 
           {/* Segunda columna - Imagen */}
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center div1">
-            <img src={Img0} alt="Remesas" className="img-fluid" />
+            <img src={Img0} alt="img0" className="img-fluid" />
           </div>
 
         </div>
 
         {/* Tercera fila - Botón centrado */}
         <div className="col-12 text-center mt-4 div3">
-          <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn store-btn text-white" target="_blank" rel="noopener noreferrer">
-            Crea tu cuenta
+          <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
+            únete a nuestra comunidad
           </a>
         </div>
       </div>
@@ -96,7 +96,7 @@ const Inicio = () => {
                 Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
               </p>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-                Regístrate
+              Descargala 
               </a>
               {/*Iconos de Envío */}
               <div className="shipping-icons">
@@ -139,7 +139,7 @@ const Inicio = () => {
               <div className="icon-container">
                 <FaBalanceScale className="icon" />
               </div>
-              <div className="text-container">
+              <div className="text-container3">
                 <h2>Retiros</h2>
                 <p>Retira tu dinero de Tkiero wallet en efectivo o transfierelo a tu banco. <br /><br /> !Con la tasa de comisión más baja¡ </p>
               </div>
@@ -160,14 +160,14 @@ const Inicio = () => {
           </div>
         </div>
         <div className="col-12 col-md-12 col-auto me-4">
-          <div className="card custom-card card2">
+          <div className="card custom-card custom2">
             <div className="text-container2">
               <h2 className="h2">Crea tu cuenta </h2>
               <p>Para registrarse llena el formulario, unicamente necesitarás tener tu Dui a la mano y ser mayor de 18 años para commenzar a disfrutar de todos los beneficios que Tkiero.app tiene para ti.</p>
               <ul>
                 <li>Recibe pagos y remesas del exterior a tu Wallet Tkiero al instante sin comisiones.</li>
                 <li>Compra en cualquier comercio y paga con tu teléfono usando el sistema QR Lightning. </li>
-                <li>Solicita documentos como partidas, actas y apostillas, y recibelos hasta la puerta de tu casa. </li>
+                <li>Solicita documentos como partidas, actas y apostillas, y recibelos hasta la puerta de tu casa.</li>
               </ul>
             </div>
             <div className="icon-container2">
@@ -181,7 +181,9 @@ const Inicio = () => {
               Miles de Salvadoreños prefieren Tkiero Wallet para enviar, recibir y administrar su dinero. <br />
               ¿A que esperas? Haz tu cuenta en Tkiero y toma el control de tu dinero.
             </p>
-            <button className="btn-register">Regístrate Ahora</button>
+            <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
+               Descargala ¡Ya!
+              </a>
           </div>
         </div>
 
@@ -206,14 +208,14 @@ const Inicio = () => {
               al instante.
             </p>
             <div className="d-flex flex-row gap-4">
-              <button className="btn btn-primary btn-register2 mt-3"> Crea tu cuenta &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
-              <a href="#"><FaApple color="#000000" className="mt-3 " size={45} /></a>
+              <button className="btn btn-register mt-3"> Crea tu cuenta &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
+              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#000000" className="mt-3 " size={45} /></a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#34A853" className="mt-3 " size={45} /></a>
             </div>
           </div>
           {/* Columna de Imagen */}
           <div className="col-12 col-md-4 text-center text-md-end mt-4 mt-md-0 order-1 order-md-2">
-            <img src={Recurso4} alt="Remesas" className="img-fluid rounded" />
+            <img src={Recurso4} alt="img4" className="img-fluid rounded" />
           </div>
         </div>
       </div>
@@ -222,7 +224,7 @@ const Inicio = () => {
         <div className="row align-items-center">
           {/* Columna de Imagen */}
           <div className="col-12 col-md-4 text-center text-md-end mt-4 mt-md-0 order-1 order-md-1">
-            <img src={Recurso6} alt="Remesas" className="img-fluid rounded" />
+            <img src={Recurso6} alt="img6" className="img-fluid rounded" />
           </div>
           {/* Columna de Texto */}
           <div className="col-12 col-md-8 order-2 order-md-2">
@@ -234,7 +236,7 @@ const Inicio = () => {
               cerca de ti. <br />
             </p>
             <div className="d-flex flex-row gap-4 justify-content-center mb-5">
-              <img src={Recurso5} alt="Remesas" className="img-fluid rounded" />
+              <img src={Recurso5} alt="img5" className="img-fluid rounded" />
             </div>
           </div>
           {/* rotacion infinita*/}
@@ -267,7 +269,7 @@ const Inicio = () => {
 
             <div className="row justify-content-between">
               {/* Card 1 */}
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-4 mb-4">
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdQrCode size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
@@ -277,7 +279,7 @@ const Inicio = () => {
               </div>
 
               {/* Card 2 */}
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-4 mb-4">
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdCheckCircle size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
@@ -287,7 +289,7 @@ const Inicio = () => {
               </div>
 
               {/* Card 3 */}
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-4 mb-4">
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdSwapHoriz size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
@@ -299,9 +301,9 @@ const Inicio = () => {
 
 
             <div className="d-flex flex-row gap-4 justify-content-end space">
-              <a href="#"><FaApple color="#000000" className="mt-3 " size={45} /></a>
-              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#34A853" className="mt-3 " size={45} /></a>
-              <button className="btn btn-primary btn-register2 mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
+              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#007bff" className="mt-3 " size={45} /></a>
+              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#007bff" className="mt-3 " size={45} /></a>
+              <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
             </div>
           </div>
 
@@ -320,22 +322,22 @@ const Inicio = () => {
         <div className="slider-container mt-5">
           <div className="slider">
             <div className="slide">
-              <img src={Img11} alt="Imagen 1" />
+              <img src={Img11} alt="Imagen 11" />
             </div>
             <div className="slide">
-              <img src={Img12} />
+              <img src={Img12} alt="Imagen 12"/>
             </div>
             <div className="slide">
-              <img src={Img13} />
+              <img src={Img13} alt="Imagen 13" />
             </div>
             <div className="slide">
-              <img src={Img11} alt="Imagen 1" />
+              <img src={Img11} alt="Imagen 14" />
             </div>
             <div className="slide">
-              <img src={Img12} />
+              <img src={Img12} alt="Imagen 15"/>
             </div>
             <div className="slide">
-              <img src={Img13} />
+              <img src={Img13} alt="Imagen 16"/>
             </div>
           </div>
         </div>
@@ -381,8 +383,8 @@ const Inicio = () => {
               </p>
               <div className="text-md-start text-center">
                 <button className="btn download-btn mt-3"> Descarga la app &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
-                <a href="#"><FaApple color="#000000" className="mt-3 " size={45} /></a>
-                <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#34A853" className="mt-3 " size={45} /></a>
+                <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#FFFFFF" className="mt-3 " size={40} /></a>
+                <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#FFFFFF" className="mt-3 " size={40} /></a>
               </div>
             </div>
           </div>
