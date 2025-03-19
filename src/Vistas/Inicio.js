@@ -9,8 +9,12 @@ import Recurso10 from '../img/Recurso10.png';
 import Recurso1 from '../img/Recurso 1.png';
 import Recurso3 from '../img/Recurso 3.png';
 import Recurso4 from '../img/Recurso4.png';
-import Recurso5 from '../img/Recurso5.png';
-import Recurso6 from '../img/Recurso 6.png';
+
+import Recurso17 from '../img/img17.jpg';
+import Recurso18 from '../img/img18.jpeg';
+import Recurso19 from '../img/img19.jpg';
+import Recurso20 from '../img/img20.jpeg';
+
 import Recurso7 from '../img/Recurso 7.png';
 import Img11 from '../img/img11.PNG';
 import Img12 from '../img/img12.png';
@@ -96,7 +100,7 @@ const Inicio = () => {
                 Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
               </p>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-              Descargala 
+                Descargala
               </a>
               {/*Iconos de Envío */}
               <div className="shipping-icons">
@@ -182,13 +186,13 @@ const Inicio = () => {
               ¿A que esperas? Haz tu cuenta en Tkiero y toma el control de tu dinero.
             </p>
             <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-               Descargala ¡Ya!
-              </a>
+              Descargala ¡Ya!
+            </a>
           </div>
         </div>
 
       </div>
-      {/*blocke 4*/}
+      {/*bloque 4*/}
       <div className="container my-5">
         <div className="row align-items-center">
           {/* Columna de Texto */}
@@ -209,8 +213,8 @@ const Inicio = () => {
             </p>
             <div className="d-flex flex-row gap-4">
               <button className="btn btn-register mt-3"> Crea tu cuenta &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
-              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#000000" className="mt-3 " size={45} /></a>
-              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#34A853" className="mt-3 " size={45} /></a>
+              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple className="mt-3 apple" size={45} /></a>
+              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
             </div>
           </div>
           {/* Columna de Imagen */}
@@ -220,26 +224,53 @@ const Inicio = () => {
         </div>
       </div>
       {/*blocke 5*/}
-      <div className="container my-5">
+      <div className="container  my-5">
         <div className="row align-items-center">
-          {/* Columna de Imagen */}
-          <div className="col-12 col-md-4 text-center text-md-end mt-4 mt-md-0 order-1 order-md-1">
-            <img src={Recurso6} alt="img6" className="img-fluid rounded" />
-          </div>
           {/* Columna de Texto */}
-          <div className="col-12 col-md-8 order-2 order-md-2">
-            <h2 className="mb-4 text-center">Retira tu dinero de Wallet en efectivo</h2>
+          <div className="col-12 col-md-12 order-2 order-md-2">
+            <h2 className="mb-4 text-center">Retira tu dinero de Tkiero Wallet en efectivo</h2>
             <p className="highlight-text block4">
-              Retira tu dinero en efectivo de tkiero Wallet con la taza
+              Retira tu dinero en efectivo de Tkiero Wallet con la tasa
               de comisión más baja en los comercios afiliados de
               Puntxpress a nivel nacional. Elige el que esté más
               cerca de ti. <br />
             </p>
-            <div className="d-flex flex-row gap-4 justify-content-center mb-5">
-              <img src={Recurso5} alt="img5" className="img-fluid rounded" />
+            <div className="d-flex flex-column gap-4 align-items-center mb-5 order-1 order-md-1">
+              <div>
+                <h2 className="text-center text-dark">
+                  Todo en un solo lugar <span style={{ color: '#007bff' }}>Tkiero App</span> tu vida más fácil
+                </h2>
+              </div>
+              <div className="slider-container2 mt-5">
+                <div className="slider2">
+                  <div className="slide2">
+                    <img src={Recurso17} alt="Imagen 17" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso18} alt="Imagen 18" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso19} alt="Imagen 19" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso20} alt="Imagen 20" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso17} alt="Imagen 17" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso18} alt="Imagen 18" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso19} alt="Imagen 19" />
+                  </div>
+                  <div className="slide2">
+                    <img src={Recurso20} alt="Imagen 20" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          {/* rotacion infinita*/}
         </div>
         <div className="text-center col-auto me-4 alianza-container">
           <h3 className="text-primary">NUESTRAS ALIANZAS ESTRATEGICAS</h3>
@@ -301,8 +332,8 @@ const Inicio = () => {
 
 
             <div className="d-flex flex-row gap-4 justify-content-end space">
-              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#007bff" className="mt-3 " size={45} /></a>
-              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#007bff" className="mt-3 " size={45} /></a>
+              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple  className="mt-3 apple" size={45} /></a>
+              <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
               <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
             </div>
           </div>
@@ -325,7 +356,7 @@ const Inicio = () => {
               <img src={Img11} alt="Imagen 11" />
             </div>
             <div className="slide">
-              <img src={Img12} alt="Imagen 12"/>
+              <img src={Img12} alt="Imagen 12" />
             </div>
             <div className="slide">
               <img src={Img13} alt="Imagen 13" />
@@ -334,10 +365,10 @@ const Inicio = () => {
               <img src={Img11} alt="Imagen 14" />
             </div>
             <div className="slide">
-              <img src={Img12} alt="Imagen 15"/>
+              <img src={Img12} alt="Imagen 15" />
             </div>
             <div className="slide">
-              <img src={Img13} alt="Imagen 16"/>
+              <img src={Img13} alt="Imagen 16" />
             </div>
           </div>
         </div>
@@ -383,7 +414,7 @@ const Inicio = () => {
               </p>
               <div className="text-md-start text-center">
                 <button className="btn download-btn mt-3"> Descarga la app &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
-                <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#FFFFFF" className="mt-3 " size={40} /></a>
+                <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#FFFFFF" className="mt-3 mx-3 " size={40} /></a>
                 <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#FFFFFF" className="mt-3 " size={40} /></a>
               </div>
             </div>

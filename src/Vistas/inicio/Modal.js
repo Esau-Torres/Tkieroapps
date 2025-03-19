@@ -38,11 +38,20 @@ const ContactModal = () => {
                             <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="https://x.com/TkieroApp" target="_blank" rel="noopener noreferrer" className="icon-circle">
-                            <i className="fab fa-twitter"></i>
+                            <i className="fab fa-x"></i>
                         </a>
                         <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="icon-circle">
                             <i className="fab fa-snapchat"></i>
                         </a>
+
+
+                        <a href="https://www.tiktok.com/@tkiero_app" target="_blank" rel="noopener noreferrer" className="icon-circle">
+                            <i className="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tkiero_app/" target="_blank" rel="noopener noreferrer" className="icon-circle">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+
                     </div>
                 </Modal.Body>
                 <Modal.Footer className="modal-footer-custom">

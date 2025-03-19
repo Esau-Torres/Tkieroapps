@@ -20,8 +20,8 @@ const Contacto = () => {
   const toggleCard3 = () => {
     setIsCard3Open(!isCard3Open);
   };
-
-  {/*Modal*/ }
+  
+  /*Modal*/
   const [showModal, setShowModal] = useState(false);
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
@@ -93,7 +93,7 @@ const Contacto = () => {
               <div className="row">
                 <div className="col-12 col-md-6 mb-4 ">
                   <div className="card h-100 shadow-sm card6 mx-auto">
-                    <div className="card-body5 card6">
+                    <div className="card-body5 ">
                       <h3 className="card-title5">Nuestra Ubicación</h3>
                       <p className="card-text5">
                         Miami FL, 33156<br />
@@ -104,7 +104,7 @@ const Contacto = () => {
                 </div>
                 <div className="col-12 col-md-6 mb-4 ">
                   <div className="card h-100 shadow-sm card6 mx-auto">
-                    <div className="card-body5 card6">
+                    <div className="card-body5">
                       <h3 className="card-title5">E-mail</h3>
                       <p className="card-text5">
                         hello@tkiero.app
@@ -117,8 +117,8 @@ const Contacto = () => {
               {/* Fila 2: Escríbenos y Redes Sociales */}
               <div className="row">
                 <div className="col-12 col-md-6 mb-4">
-                  <div className="card h-100 shadow-sm mx-auto">
-                    <div className="card-body card6">
+                  <div className="card h-100 shadow-sm mx-auto card6">
+                    <div className="card-body">
                       <h3 className="card-title5">Escríbenos</h3>
                       <p className="card-text5">
                         <strong>Horarios</strong><br />
@@ -130,7 +130,7 @@ const Contacto = () => {
                 </div>
                 <div className="col-12 col-md-6 mb-4">
                   <div className="card h-100 shadow-sm card6 mx-auto" onClick={handleShowModal} style={{ cursor: 'pointer' }}>
-                    <div className="card-body5 card6">
+                    <div className="card-body5">
                       <h3 className="card-title5">Redes Sociales</h3>
                       <p className="card-text5">
                         Haz clic aquí para ver nuestras redes sociales.
@@ -163,7 +163,7 @@ const Contacto = () => {
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://x.com/TkieroApp" target="_blank" rel="noopener noreferrer" className="icon-circle2">
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-x"></i>
               </a>
               <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="icon-circle2">
                 <i className="fab fa-snapchat"></i>
@@ -189,7 +189,7 @@ const Contacto = () => {
           {/* Card 1: Qué Hace Tkiero */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard1}>
-              <h3 className="card-title text-light">Qué Hace Tkiero</h3>
+              <h3 className="card-title text-light">¿Qué Hace Tkiero?</h3>
               <span className="toggle-icon">&nbsp;{isCard1Open ? '−' : '+'}&nbsp;</span>
             </div>
             <div className={`card-body2 justified-text ${isCard1Open ? "open" : ""}`}>
@@ -214,7 +214,7 @@ const Contacto = () => {
           {/* Card 2: Cómo Tkiero Beneficia al Consumidor */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard2}>
-              <h3 className="card-title text-light">Cómo Tkiero Beneficia al Consumidor</h3>
+              <h3 className="card-title text-light">¿Cómo Tkiero Beneficia al Consumidor?</h3>
               <span className="toggle-icon">&nbsp; {isCard2Open ? ' − ' : '+'} &nbsp;</span>
             </div>
             <div className={`card-body2 ${isCard2Open ? "open" : ""}`}>
@@ -233,7 +233,7 @@ const Contacto = () => {
           {/* Card 3: Por Qué Integrar Tkiero Beneficia a Su Empresa */}
           <div className="card mb-4 shadow-sm card4">
             <div className="card-header2" onClick={toggleCard3}>
-              <h3 className="card-title text-light">Por Qué Integrar Tkiero Beneficia a Su Empresa</h3>
+              <h3 className="card-title text-light">¿Por Qué Integrar Tkiero Beneficia a Su Empresa?</h3>
               <span className="toggle-icon">&nbsp; {isCard3Open ? ' − ' : '+'} &nbsp;</span>
             </div>
             <div className={`card-body2 ${isCard3Open ? "open" : ""}`}>

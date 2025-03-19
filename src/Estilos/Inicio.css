@@ -150,19 +150,22 @@ a {
 
 /* Botón */
 .btn-register {
-    transition: transform 0.3s ease;
-    background: linear-gradient(50deg, var(--celeste), var(--azul-celeste));
-    color: #ffffff;
+    background: #cae2fe;
+    color: var(--azul-celeste);
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 1rem;
-    border: none;
     cursor: pointer;
+    border: 2px solid var(--azul-celeste); 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer; 
 }
 
 .btn-register:hover {
     transform: scale(1.07);
     color: #ffffff;
+    border-color: #f0f8ff; 
+    background: var(--azul-celeste);
 }
 
 
@@ -344,6 +347,12 @@ a {
 .block4 {
     line-height: 1.6;
 }
+.apple{
+    color: #007bff;
+}
+.apple:hover{
+    color: #ffcc00;
+}
 
 /*bloque 5*/
 .alianza-container {
@@ -370,6 +379,51 @@ a {
     height: 60px;
     margin: 0 15px;
 }
+
+/* Estilos generales */
+.slider-container2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider2 {
+    display: flex;
+    width: auto; 
+    animation: slide 20s linear infinite; 
+  }
+  
+  .slide2 {
+    flex: 0 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    transition: 0.5s ease;
+  }
+  
+  .slide2 img {
+    width: 70%; 
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Animación */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .slide2 {
+      width: 200px; 
+    }
+  }
 
 /* Animación para mover las imágenes */
 @keyframes scroll {
@@ -648,19 +702,21 @@ a {
 /* Estilo del botón */
 .download-btn {
     color: #FFFFFF;
-    background-color: black;
+    background-color: transparent; 
+    border: 2px solid rgb(255, 255, 255); 
     margin-top: 20px;
     font-size: 1rem;
     border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
+    padding: 10px 20px; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer; 
 }
 
 .download-btn:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: #f0f8ff;
+    transform: scale(1.1); 
+    color: #f0f8ff; 
+    border-color: #f0f8ff; 
 }
-
 /* Imagen del logo */
 .logo2-img {
     max-width: 300px;
@@ -714,23 +770,29 @@ a {
   
   /* Colores específicos para cada ícono */
   .icon-circle .fa-facebook {
-    color: #1877F2; /* Azul de Facebook */
+    color: #1877F2; 
   }
   
   .icon-circle .fa-youtube {
-    color: #ff0000; /* Verde de WhatsApp */
+    color: #ff0000; 
   }
   
   .icon-circle .fa-linkedin {
-    color: #0A66C2; /* Azul de LinkedIn */
+    color: #0A66C2; 
   }
   
   .icon-circle .fa-twitter {
-    color: #006AFF; /* Azul de Messenger */
+    color: #006AFF; 
   }
   
   .icon-circle .fa-snapchat {
-    color: #FFFC00; /* Amarillo de Snapchat */
+    color: #FFFC00; 
+  }
+  .icon-circle .fa-tiktok {
+    color: #000000; 
+  }
+  .icon-circle .fa-instagram {
+    color: #ff00c8af; 
   }
 
 /* Animaciones */
