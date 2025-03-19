@@ -29,7 +29,7 @@ const Seccion = () => {
     }, []);
   
     return (
-      <section id="mi-seccion" className="container-fluid" ref={seccionRef}>
+      <section id="mi-seccion" className="container-fluid bg-fondo" ref={seccionRef}>
         <div className="container">
           <h3 className="titulo1">Tu dinero siempre protegido</h3>
   

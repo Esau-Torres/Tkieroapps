@@ -9,13 +9,10 @@ import Recurso10 from '../img/Recurso10.png';
 import Recurso1 from '../img/Recurso 1.png';
 import Recurso3 from '../img/Recurso 3.png';
 import Recurso4 from '../img/Recurso4.png';
-
 import Recurso17 from '../img/img17.jpg';
 import Recurso18 from '../img/img18.jpeg';
 import Recurso19 from '../img/img19.jpg';
 import Recurso20 from '../img/img20.jpeg';
-
-import Recurso7 from '../img/Recurso 7.png';
 import Img11 from '../img/img11.PNG';
 import Img12 from '../img/img12.png';
 import Img13 from '../img/img13.png';
@@ -40,7 +37,7 @@ const Inicio = () => {
   return (
     /*bloque uno*/
     <div className="divprincipa row">
-      <div className="container-fluid parent my-5">
+      <div className="container-fluid parent my-5 bg-fondo">
 
         <div className="row col-12 col-md-12 align-items-center text-white">
 
@@ -81,7 +78,7 @@ const Inicio = () => {
       </div>
 
       {/* bloque dos*/}
-      <div className="container-fluid">
+      <div className="container-fluid bg-fondo2">
         <div className="container section-container">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 text-center">
@@ -193,7 +190,7 @@ const Inicio = () => {
 
       </div>
       {/*bloque 4*/}
-      <div className="container my-5">
+      <div className="container my-5 bg-fondo3">
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-8 order-2 order-md-1">
@@ -224,7 +221,7 @@ const Inicio = () => {
         </div>
       </div>
       {/*blocke 5*/}
-      <div className="container  my-5">
+      <div className="container  my-5 bg-fondo">
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-12 order-2 order-md-2">
@@ -287,10 +284,10 @@ const Inicio = () => {
       </div>
 
       {/*Bloque 6*/}
-      <div className="container my-5">
+      <div className="container my-5 bg-fondo2">
         <div className="row align-items-center">
           {/* Columna de Texto */}
-          <div className="col-12 col-md-8 order-2 order-md-1">
+          <div className="col-12 col-md-12 order-2 order-md-1">
             <h2 className="mb-4 text-center">Vende, Compra y paga con Tetecnología Lightning</h2>
             <p className="highlight-text block4">
               Lightning la forma más rápida de pagar o cobrar al instante con solo
@@ -331,22 +328,18 @@ const Inicio = () => {
             </div>
 
 
-            <div className="d-flex flex-row gap-4 justify-content-end space">
+            <div className="d-flex flex-row gap-4 justify-content-center space">
               <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple  className="mt-3 apple" size={45} /></a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
               <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
             </div>
           </div>
 
-          {/* Columna de Imagen */}
-          <div className="col-12 col-md-4 text-center text-md-end mt-4 mt-md-0 order-1 order-md-2">
-            <img src={Recurso7} alt="QR" className="img-fluid rounded" />
-          </div>
 
         </div>
       </div>
       {/*Bloque 7*/}
-      <div className="container my-5">
+      <div className="container my-5 bg-fondo3">
         <div>
           <h2 className="text-center">Aprende a usar <span className="text-primary" >Tkiero</span> en minutos con <br /> nuestros tutoriales en TikTok</h2>
         </div>
@@ -401,7 +394,7 @@ const Inicio = () => {
         <Seguridad />
       </div>
       {/*Bloque 9*/}
-      <div className="container my-5 d-flex justify-content-center" >
+      <div className="container my-5 d-flex justify-content-center " >
         <div className="row align-items-center hero-secction">
           {/* Columna de Texto */}
           <div className="col-12 col-md-6 d-flex flex-column justify-content-end order-2 order-md-1">

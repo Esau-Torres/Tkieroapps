@@ -40,12 +40,9 @@ a {
 /* Colores personalizados */
 :root {
     --celeste: #87CEEB;
-    /* Celeste claro */
     --blanco: #FFFFFF;
-    /* Blanco */
     --azul-oscuro: #1E3A8A;
     --azul-celeste: #0784f2;
-    /* Azul oscuro para contraste */
 }
 
 /* Fondo celeste */
@@ -58,6 +55,23 @@ a {
     color: var(--blanco);
 }
 
+.bg-fondo{
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-fondo2{
+    background-image: url('../img/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.bg-fondo3{
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 .size1 {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
@@ -78,7 +92,6 @@ a {
 
 .store-btn:hover {
     transform: scale(1.1);
-    /* Efecto de escala al pasar el mouse */
 }
 
 /* Imagen */
@@ -707,7 +720,7 @@ a {
     margin-top: 20px;
     font-size: 1rem;
     border-radius: 30px;
-    padding: 10px 20px; 
+    padding: 10px 10px; 
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     cursor: pointer; 
 }
@@ -843,7 +856,7 @@ a {
     }
 
     .download-btn {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
 
     .logo2-img {
@@ -854,3 +867,4 @@ a {
         font-size: 20px;
     }
 }
+
