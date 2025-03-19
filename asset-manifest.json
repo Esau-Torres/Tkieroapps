@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tkieroapps/static/css/main.6f1d4b28.css",
-    "main.js": "/Tkieroapps/static/js/main.ed85581b.js",
+    "main.css": "/Tkieroapps/static/css/main.63f94ede.css",
+    "main.js": "/Tkieroapps/static/js/main.35e7d7c4.js",
     "static/js/453.56ee17ea.chunk.js": "/Tkieroapps/static/js/453.56ee17ea.chunk.js",
     "static/media/img12.png": "/Tkieroapps/static/media/img12.0a36529b2e0b57835667.png",
     "static/media/img11.PNG": "/Tkieroapps/static/media/img11.56551c754e1752e30ce1.PNG",
@@ -11,7 +11,7 @@
     "static/media/footer.png": "/Tkieroapps/static/media/footer.80e56da6f8b329d66386.png",
     "static/media/img10.png": "/Tkieroapps/static/media/img10.ff85ef7242b5e782ebbb.png",
     "static/media/img7.png": "/Tkieroapps/static/media/img7.f4b234a1b1081efd935e.png",
-    "static/media/Recurso 7.png": "/Tkieroapps/static/media/Recurso 7.11171afca2a2d57dbcdf.png",
+    "static/media/Recurso4.png": "/Tkieroapps/static/media/Recurso4.f74f2dab16356ede83b8.png",
     "static/media/img3.png": "/Tkieroapps/static/media/img3.bb4741c443c43b94c547.png",
     "static/media/img17.jpg": "/Tkieroapps/static/media/img17.a1f29da7767c9be9a956.jpg",
     "static/media/img4.png": "/Tkieroapps/static/media/img4.265164b69cecfcd8d8f0.png",
@@ -21,15 +21,17 @@
     "static/media/img1.png": "/Tkieroapps/static/media/img1.1f05f4429f01d01e0736.png",
     "static/media/img5.png": "/Tkieroapps/static/media/img5.9d209198dd0e06aebef8.png",
     "static/media/img19.jpg": "/Tkieroapps/static/media/img19.472d38d0806c14cd539a.jpg",
-    "static/media/Recurso4.png": "/Tkieroapps/static/media/Recurso4.96c6bf9ab07783a4a6d7.png",
+    "static/media/bg1.png": "/Tkieroapps/static/media/bg1.7f11b608a6253965446d.png",
+    "static/media/bg2.png": "/Tkieroapps/static/media/bg2.6d556db6937ea6d3bc3e.png",
+    "static/media/bg3.png": "/Tkieroapps/static/media/bg3.bbb42336e81817477fff.png",
     "static/media/img8.png": "/Tkieroapps/static/media/img8.53c7b6920cff332fcc6d.png",
     "index.html": "/Tkieroapps/index.html",
-    "main.6f1d4b28.css.map": "/Tkieroapps/static/css/main.6f1d4b28.css.map",
-    "main.ed85581b.js.map": "/Tkieroapps/static/js/main.ed85581b.js.map",
+    "main.63f94ede.css.map": "/Tkieroapps/static/css/main.63f94ede.css.map",
+    "main.35e7d7c4.js.map": "/Tkieroapps/static/js/main.35e7d7c4.js.map",
     "453.56ee17ea.chunk.js.map": "/Tkieroapps/static/js/453.56ee17ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f1d4b28.css",
-    "static/js/main.ed85581b.js"
+    "static/css/main.63f94ede.css",
+    "static/js/main.35e7d7c4.js"
   ]
 }
