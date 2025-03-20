@@ -85,20 +85,15 @@ a {
 .store-btn {
     max-width: 150px;
     transition: transform 0.3s ease;
-    background: linear-gradient(150deg, var(--celeste), var(--azul-celeste));
+    background:  var(--azul-celeste);
     padding: 10px;
     border-radius: 20px;
+    color: #f0f8ff;
 }
-.store2-btn {
-    max-width: 150px;
-    transition: transform 0.3s ease;
-    background: linear-gradient(150deg, var(--celeste), var(--azul-celeste));
-    padding: 7px;
-    border-radius: 20px;
-}
-
 .store-btn:hover {
     transform: scale(1.1);
+    color: #f0f8ff;
+    background:  var(--azul-celeste);
 }
 
 /* Imagen */
@@ -128,11 +123,7 @@ a {
     }
 
     .store-btn {
-        max-width: 120px;
-        /* Botones más pequeños en móviles */
-    }
-    .store2-btn {
-        max-width: 140px;
+        max-width: 150px;
         /* Botones más pequeños en móviles */
     }
 }

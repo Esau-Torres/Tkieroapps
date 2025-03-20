@@ -30,13 +30,13 @@ const Header = () => {
                     {/* Menú para PC (lista centrada) */}
                     <div className="d-none d-lg-block w-100">
                         <ul className="navbar-nav mx-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/">
                                     Inicio
                                 </Link>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/contacto">
+                                <Link className="nav-link" to="/contacto">
                                     ¿Quienes somos?
                                 </Link>
                             </li>
@@ -69,13 +69,18 @@ const Header = () => {
                                 </button>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/contacto" onClick={closeMenu}>
+                            <Link className="nav-link" to="/">
+                                    Inicio
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contacto" onClick={closeMenu}>
                                     ¿Quienes somos?
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/caracteristicas" onClick={closeMenu}>
-                                    Ayuda y seguridad
+                                    Ayuda
                                 </Link>
                             </li>
                             <li className="nav-item">

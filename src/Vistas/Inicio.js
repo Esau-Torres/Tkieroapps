@@ -4,8 +4,6 @@ import Modal from './inicio/Modal';
 import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin,FaYoutube } from "react-icons/fa";
 import { MdQrCode, MdSwapHoriz, MdCheckCircle, } from "react-icons/md";
 import Seguridad from "./inicio/Bloque8";
-import Recurso9 from '../img/Recurso9.png';
-import Recurso10 from '../img/Recurso10.png';
 import Recurso1 from '../img/Recurso 1.png';
 import Recurso3 from '../img/Recurso 3.png';
 import Recurso4 from '../img/Recurso4.png';
@@ -54,10 +52,10 @@ const Inicio = () => {
             {/* Botones de descarga */}
             <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
               <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" target="_blank" rel="noopener noreferrer">
-                <img src={Recurso9} alt="Google Play" className="img-fluid btn store-btn" />
+               <p className="btn store-btn"><FaApple color="#FFFFFF"  size={30} />&#160; Apple Store</p>
               </a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero" target="_blank" rel="noopener noreferrer">
-                <img src={Recurso10} alt="App Store" className="img-fluid btn store2-btn" />
+              <p className="btn store-btn"><FaGooglePlay color="#FFFFFF" size={30} />&#160; Google Play</p>
               </a>
             </div>
           </div>
@@ -418,19 +416,19 @@ const Inicio = () => {
             <img src={Img15} alt="Logo2" className="logo2-img w-100" />
             <div className="social-icons text-center text-md-center mt-5">
               <a href="https://www.facebook.com/Tkieroapp" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={40} />
+                <FaFacebook size={30} />
               </a>
               <a href="https://www.instagram.com/tkiero_app" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={40} />
+                <FaInstagram size={30} />
               </a>
               <a href="https://www.tiktok.com/@tkiero_app" target="_blank" rel="noopener noreferrer">
-                <FaTiktok size={40} />
+                <FaTiktok size={30} />
               </a>
               <a href="https://www.linkedin.com/company/tkiero-app/about/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={40} />
+                <FaLinkedin size={30} />
               </a>
               <a href="https://www.youtube.com/@Tkiero_app" target="_blank" rel="noopener noreferrer">
-                <FaYoutube size={40}/>
+                <FaYoutube size={30}/>
               </a>
             </div>
           </div>
