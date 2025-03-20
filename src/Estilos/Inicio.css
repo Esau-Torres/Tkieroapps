@@ -89,6 +89,13 @@ a {
     padding: 10px;
     border-radius: 20px;
 }
+.store2-btn {
+    max-width: 150px;
+    transition: transform 0.3s ease;
+    background: linear-gradient(150deg, var(--celeste), var(--azul-celeste));
+    padding: 7px;
+    border-radius: 20px;
+}
 
 .store-btn:hover {
     transform: scale(1.1);
@@ -122,6 +129,10 @@ a {
 
     .store-btn {
         max-width: 120px;
+        /* Botones más pequeños en móviles */
+    }
+    .store2-btn {
+        max-width: 140px;
         /* Botones más pequeños en móviles */
     }
 }
@@ -163,8 +174,8 @@ a {
 
 /* Botón */
 .btn-register {
-    background: #cae2fe;
-    color: var(--azul-celeste);
+    background: var(--azul-celeste);
+    color: #FFFFFF;
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -734,6 +745,7 @@ a {
 .logo2-img {
     max-width: 300px;
     animation: scaleIn 1.5s ease-in-out;
+    margin-right: 25px;
 }
 
 /* Estilo de iconos sociales */

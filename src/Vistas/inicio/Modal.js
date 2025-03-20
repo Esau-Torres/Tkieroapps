@@ -43,8 +43,6 @@ const ContactModal = () => {
                         <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="icon-circle">
                             <i className="fab fa-snapchat"></i>
                         </a>
-
-
                         <a href="https://www.tiktok.com/@tkiero_app" target="_blank" rel="noopener noreferrer" className="icon-circle">
                             <i className="fab fa-tiktok"></i>
                         </a>

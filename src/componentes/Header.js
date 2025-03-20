@@ -28,8 +28,13 @@ const Header = () => {
                     </button>
 
                     {/* Menú para PC (lista centrada) */}
-                    <div className="d-none d-lg-block">
+                    <div className="d-none d-lg-block w-100">
                         <ul className="navbar-nav mx-auto">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">
+                                    Inicio
+                                </Link>
+                            </li>
                             <li className="nav-item">
                             <Link className="nav-link" to="/contacto">
                                     ¿Quienes somos?
@@ -37,7 +42,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/caracteristicas">
-                                    Ayuda y seguridad
+                                    Ayuda
                                 </Link>
                             </li>
                             <li className="nav-item">

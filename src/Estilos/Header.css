@@ -29,6 +29,8 @@
   .d-none.d-lg-block .navbar-nav {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    width: 100%;
   }
   
   .d-none.d-lg-block .nav-link {

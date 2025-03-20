@@ -1,124 +1,225 @@
-.animated-cards {
-    background-color: var(--gris-claro);
-    padding: 60px 0;
-  }
-  
+/*Bloque 1*/
+.tkiero-history {
+  padding: 60px 0;
+}
 
-  .card5 {
-    position: relative;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    background: var(--blanco);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #0784f2;
+  transform: translateX(-50%);
+}
+
+/* Estilos base de los elementos */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+/* Alternando los elementos en la línea de tiempo */
+.timeline-item:nth-child(odd) {
+  right: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #0784f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-icon {
+  right: -25px;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  left: -25px;
+}
+
+.timeline-content {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border:dotted;
+  border-color: #0784f2;
+}
+.timeline-content:hover{
+  border: solid;
+  border-color: #0784f2;
+}
+/* Animaciones */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 0px;
   }
-  
-  .card5:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-align: left !important;
   }
-  
-  /* Efecto de círculo animado */
-  .circle-animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background:  rgb(0, 166, 255);
-    border-radius: 25%;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
-    z-index: 0;
-    opacity: 0.15;
+
+  .timeline-item:nth-child(odd)
+  {
+    left: 0;
   }
-  
-  .card5:hover .circle-animation {
-    width: 1300px;
-    height: 350px;
+  .timeline-item:nth-child(even) {
+    left: 0;
   }
-  
-  /* Estilo del texto */
-  .card-body {
-    position: relative;
-    z-index: 2;
-    padding: 30px;
+
+  .timeline-icon {
+    left: -20px; 
+    width: 45px; 
+    height: 45px;
   }
-  
+}
+
+
+/*bloque 2*/
+.icon-section {
+  background-color: #0784f2; /* Fondo azul */
+  color: white; /* Color del ícono */
+  padding: 15px;
+  border-radius: 10px 0 10px 0; /* Bordes redondeados */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%; 
+}
+
+.card5 {
+  position: relative;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+  padding: 0; 
+  display: flex;
+  align-items: stretch; 
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1e066d; /* Color del título */
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px; /* Espaciado interno */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  background: transparent;
+}
+
+/* Estilos responsivos para tablets y móviles */
+@media (max-width: 991.98px) {
   .card-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: var(--azul-oscuro);
-    margin-bottom: 15px;
-  }
-  
-  .card-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.6;
+    font-size: 1.5rem; 
   }
 
-  .card-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    margin-bottom: 15px; 
-    margin: 0;
-    background: transparent;
+  .icon-section {
+    height: auto; 
+    padding: 10px; 
   }
-  .card-image {
-    width: 30%; 
-    height: 40%;
-    object-fit: cover; 
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  @media (max-width: 991.98px) {
-    .card-image {
-      width: 30%;
-      height: 50%;
-      
-    }
-    .card-image2 {
-        width: 30%; 
-        height: 50%;
-        
-      }
-    .card-title {
-        font-size: 1.2rem; 
-      }
 }
 
 @media (max-width: 767.98px) {
-    .card-header {
-      flex-direction: column; 
-      align-items: center; 
-      text-align: center; 
-    }
-  
-    .card-image {
-      width: 30%; 
-      height: 30%;
-      margin-left: 0; 
-    }
-    .card-image2 {
-        width: 30%; 
-        height: 30%;
-        margin-left: 0; 
-      }
-    .card-title {
-      font-size: 1.2rem; 
-    }
-  
-    .card-text {
-      font-size: 0.85rem; 
-    }
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .card-title {
+    font-size: 1.2rem; 
+  }
+
+  .card-text {
+    font-size: 0.9rem; 
+  }
+
+  .icon-section {
+    width: 25%; 
+    padding: 8px; 
+  }
+
+  .text-section {
+    padding-left: 15px; 
+  }
+}
+
+/* Estilos específicos para PC (pantallas grandes) */
+@media (min-width: 992px) {
+  .icon-section {
+    width: 15%; /* Reducir el ancho del ícono en PC */
+  }
+}
 
   /*Bloque 2*/
 

@@ -1,7 +1,7 @@
 import React from "react";
 import '../Estilos/Inicio.css';
 import Modal from './inicio/Modal';
-import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin,FaYoutube } from "react-icons/fa";
 import { MdQrCode, MdSwapHoriz, MdCheckCircle, } from "react-icons/md";
 import Seguridad from "./inicio/Bloque8";
 import Recurso9 from '../img/Recurso9.png';
@@ -57,7 +57,7 @@ const Inicio = () => {
                 <img src={Recurso9} alt="Google Play" className="img-fluid btn store-btn" />
               </a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero" target="_blank" rel="noopener noreferrer">
-                <img src={Recurso10} alt="App Store" className="img-fluid btn store-btn" />
+                <img src={Recurso10} alt="App Store" className="img-fluid btn store2-btn" />
               </a>
             </div>
           </div>
@@ -329,7 +329,7 @@ const Inicio = () => {
 
 
             <div className="d-flex flex-row gap-4 justify-content-center space">
-              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple  className="mt-3 apple" size={45} /></a>
+              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple className="mt-3 apple" size={45} /></a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
               <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
             </div>
@@ -416,7 +416,7 @@ const Inicio = () => {
           {/* Columna de Imagen */}
           <div className="col-12 col-md-6 text-center text-md-center mt-4 mt-md-0 order-1 order-md-2">
             <img src={Img15} alt="Logo2" className="logo2-img w-100" />
-            <div className="social-icons text-center text-md-center">
+            <div className="social-icons text-center text-md-center mt-5">
               <a href="https://www.facebook.com/Tkieroapp" target="_blank" rel="noopener noreferrer">
                 <FaFacebook size={40} />
               </a>
@@ -428,6 +428,9 @@ const Inicio = () => {
               </a>
               <a href="https://www.linkedin.com/company/tkiero-app/about/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={40} />
+              </a>
+              <a href="https://www.youtube.com/@Tkiero_app" target="_blank" rel="noopener noreferrer">
+                <FaYoutube size={40}/>
               </a>
             </div>
           </div>
