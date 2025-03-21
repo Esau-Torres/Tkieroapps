@@ -7,7 +7,7 @@
   
   /* Fondo celeste */
   .bg-header {
-    background-color: #558ed5;
+    background-color: transparent;
   }
   
   /* Estilos para el logo */
@@ -22,7 +22,7 @@
   }
   
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(7, 139, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   
   /* Menú para PC (lista centrada) */
@@ -34,7 +34,7 @@
   }
   
   .d-none.d-lg-block .nav-link {
-    color: var(--blanco) !important;
+    color: #0c60fb !important;
     font-family: 'Poppins', sans-serif;
     font-weight: 500; /* Medium */
     font-size: 1.1rem;
@@ -43,7 +43,7 @@
   }
   
   .d-none.d-lg-block .nav-link:hover {
-    color: var(--azul-oscuro) !important;
+    color: #40b3f1 !important;
   }
   
   /* Estilos para el menú circular (solo en móvil) */
@@ -54,7 +54,7 @@
     transform: translate(-50%, -50%) scale(0);
     width: 0;
     height: 0;
-    background-color: #558ed5;
+    background-color: #40b3f1;
     border-radius: 50%;
     display: flex;
     flex-direction: column;

@@ -15,7 +15,7 @@ const Contacto = () => {
   return (
     <>
       {/*Bloque 1*/}
-      <section className="tkiero-history py-5 bg-fondo">
+      <section className="tkiero-history py-5 bg-fondo3">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
@@ -80,7 +80,7 @@ const Contacto = () => {
       </section>
       {/*Bloque 2 */}
       <h2 className="text-center">El Salvador cambia su manera de manejar el dinero con nosotros.</h2>
-      <section className="animated-cards py-5 bg-fondo3">
+      <section className="animated-cards py-5">
         <div className="container">
           <div className="row">
             {/* Card 1: Quiénes Somos */}

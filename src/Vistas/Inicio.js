@@ -1,7 +1,7 @@
 import React from "react";
 import '../Estilos/Inicio.css';
 import Modal from './inicio/Modal';
-import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin,FaYoutube } from "react-icons/fa";
+import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { MdQrCode, MdSwapHoriz, MdCheckCircle, } from "react-icons/md";
 import Seguridad from "./inicio/Bloque8";
 import Recurso1 from '../img/Recurso 1.png';
@@ -33,84 +33,86 @@ const logos = [
 const Inicio = () => {
 
   return (
-    /*bloque uno*/
+
     <div className="divprincipa row">
-      <div className="container-fluid parent my-5 bg-fondo">
+      <div className="bg-fondo">
+        {/* bloque uno*/}
+        <div className="container-fluid parent my-5">
 
-        <div className="row col-12 col-md-12 align-items-center text-white">
+          <div className="row col-12 col-md-12 align-items-center text-white">
 
-          {/* Primera columna - Texto y botones */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
-            <h1 className="fw-bold text-md-start text-center">
-              Envia Remesas a tus familiares  en El Salvador sin pagar comisiones<br /><br />
-            </h1>
+            {/* Primera columna - Texto y botones */}
+            <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+              <h1 className="fw-bold text-md-start text-center">
+                Envia Remesas a tus familiares  en El Salvador sin pagar comisiones<br /><br />
+              </h1>
 
-            <p className="size1 text-md-start text-center">
-              Envia remesas al instante sin pagar comisiones desde tu <br /> teléfono. Regístrate únicamente con el DUI.
-            </p>
-
-            {/* Botones de descarga */}
-            <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-              <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" target="_blank" rel="noopener noreferrer">
-               <p className="btn store-btn"><FaApple color="#FFFFFF"  size={30} />&#160; Apple Store</p>
-              </a>
-              <a href="https://play.google.com/store/apps/details?id=app.tkiero" target="_blank" rel="noopener noreferrer">
-              <p className="btn store-btn"><FaGooglePlay color="#FFFFFF" size={30} />&#160; Google Play</p>
-              </a>
-            </div>
-          </div>
-
-          {/* Segunda columna - Imagen */}
-          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center div1">
-            <img src={Img0} alt="img0" className="img-fluid" />
-          </div>
-
-        </div>
-
-        {/* Tercera fila - Botón centrado */}
-        <div className="col-12 text-center mt-4 div3">
-          <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-            únete a nuestra comunidad
-          </a>
-        </div>
-      </div>
-
-      {/* bloque dos*/}
-      <div className="container-fluid bg-fondo2">
-        <div className="container section-container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6 text-center">
-              <img src={Recurso1} className="img-fluid mobile-img" alt="Móvil 1" />
-            </div>
-
-            {/* Texto y Botón */}
-            <div className="col-12 col-md-6">
-              <h2 className="title">
-                Transferencias instantáneas, documentos <br /> legales y más en tu bolsillo.
-              </h2>
-              <p className="highlight-text text-start">
-                Tramita partidas de nacimiento, actas de matrimonio y más, apostilladas, entregadas a tiempo con DHL.
+              <p className="size1 text-md-start text-center">
+                Envia remesas al instante sin pagar comisiones desde tu <br /> teléfono. Regístrate únicamente con el DUI.
               </p>
-              <p className="highlight-text text-start">
-                Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
-              </p>
-              <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-                Descargala
-              </a>
-              {/*Iconos de Envío */}
-              <div className="shipping-icons">
-                <img src={Recurso3} className="img-fluid" alt="UPS y DHL" />
+
+              {/* Botones de descarga */}
+              <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" target="_blank" rel="noopener noreferrer">
+                  <p className="btn store-btn"><FaApple color="#FFFFFF" size={30} />&#160; Apple Store</p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=app.tkiero" target="_blank" rel="noopener noreferrer">
+                  <p className="btn store-btn"><FaGooglePlay color="#FFFFFF" size={30} />&#160; Google Play</p>
+                </a>
               </div>
             </div>
+
+            {/* Segunda columna - Imagen */}
+            <div className="col-12 col-md-6 d-flex justify-content-center align-items-center div1">
+              <img src={Img0} alt="img0" className="img-fluid" />
+            </div>
+
           </div>
 
-          {/* Mensaje Inferior */}
-          <p className="footer-text">
-            Olvídate de largas esperas. Nosotros llevamos tus documentos por ti.
-          </p>
+          {/* Tercera fila - Botón centrado */}
+          <div className="col-12 text-center mt-4 div3">
+            <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
+              únete a nuestra comunidad
+            </a>
+          </div>
+        </div>
+
+        {/* bloque dos*/}
+        <div className="container-fluid">
+          <div className="container section-container">
+            <div className="row align-items-center">
+              <div className="col-12 col-md-6 text-center">
+                <img src={Recurso1} className="img-fluid mobile-img" alt="Móvil 1" />
+              </div>
+
+              {/* Texto y Botón */}
+              <div className="col-12 col-md-6">
+                <h2 className="title">
+                  Transferencias instantáneas, documentos <br /> legales y más en tu bolsillo.
+                </h2>
+                <p className="highlight-text text-start">
+                  Tramita partidas de nacimiento, actas de matrimonio y más, apostilladas, entregadas a tiempo con DHL.
+                </p>
+                <p className="highlight-text text-start">
+                  Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
+                  Descargala
+                </a>
+                {/*Iconos de Envío */}
+                <div className="shipping-icons">
+                  <img src={Recurso3} className="img-fluid" alt="UPS y DHL" />
+                </div>
+              </div>
+            </div>
+
+            {/* Mensaje Inferior */}
+            <p className="footer-text">
+              Olvídate de largas esperas. Nosotros llevamos tus documentos por ti.
+            </p>
+          </div>
         </div>
       </div>
-
       {/* bloque tres*/}
       <div className="container cards-container">
         <h2 className="title text-center">
@@ -188,7 +190,7 @@ const Inicio = () => {
 
       </div>
       {/*bloque 4*/}
-      <div className="container my-5 bg-fondo3">
+      <div className="container my-5">
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-8 order-2 order-md-1">
@@ -219,7 +221,7 @@ const Inicio = () => {
         </div>
       </div>
       {/*blocke 5*/}
-      <div className="container  my-5 bg-fondo">
+      <div className="container  my-5">
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-12 order-2 order-md-2">
@@ -282,7 +284,7 @@ const Inicio = () => {
       </div>
 
       {/*Bloque 6*/}
-      <div className="container my-5 bg-fondo2">
+      <div className="container my-5">
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-12 order-2 order-md-1">
@@ -337,7 +339,7 @@ const Inicio = () => {
         </div>
       </div>
       {/*Bloque 7*/}
-      <div className="container my-5 bg-fondo3">
+      <div className="container my-5">
         <div>
           <h2 className="text-center">Aprende a usar <span className="text-primary" >Tkiero</span> en minutos con <br /> nuestros tutoriales en TikTok</h2>
         </div>
@@ -428,7 +430,7 @@ const Inicio = () => {
                 <FaLinkedin size={30} />
               </a>
               <a href="https://www.youtube.com/@Tkiero_app" target="_blank" rel="noopener noreferrer">
-                <FaYoutube size={30}/>
+                <FaYoutube size={30} />
               </a>
             </div>
           </div>
