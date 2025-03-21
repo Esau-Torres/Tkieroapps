@@ -69,7 +69,7 @@ const Header = () => {
                                 </button>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/">
+                            <Link className="nav-link" to="/" onClick={closeMenu}>
                                     Inicio
                                 </Link>
                             </li>
