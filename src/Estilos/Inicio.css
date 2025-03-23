@@ -58,20 +58,21 @@ a {
 .bg-fondo{
     background-image: url('../img/bg1.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Reduce el tamaño al 50% */
+    background-size: 150% 100%; /* Reduce el tamaño al 50% */
     background-position: center; 
 }
 .bg-fondo2{
     background-image: url('../img/bg2.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Reduce el tamaño al 50% */
+    background-size: cover;
     background-position: center; 
     
 }
 .bg-fondo3{
     background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
+    background-position: center;
     
 }
 .size1 {
@@ -114,6 +115,12 @@ a {
 }
 
 /* Responsividad */
+@media (max-width: 992px){
+    .bg-fondo2{
+        background-size: contain;
+        left: 50px;
+    }
+}
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -128,7 +135,11 @@ a {
         max-width: 200px;
         /* Botones más pequeños en móviles */
     }
+    .bg-fondo2{
+        background-size: 100% 100%;
+    }
 }
+
 
 /*bloque 2*/
 /* Contenedor General */

@@ -3,6 +3,7 @@ import { Modal, Button } from 'react-bootstrap';
 import ContactForm from "./inicio/Correo";
 import visible from "./inicio/visible";
 import '../Estilos/AcercaDe.css';
+import logos from  '../img/logotipo.png'
 
 const Contacto = () => {
 
@@ -19,7 +20,7 @@ const Contacto = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 className="display-4 font-weight-bold text-primary">Historia de Tkiero</h2>
+              <img src={logos} alt="logo" height={'80px'} width={'auto'}/>
               <p className="lead">Una travesía de innovación y compromiso con la inclusión financiera.</p>
             </div>
           </div>
@@ -178,8 +179,8 @@ const Contacto = () => {
 
       {/*Bloque 3*/}
 
-      <section className="contact-section py-5 bg-fondo2">
-        <div className="container">
+      <section className="contact-section py-5 ">
+        <div className="container bg-fondo2">
           {/* Título */}
           <h2 className="text-center mb-4">Contáctanos</h2>
           <div className="row align-item-center">
