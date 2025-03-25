@@ -436,6 +436,121 @@ a {
     border-radius: 20px;
   }
   
+/*5.5*/
+/* Contenedor principal */
+.services-payment-container {
+    max-width: 1200px;
+  }
+  
+  /* Estructura grid */
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Grupos de iconos */
+  .payment-icons-group {
+    width: 100%;
+  }
+  
+  .icons-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Contenedores de iconos */
+  .payment-icon-wrapper {
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    flex: 0 0 auto;
+  }
+  
+  /* Imágenes de iconos */
+  .payment-icon-img {
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Imagen central destacada */
+  .featured-payment-image-container {
+    width: 100%;
+    max-width: 800px;
+ 
+  }
+  
+  .featured-payment-image {
+    width: 80%;
+  }
+  
+  /* Responsive: Mobile */
+  @media (min-width: 300px) and (max-width: 767px) {
+    .payment-icon-wrapper {
+      padding: 0.8rem;
+      margin: 0.5rem;
+    }
+    .payment-icons-group {
+        width: 120%;
+      }
+    .payment-icon-img {
+      max-height: 50px;
+      max-width: 60px;
+    }
+    .icons-row {
+      gap: 0.4rem;
+    }
+    
+    .payment-title {
+      font-size: 1.5rem;
+    }
+  
+  }
+  
+  /* Responsive: Tablet */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .payment-icon-img {
+      max-height: 90px;
+      max-width: 110px;
+    }
+    
+    .icons-row {
+      gap: 1.5rem;
+    }
+  }
+  
+  /* Responsive: Desktop */
+  @media (min-width: 992px) {
+    .payment-icon-img {
+      max-height: 120px;
+      max-width: 140px;
+    }
+    
+    .icons-row {
+      gap: 2.5rem;
+      flex-wrap: nowrap;
+    }
+    
+    .payment-icon-wrapper {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Efectos hover */
+  @media (hover: hover) {
+    .payment-icon-wrapper:hover {
+      transform: translateY(-5px);
+    }
+    
+    .payment-icon-img:hover {
+      transform: scale(1.05);
+    }
+  }
+
+
   /* Animación */
   @keyframes slide {
     0% {

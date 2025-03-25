@@ -17,6 +17,18 @@ import Img13 from '../img/img13.png';
 import Img15 from '../img/img15.png';
 import Img0 from '../img/img0.png';
 
+import remesas from '../img/remesa.png';
+import paga from '../img/paga.jpeg';
+import q_pay from '../img/Q_pay.png';
+
+import block1 from '../img/5_1.png';
+import block2 from '../img/5_2.png';
+import block3 from '../img/5_3.png';
+import block4 from '../img/5_4.png';
+import block5 from '../img/5_5.png';
+import block6 from '../img/5_6.png';
+import block7 from '../img/block5_5.png';
+
 const logos = [
   require("../img/img1.png"),
   require("../img/img2.png"),
@@ -71,8 +83,8 @@ const Inicio = () => {
 
           {/* Tercera fila - Botón centrado */}
           <div className="col-12 text-center mt-4 div3">
-            <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-              únete a nuestra comunidad
+            <a href="https://play.google.com/store/apps/details?id=app.tkiero" style={{ fontSize: '1.3rem' }} className="btn btn-register" target="_blank" rel="noopener noreferrer">
+              ¿Qué esperas?, Únete !Ya¡
             </a>
           </div>
         </div>
@@ -253,19 +265,64 @@ const Inicio = () => {
                     <img src={Recurso20} alt="Imagen 20" />
                   </div>
                   <div className="slide2">
-                    <img src={Recurso17} alt="Imagen 17" />
+                    <img src={remesas} alt="remesa" />
                   </div>
                   <div className="slide2">
-                    <img src={Recurso18} alt="Imagen 18" />
+                    <img src={paga} alt="paga" />
                   </div>
                   <div className="slide2">
-                    <img src={Recurso19} alt="Imagen 19" />
+                    <img src={q_pay} alt="Qpay" />
                   </div>
                   <div className="slide2">
                     <img src={Recurso20} alt="Imagen 20" />
                   </div>
                 </div>
               </div>
+
+              {/*blocke 5.5*/}
+              <div className="services-payment-container my-4 my-lg-6 px-2 px-md-4 bg-fondo">
+                <div className="services-grid">
+                  <div className="payment-header text-center">
+                    <h2>
+                      !Paga todos tus servicios básicos en un solo lugar¡
+                    </h2>
+                  </div>
+                  <div className="payment-icons-group">
+                    <div className="icons-row">
+                      {[block1, block6, block2].map((img, index) => (
+                        <div key={`top-icon-${index}`} className="payment-icon-wrapper">
+                          <img
+                            src={img}
+                            alt={`Servicio ${index + 1}`}
+                            className="payment-icon-img"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="featured-payment-image-container align-item-center text-center">
+                    <img
+                      src={block7}
+                      alt="Servicios disponibles"
+                      className="featured-payment-image"
+                    />
+                  </div>
+                  <div className="payment-icons-group">
+                    <div className="icons-row">
+                      {[block3, block4, block5].map((img, index) => (
+                        <div key={`bottom-icon-${index}`} className="payment-icon-wrapper">
+                          <img
+                            src={img}
+                            alt={`Beneficio ${index + 1}`}
+                            className="payment-icon-img"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -282,7 +339,6 @@ const Inicio = () => {
           </div>
         </div>
       </div>
-
       {/*Bloque 6*/}
       <div className="container my-5">
         <div className="row align-items-center">
