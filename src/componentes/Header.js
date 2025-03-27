@@ -37,7 +37,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contacto">
-                                    ¿Quienes somos?
+                                    Nuestros Servicios
                                 </Link>
                             </li>
                             <li className="nav-item">
@@ -75,7 +75,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contacto" onClick={closeMenu}>
-                                    ¿Quienes somos?
+                                    Nuestros Servicios
                                 </Link>
                             </li>
                             <li className="nav-item">

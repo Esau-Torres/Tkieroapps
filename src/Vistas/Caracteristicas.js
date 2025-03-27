@@ -1,7 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Modal, Button } from 'react-bootstrap';
 import '../Estilos/AcercaDe.css';
+import ContactForm from "./inicio/Correo";
 
 const Caracteristicas = () => {
+    /*Modal*/
+    const [showModal, setShowModal] = useState(false);
+    const handleCloseModal = () => setShowModal(false);
+    const handleShowModal = () => setShowModal(true);
+
     const [isCard1Open, setIsCard1Open] = useState(false);
     const [isCard2Open, setIsCard2Open] = useState(false);
     const [isCard3Open, setIsCard3Open] = useState(false);
@@ -20,6 +27,7 @@ const Caracteristicas = () => {
         <>
             {/*Bloque 3*/}
             <section className="expandable-cards py-5">
+                <h2 className="text-center mt-5">Haciendo tu vida más fácil, una transacción a la vez.</h2>
                 <div className="container">
                     {/* Card 1: Qué Hace Tkiero */}
                     <div className="card mb-4 shadow-sm card4">
@@ -86,7 +94,107 @@ const Caracteristicas = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-center mt-5">Haciendo tu vida más fácil, una transacción a la vez.</h2>
+            </section>
+
+            <section className="contact-section py-5 ">
+                <div className="container bg-fondo2">
+                    {/* Título */}
+                    <h2 className="text-center mb-4">Contáctanos</h2>
+                    <div className="row align-item-center">
+                        {/* Columna 1: Cards */}
+                        <div className="col-12 col-md-6 mx-auto c1">
+                            {/* Fila 1: Nuestra Ubicación y E-mail */}
+                            <div className="row">
+                                <div className="col-12 col-md-6 mb-4 ">
+                                    <div className="card h-100 shadow-sm card6 mx-auto">
+                                        <div className="card-body5 ">
+                                            <h3 className="card-title5">Nuestra Ubicación</h3>
+                                            <p className="card-text5">
+                                                67 Av. Sur , Edificio 300, apto 4,<br />
+                                                segunda planta, Colonia Roma, S.S.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 mb-4 ">
+                                    <div className="card h-100 shadow-sm card6 mx-auto">
+                                        <div className="card-body5">
+                                            <h3 className="card-title5">E-mail</h3>
+                                            <p className="card-text5">
+                                                help@tkiero.app
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Fila 2: Escríbenos y Redes Sociales */}
+                            <div className="row">
+                                <div className="col-12 col-md-6 mb-4">
+                                    <div className="card h-100 shadow-sm mx-auto card6">
+                                        <div className="card-body5">
+                                            <h3 className="card-title5">Escríbenos</h3>
+                                            <p className="card-text5">
+                                                <strong>Horarios</strong><br />
+                                                Lun - Vie: 8am a 5pm<br />
+                                                Sáb: 8am a 2pm
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6 mb-4">
+                                    <div className="card h-100 shadow-sm card6 mx-auto" onClick={handleShowModal} style={{ cursor: 'pointer' }}>
+                                        <div className="card-body5">
+                                            <h3 className="card-title5">Redes Sociales</h3>
+                                            <p className="card-text5">
+                                                Haz clic aquí para ver nuestras redes sociales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Columna 2: Formulario */}
+                        <ContactForm />
+                    </div>
+                </div>
+
+                {/* Modal para Redes Sociales */}
+                <Modal show={showModal} onHide={handleCloseModal} centered>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Redes Sociales</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="social-icons2 text-center">
+                            <a href="https://www.facebook.com/Tkieroapp" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@Tkiero_app" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/feed/?shareActive=true&shareUrl=https%3A%2F%2Ftr.ee%2FEbICCOG1uJ" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/TkieroApp" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-x"></i>
+                            </a>
+                            <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-snapchat"></i>
+                            </a> <a href="https://www.tiktok.com/@tkiero_app" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/tkiero_app/" target="_blank" rel="noopener noreferrer" className="icon-circle2">
+                                <i className="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleCloseModal}>
+                            Cerrar
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
             </section>
 
         </>
