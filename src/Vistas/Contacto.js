@@ -1,5 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+
 import visible from "./inicio/visible";
 import '../Estilos/AcercaDe.css';
 import logo from '../img/logotipo.png';
@@ -7,6 +14,10 @@ import services from '../img/services1.jpeg';
 import services1 from '../img/services2.jpeg';
 import services2 from '../img/services0.jpeg';
 import services3 from '../img/services4.jpeg';
+import services4 from '../img/services5.jpeg';
+import services5 from '../img/services6.jpeg';
+import services6 from '../img/services7.jpeg';
+import services7 from '../img/services8.jpeg';
 
 const Contacto = () => {
 
@@ -15,104 +26,181 @@ const Contacto = () => {
   return (
     <>
       {/*Bloque 1*/}
-
       <section className="bg-fondo py-5">
         <Container>
-          {/* Fila contenedora de las 4 secciones */}
           <div className="col-12 text-center mb-5">
-            <img src={logo} alt="logo" height={'80px'} width={'auto'} />
-            <p className="lead">Una travesía de innovación y compromiso con la inclusión financiera.</p>
+            <img src={logo} alt="logo" height={"80px"} width={"auto"} />
+            <h2 className="text-center mt-4">!Tkiero cambia tu manera de manejar tu dinero¡</h2>
           </div>
-          <Row className="g-4">
-            {/* Sección 1 */}
-            <Col lg={3} md={6}>
-              <div className="grid-item h-100">
-              <div className="image-part">
-                  <img
-                    src={services}
-                    alt="Pago de facturas"
-                  />
-                </div>
-                <div className="text-part p-4 text-center">
-                  <h3 className="mb-3">Ten un punto express</h3>
-                  <p className="mb-0">
-                    Paga todas tus facturas de agua, luz, internet, cable en un solo lugar.
-                  </p>
-                </div>
-                <div className="bg-primary p-1">
-                  <a href="https://play.google.com/store/apps/details?id=app.tkiero"><p className="text-center text-light m-2">Descarga La Apps</p></a>
-                </div>
-              </div>
-            </Col>
 
-            {/* Sección 2 */}
-            <Col lg={3} md={6}>
-              <div className="grid-item h-100">
-              <div className="image-part">
-                  <img
-                    src={services2}
-                    alt="Pago con QuickPay"
-                  />
-                </div>
-                <div className="text-part p-4 text-center">
-                  <h3 className="mb-3">Paga en cualquier lugar</h3>
-                  <p className="mb-0">
-                    En Tkiero App puedes pagar en establecimientos afiliados a QuickPay.
-                  </p>
-                </div>
-                <div className="bg-primary p-1">
-                  <a href="https://play.google.com/store/apps/details?id=app.tkiero"><p className="text-center text-light m-2">Descarga La Apps</p></a>
-                </div>
-              </div>
-            </Col>
+          <Row>
+            <Col>
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                slidesPerGroup={1}
+                loop={true}
+                speed={1500} // Desplazamiento suave
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                navigation
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  576: { slidesPerView: 1, slidesPerGroup: 1 },
+                  768: { slidesPerView: 2, slidesPerGroup: 1 },
+                  1024: { slidesPerView: 3, slidesPerGroup: 1 },
+                  1200: { slidesPerView: 4, slidesPerGroup: 1 } 
+                }}
+              >
 
-            {/* Sección 3 */}
-            <Col lg={3} md={6}>
-              <div className="grid-item h-100">
-              <div className="image-part">
-                  <img
-                    src={services1}
-                    alt="Lightning Network"
-                  />
-                </div>
-                <div className="text-part p-4 text-center">
-                  <h3 className=" mb-3">Tecnología Lightning</h3>
-                  <p className="mb-0">
-                    Transferencias instantáneas y de bajo costo con Bitcoin Lightning Network.
-                  </p>
-                </div>
-                <div className="bg-primary p-1">
-                  <a href="https://play.google.com/store/apps/details?id=app.tkiero"><p className="text-center text-light m-2">Descarga La Apps</p></a>
-                </div>
-              </div>
-            </Col>
 
-            {/* Sección 4 */}
-            <Col lg={3} md={6}>
-              <div className="grid-item h-100">
-              <div className="image-part">
-                  <img
-                    src={services3}
-                    alt="Recargas telefónicas"
-                  />
-                </div>
-                <div className="text-part p-4 text-center">
-                  <h3 className="mb-3">Recargas telefónicas</h3>
-                  <p className="mb-0">
-                    Realiza tus recargas o paquetes de tu compañía telefónica con nosotros.
-                  </p>
-                </div>
-                <div className="bg-primary p-1">
-                  <a href="https://play.google.com/store/apps/details?id=app.tkiero"><p className="text-center text-light m-2">Descarga La Apps</p></a>
-                </div>
-              </div>
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services} alt="Pago de facturas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Ten un punto express 24/7</h4>
+                      <p>Paga todas tus facturas de agua, luz, internet, cable en un solo lugar, en cualquier hora.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services2} alt="Pago con QuickPay" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Paga en cualquier lugar</h4>
+                      <p>En Tkiero App puedes pagar en establecimientos afiliados a QuickPay.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services1} alt="Lightning Network" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Lightning lo hace a su hora</h4>
+                      <p>Transferencias instantáneas y de bajo costo con Bitcoin Lightning Network.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services3} alt="Recargas telefónicas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Recargas telefónicas</h4>
+                      <p>Realiza tus recargas o paquetes de tu compañía telefónica con nosotros.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                {/*Bloques agregados*/}
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services4} alt="Recargas telefónicas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3 fs-4">Realiza transacciones 365</h4>
+                      <p>Realiza tus transacciones seguras, rápidas y globales, cualquier día del año.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services5} alt="Recargas telefónicas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3 fs-4">Paga con tarjeta de debito o crédito</h4>
+                      <p>Realiza transacciones con crédito o débito, con tu banco de preferencia.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services6} alt="Recargas telefónicas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Partidas de Nacimiento</h4>
+                      <p>Obtén tus documentos legales desde cualquier lugar de manera rápida y segura.</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="grid-item">
+                    <div className="image-part">
+                      <img src={services7} alt="Recargas telefónicas" />
+                    </div>
+                    <div className="text-part">
+                      <h4 className="mb-3">Envía Dinero a Terceros</h4>
+                      <p>Transfiere dinero de forma segura y rápida usando solo tu DUI o pasaporte</p>
+                    </div>
+                    <div className="bg-primary p-1">
+                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
+                        <p className="text-center text-light m-2">Descarga La App</p>
+                      </a>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </Col>
           </Row>
         </Container>
       </section>
 
+
       {/*Bloque 2 */}
-      <h2 className="text-center">!Tkiero cambia tu manera de manejar tu dinero¡</h2>
+      
+      <h2 className="text-center">Una travesía de innovación y compromiso con la inclusión financiera.</h2>
       <section className="animated-cards py-5 bg-fondo2">
         <div className="container">
           <div className="row">

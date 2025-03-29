@@ -1,0 +1,17 @@
+# Manejar finales de línea para archivos JSON
+*.json text eol=lf
+
+# Manejar finales de línea para archivos HTML
+*.html text eol=lf
+
+# Manejar finales de línea para archivos CSS
+*.css text eol=lf
+
+# Manejar finales de línea para archivos JavaScript
+*.js text eol=lf
+
+# Manejar finales de línea para archivos Markdown
+*.md text eol=lf
+
+# Finales de línea para otros archivos de texto
+* text=auto
