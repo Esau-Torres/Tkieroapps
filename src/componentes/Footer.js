@@ -12,14 +12,14 @@ const Footer = () => {
             <img src={logo} alt="logo" style={{ height: "40px" }} />
             <p className="small mt-2">© 2025 Copyright by Xert - All Rights Reserved.</p>
           </div>
-
+          {/* 
           <div className="col-md-6 text-center mb-3 mb-md-0">
             <a href="#" className="text-dark mx-2">Terms & Conditions</a>
             <a href="#" className="text-dark mx-2">Following & Cookies</a>
             <a href="#" className="text-dark mx-2">Crypto Policy</a>
             <a href="#" className="text-dark mx-2">Account Suspension</a>
           </div>
-
+            */}
           <div className="col-md-3 text-center text-md-end">
             <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={20} /></a>
             <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={20} /></a>
