@@ -108,8 +108,8 @@ const Inicio = () => {
                 <p className="highlight-text text-start">
                   Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
                 </p>
-                <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-                  Descargala
+                <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register fs-5 fs-md-4 fs-lg-3" target="_blank" rel="noopener noreferrer">
+                  Descargala Ahora!!
                 </a>
                 {/*Iconos de Envío */}
                 <div className="shipping-icons">
@@ -176,7 +176,7 @@ const Inicio = () => {
           <div className="card custom-card custom2">
             <div className="text-container2">
               <h2 className="h2">Crea tu cuenta </h2>
-              <p>Para registrarse llena el formulario, unicamente necesitarás tener tu Dui a la mano y ser mayor de 18 años para commenzar a disfrutar de todos los beneficios que Tkiero.app tiene para ti.</p>
+              <p>Para registrarse llena el formulario, unicamente necesitarás tener tu DUI a la mano y ser mayor de 18 años para commenzar a disfrutar de todos los beneficios que Tkiero.app tiene para ti.</p>
               <ul>
                 <li>Recibe pagos y remesas del exterior a tu Wallet Tkiero al instante sin comisiones.</li>
                 <li>Compra en cualquier comercio y paga con tu teléfono usando el sistema QR Lightning. </li>

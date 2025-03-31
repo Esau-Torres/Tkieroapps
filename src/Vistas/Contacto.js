@@ -35,7 +35,7 @@ const Contacto = () => {
 
           <Row>
             <Col>
-              <Swiper
+            <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -60,7 +60,7 @@ const Contacto = () => {
                       <img src={services} alt="Pago de facturas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Ten un punto express 24/7</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Un punto express 24/7 los 365 dias del año</h4>
                       <p>Paga todas tus facturas de agua, luz, internet, cable en un solo lugar, en cualquier hora.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -77,7 +77,7 @@ const Contacto = () => {
                       <img src={services2} alt="Pago con QuickPay" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Paga en cualquier lugar</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Paga en cualquier lugar</h4>
                       <p>En Tkiero App puedes pagar en establecimientos afiliados a QuickPay.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -94,8 +94,8 @@ const Contacto = () => {
                       <img src={services1} alt="Lightning Network" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Lightning lo hace a su hora</h4>
-                      <p>Transferencias instantáneas y de bajo costo con Bitcoin Lightning Network.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Lightning lo hace a su hora⚡</h4>
+                      <p>Envia o recibe transferencias desde cualquier billetera Bitcoin vía Lightning Network.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -111,7 +111,7 @@ const Contacto = () => {
                       <img src={services3} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Recargas telefónicas</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3" >Realiza tus recargas telefónicas</h4>
                       <p>Realiza tus recargas o paquetes de tu compañía telefónica con nosotros.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -129,8 +129,8 @@ const Contacto = () => {
                       <img src={services4} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3 fs-4">Realiza transacciones 365</h4>
-                      <p>Realiza tus transacciones seguras, rápidas y globales, cualquier día del año.</p>
+                      <h4 className="fs-5 fs-md-4 fs-lg-3">Realiza transacciones 365 desde tu billetera o cuenta bancaria</h4>
+                      <p>Carga y retira tu billetera tkiero con tu cuenta de banco de forma seguras y rápidas</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -147,8 +147,8 @@ const Contacto = () => {
                       <img src={services5} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3 fs-4">Paga con tarjeta de debito o crédito</h4>
-                      <p>Realiza transacciones con crédito o débito, con tu banco de preferencia.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Recarga con tu tarjeta de debito o crédito</h4>
+                      <p>Realiza transacciones con tarjeta de crédito o débito, con tu banco de preferencia.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -164,7 +164,7 @@ const Contacto = () => {
                       <img src={services6} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Partidas de Nacimiento</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Obten tu Partida de Nacimiento</h4>
                       <p>Obtén tus documentos legales desde cualquier lugar de manera rápida y segura.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -181,7 +181,7 @@ const Contacto = () => {
                       <img src={services7} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3">Envía Dinero a Terceros</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Envía Dinero a Terceros</h4>
                       <p>Transfiere dinero de forma segura y rápida usando solo tu DUI o pasaporte</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -199,7 +199,7 @@ const Contacto = () => {
 
 
       {/*Bloque 2 */}
-      
+
       <h2 className="text-center">Una travesía de innovación y compromiso con la inclusión financiera.</h2>
       <section className="animated-cards py-5 bg-fondo2">
         <div className="container">
@@ -238,7 +238,7 @@ const Contacto = () => {
                     <div className="card-header p-0 mb-3">
                       <h3 className="card-title">Nuestros Servicios</h3>
                     </div>
-                    <p className="card-text">En Tídero, nos especializamos en:</p>
+                    <p className="card-text">En Tkiero, nos especializamos en:</p>
                     <ul className="card-text">
                       <li>Envío y recepción de remesas</li>
                       <li>Pagos de facturas y servicios básicos</li>
