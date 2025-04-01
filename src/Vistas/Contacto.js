@@ -11,13 +11,14 @@ import visible from "./inicio/visible";
 import '../Estilos/AcercaDe.css';
 import logo from '../img/logotipo.png';
 import services from '../img/services1.jpeg';
-import services1 from '../img/services2.jpeg';
+import services1 from '../img/recursos2.jpg';
 import services2 from '../img/services0.jpeg';
 import services3 from '../img/services4.jpeg';
 import services4 from '../img/services5.jpeg';
 import services5 from '../img/services6.jpeg';
 import services6 from '../img/services7.jpeg';
 import services7 from '../img/services8.jpeg';
+
 
 const Contacto = () => {
 
@@ -60,7 +61,7 @@ const Contacto = () => {
                       <img src={services} alt="Pago de facturas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Un punto express 24/7 los 365 dias del año</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Punto express 24/7 los 365 días del año</h4>
                       <p>Paga todas tus facturas de agua, luz, internet, cable en un solo lugar, en cualquier hora.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -94,7 +95,7 @@ const Contacto = () => {
                       <img src={services1} alt="Lightning Network" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Lightning lo hace a su hora⚡</h4>
+                      <h4 className="mb-2 fs-6 fs-md-4 fs-lg-3">Paga o recibe dinero desde cualquier Lightning Network⚡</h4>
                       <p>Envia o recibe transferencias desde cualquier billetera Bitcoin vía Lightning Network.</p>
                     </div>
                     <div className="bg-primary p-1">
@@ -147,7 +148,7 @@ const Contacto = () => {
                       <img src={services5} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Recarga con tu tarjeta de debito o crédito</h4>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Recarga tu billetera con tu tarjeta de debito o crédito</h4>
                       <p>Realiza transacciones con tarjeta de crédito o débito, con tu banco de preferencia.</p>
                     </div>
                     <div className="bg-primary p-1">
