@@ -61,8 +61,8 @@ const Contacto = () => {
                       <img src={services} alt="Pago de facturas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Punto express 24/7 los 365 días del año</h4>
-                      <p>Paga todas tus facturas de agua, luz, internet, cable en un solo lugar, en cualquier hora.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">¡Punto Xpress 24/7, los 365 días del año!</h4>
+                      <p>Paga todas tus facturas de agua, luz, internet, cable y mucho más, en un solo lugar, desde tu teléfono y a cualquier hora del día.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -78,8 +78,8 @@ const Contacto = () => {
                       <img src={services2} alt="Pago con QuickPay" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Paga en cualquier lugar</h4>
-                      <p>En Tkiero App puedes pagar en establecimientos afiliados a QuickPay.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Tkiero: tu billetera en cada tienda.</h4>
+                      <p className="text-center">Aceptada en miles de comercios afiliados a QuickPay.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -95,8 +95,8 @@ const Contacto = () => {
                       <img src={services1} alt="Lightning Network" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-2 fs-6 fs-md-4 fs-lg-3">Paga o recibe dinero desde cualquier Lightning Network⚡</h4>
-                      <p>Envia o recibe transferencias desde cualquier billetera Bitcoin vía Lightning Network.</p>
+                      <h4 className="mb-3 fs-5 fs-md-4 fs-lg-3">Con Tkiero, enviar y recibir por Lightning no tiene límites.</h4>
+                      <p>Conéctate con cualquier billetera Bitcoin que use Lightning Network. Envía y recibe dinero al instante, sin fronteras ni complicaciones.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -112,8 +112,8 @@ const Contacto = () => {
                       <img src={services3} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3" >Realiza tus recargas telefónicas</h4>
-                      <p>Realiza tus recargas o paquetes de tu compañía telefónica con nosotros.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3" >Nunca te quedes sin saldo</h4>
+                      <p>Tkiero te da acceso a todas las compañías telefónicas desde una sola app. Recarga o compra paquetes al instante, estés donde estés.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -130,8 +130,8 @@ const Contacto = () => {
                       <img src={services4} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="fs-5 fs-md-4 fs-lg-3">Realiza transacciones 365 desde tu billetera o cuenta bancaria</h4>
-                      <p>Carga y retira tu billetera tkiero con tu cuenta de banco de forma seguras y rápidas</p>
+                      <h4 className="fs-5 fs-md-4 fs-lg-3">Seguridad total: transacciones solo con tu cuenta personal</h4>
+                      <p>Usa 365 para recargar o retirar desde tu billetera Tkiero, usando únicamente tu cuenta bancaria registrada a tu nombre</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -148,8 +148,9 @@ const Contacto = () => {
                       <img src={services5} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Recarga tu billetera con tu tarjeta de debito o crédito</h4>
-                      <p>Realiza transacciones con tarjeta de crédito o débito, con tu banco de preferencia.</p>
+                      <h4 className="mb-4 mt-2 fs-5 fs-md-4 fs-lg-3">Recarga tu billetera al instante y sin complicaciones</h4>
+                      <p>Usa tu tarjeta de crédito o débito, desde cualquier banco.
+                      Solo necesitas una cosa: que sea tuya. Por tu seguridad, no aceptamos tarjetas de terceros.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -165,8 +166,8 @@ const Contacto = () => {
                       <img src={services6} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Obten tu Partida de Nacimiento</h4>
-                      <p>Obtén tus documentos legales desde cualquier lugar de manera rápida y segura.</p>
+                      <h4 className="mb-3 mt-3 fs-5 fs-md-4 fs-lg-3">Documentos legales a domicilio, estés donde estés</h4>
+                      <p>Solicita partidas de nacimiento, actas y más desde cualquier lugar. El proceso es 100% en línea y recibes tus documentos físicos por DHL, UPS o FedEx, incluso apostillados si lo necesitas</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -182,8 +183,8 @@ const Contacto = () => {
                       <img src={services7} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Envía Dinero a Terceros</h4>
-                      <p>Transfiere dinero de forma segura y rápida usando solo tu DUI o pasaporte</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Envía dinero seguro y sin cuentas bancarias</h4>
+                      <p>Con solo el DUI o pasaporte, el dinero llega rápido y seguro desde tu app Tkiero</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
