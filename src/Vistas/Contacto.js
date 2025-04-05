@@ -18,6 +18,7 @@ import services4 from '../img/services5.jpeg';
 import services5 from '../img/services6.jpeg';
 import services6 from '../img/services7.jpeg';
 import services7 from '../img/services8.jpeg';
+import services8 from '../img/Services9.png';
 
 
 const Contacto = () => {
@@ -36,7 +37,7 @@ const Contacto = () => {
 
           <Row>
             <Col>
-            <Swiper
+              <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -50,7 +51,7 @@ const Contacto = () => {
                   576: { slidesPerView: 1, slidesPerGroup: 1 },
                   768: { slidesPerView: 2, slidesPerGroup: 1 },
                   1024: { slidesPerView: 3, slidesPerGroup: 1 },
-                  1200: { slidesPerView: 4, slidesPerGroup: 1 } 
+                  1200: { slidesPerView: 4, slidesPerGroup: 1 }
                 }}
               >
 
@@ -150,7 +151,7 @@ const Contacto = () => {
                     <div className="text-part">
                       <h4 className="mb-4 mt-2 fs-5 fs-md-4 fs-lg-3">Recarga tu billetera al instante y sin complicaciones</h4>
                       <p>Usa tu tarjeta de crédito o débito, desde cualquier banco.
-                      Solo necesitas una cosa: que sea tuya. Por tu seguridad, no aceptamos tarjetas de terceros.</p>
+                        Solo necesitas una cosa: que sea tuya. Por tu seguridad, no aceptamos tarjetas de terceros.</p>
                     </div>
                     <div className="bg-primary p-1">
                       <a href="https://play.google.com/store/apps/details?id=app.tkiero">
@@ -200,8 +201,92 @@ const Contacto = () => {
       </section>
 
 
-      {/*Bloque 2 */}
+      {/*Bloque 3*/}
+      <section className="payment-sectionservices">
+      <div className="payment-containerservices">
+        {/* Header */}
+        <div className="payment-headerservices">
+          <h2 className="payment-titleservices">Cómo recibir pagos en Tkiero: Chivo Wallet, Lightning y otros</h2>
+          <div className="lightning-icon">⚡</div>
+        </div>
 
+        {/* Contenido principal */}
+        <div className="payment-contentservices">
+          {/* Columna de imagen */}
+          <div className="payment-imageservices">
+            <div className="image-wrapperservices">
+              <img 
+                src={services8} 
+                alt="Servicios de pago Tkiero" 
+                className="service-image"
+              />
+            </div>
+          </div>
+          
+          {/* Columna de información */}
+          <div className="payment-infoservices">
+            <div className="info-card">
+              <h3 className="info-headlineservices text-center">
+                Recibe pagos directamente desde <span className="highlight-blueservices">Chivo Wallet</span>, 
+                <span className="highlight-blueservices"> Lightning</span> y otros usuarios <span className="highlight-blueservices">Tkiero</span>
+              </h3>
+              
+              <div className="instruction-step">
+                <p className="step-guide">
+                  Ve a la sección <strong className="highlight-pathservices">Billetera → Recibir</strong>
+                </p>
+                <ol className="step-list">
+                  <li className="step-item">
+                    <div className="step-marker">1</div>
+                    <div className="step-content">
+                      <strong>Tkiero</strong> - Entre usuarios de Tkiero
+                    </div>
+                  </li>
+                  <li className="step-item">
+                    <div className="step-marker">2</div>
+                    <div className="step-content">
+                      <strong>Lightning</strong> - Desde cualquier billetera Lightning (Strike, Wallet of Satoshi, Muun, etc.)
+                    </div>
+                  </li>
+                  <li className="step-item">
+                    <div className="step-marker">3</div>
+                    <div className="step-content">
+                      <strong>Chivo Wallet</strong> - Recibe directamente desde la app Chivo (en USD o BTC)
+                    </div>
+                  </li>
+                </ol>
+              </div>
+
+              <div className="payment-methodservices">
+                <h4 className="methods-title">¿Cómo te pueden enviar dinero?</h4>
+                <ul className="method-list">
+                  <li className="method-item">
+                    <span className="method-icon">✓</span>
+                    <span className="method-detail">
+                      Con tu nickname: <span className="highlight-code">tunombre@tkiero.money</span>
+                    </span>
+                  </li>
+                  <li className="method-item">
+                    <span className="method-icon">✓</span>
+                    <span className="method-detail">
+                      Con tu número internacional: <span className="highlight-code">+503xxxxxxx@tkiero.money</span>
+                    </span>
+                  </li>
+                  <li className="method-item">
+                    <span className="method-icon">✓</span>
+                    <span className="method-detail">
+                      Transferencias internas usando nick, email o número <span className="money-emoji">💸</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      {/*Bloque 2 */}
       <h2 className="text-center">Una travesía de innovación y compromiso con la inclusión financiera.</h2>
       <section className="animated-cards py-5 bg-fondo2">
         <div className="container">

@@ -46,15 +46,15 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">
-                                    Comercio
-                                </Link>
+                                <select
+                                    className="form-select nav-link bg-transparent border-0"
+                                    onChange={(e) => window.location.href = e.target.value}>
+                                    <option selected value="">&#160; Afiliate hoy &#160;</option>
+                                    <option value="https://play.google.com/store/apps/details?id=app.tkiero">&#160; Google Play &#160;</option>
+                                    <option value="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone">&#160; Apple Store &#160;</option>
+                                </select>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="https://play.google.com/store/apps/details?id=app.tkiero">
-                                    Afiliate hoy
-                                </Link>
-                            </li>
+                            
                         </ul>
                     </div>
 
@@ -69,7 +69,7 @@ const Header = () => {
                                 </button>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/" onClick={closeMenu}>
+                                <Link className="nav-link" to="/" onClick={closeMenu}>
                                     Inicio
                                 </Link>
                             </li>
@@ -84,13 +84,13 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#" onClick={closeMenu}>
-                                    Comercio
+                                <Link className="nav-link" to="https://play.google.com/store/apps/details?id=app.tkiero" onClick={closeMenu}>
+                                    Afiliate hoy con android
                                 </Link>
-                            </li>
+                            </li> 
                             <li className="nav-item">
-                                <Link className="nav-link" to="#" onClick={closeMenu}>
-                                    Afiliate hoy
+                                <Link className="nav-link" to="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" onClick={closeMenu}>
+                                    Afiliate hoy con apple
                                 </Link>
                             </li>
                         </ul>
