@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Tkieroapps/static/css/main.e065d810.css",
+    "main.css": "/Tkieroapps/static/css/main.f688e9f3.css",
     "main.js": "/Tkieroapps/static/js/main.d32e90aa.js",
     "static/js/453.56ee17ea.chunk.js": "/Tkieroapps/static/js/453.56ee17ea.chunk.js",
     "static/media/img12.png": "/Tkieroapps/static/media/img12.0a36529b2e0b57835667.png",
@@ -39,12 +39,12 @@
     "static/media/img19.jpg": "/Tkieroapps/static/media/img19.472d38d0806c14cd539a.jpg",
     "static/media/img8.png": "/Tkieroapps/static/media/img8.53c7b6920cff332fcc6d.png",
     "index.html": "/Tkieroapps/index.html",
-    "main.e065d810.css.map": "/Tkieroapps/static/css/main.e065d810.css.map",
+    "main.f688e9f3.css.map": "/Tkieroapps/static/css/main.f688e9f3.css.map",
     "main.d32e90aa.js.map": "/Tkieroapps/static/js/main.d32e90aa.js.map",
     "453.56ee17ea.chunk.js.map": "/Tkieroapps/static/js/453.56ee17ea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e065d810.css",
+    "static/css/main.f688e9f3.css",
     "static/js/main.d32e90aa.js"
   ]
 }
