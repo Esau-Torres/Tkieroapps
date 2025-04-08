@@ -308,7 +308,7 @@
 
 @media (max-width: 991.98px) {
 
-  .card-body2 li {
+  .card-body2 li, .card-body2 p  {
     font-size: 0.9rem; 
   }
   
@@ -317,7 +317,7 @@
 @media (max-width: 767.98px) {
 
 
-  .card-body2 li {
+  .card-body2 li, .card-body2 p  {
     font-size: 0.85rem; 
   }
 }
