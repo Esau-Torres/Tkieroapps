@@ -35,15 +35,16 @@ const Caracteristicas = () => {
                             {/* Fila 1: Nuestra Ubicación y E-mail */}
                             <div className="row">
                                 <div className="col-12 col-md-6 mb-4 ">
-                                    <div className="card h-100 shadow-sm card6 mx-auto">
-                                        <div className="card-body5 ">
-                                            <h3 className="card-title5">Nuestra Ubicación</h3>
-                                            <p className="card-text5">
-                                                67 Av. Sur , Edificio 300, apto 4,<br />
-                                                segunda planta, Colonia Roma, S.S.
-                                            </p>
+                                    <a href="https://wa.me/50375781206" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                                        <div className="card h-100 shadow-sm card6 mx-auto" style={{ cursor: 'pointer' }}>
+                                            <div className="card-body5 ">
+                                                <h3 className="card-title5">Nuestro WhatsApp</h3>
+                                                <p className="card-text5">
+                                                    Escribenos al: <br/>+503 7578-1206
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div className="col-12 col-md-6 mb-4 ">
                                     <div className="card h-100 shadow-sm card6 mx-auto">
@@ -58,20 +59,8 @@ const Caracteristicas = () => {
                             </div>
 
                             {/* Fila 2: Escríbenos y Redes Sociales */}
-                            <div className="row">
-                                <div className="col-12 col-md-6 mb-4">
-                                    <div className="card h-100 shadow-sm mx-auto card6">
-                                        <div className="card-body5">
-                                            <h3 className="card-title5">Escríbenos</h3>
-                                            <p className="card-text5">
-                                                <strong>Horarios</strong><br />
-                                                Lun - Vie: 8am a 5pm<br />
-                                                Sáb: 8am a 2pm
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12 col-md-6 mb-4">
+                            <div className="row justify-content-center">
+                                <div className="col-12 col-md-8 mb-4">
                                     <div className="card h-100 shadow-sm card6 mx-auto" onClick={handleShowModal} style={{ cursor: 'pointer' }}>
                                         <div className="card-body5">
                                             <h3 className="card-title5">Redes Sociales</h3>

@@ -203,88 +203,87 @@ const Contacto = () => {
 
       {/*Bloque 3*/}
       <section className="payment-sectionservices">
-      <div className="payment-containerservices">
-        {/* Header */}
-        <div className="payment-headerservices">
-          <h2 className="payment-titleservices">Cómo recibir pagos en Tkiero: Chivo Wallet, Lightning y otros</h2>
-          <div className="lightning-icon">⚡</div>
-        </div>
-
-        {/* Contenido principal */}
-        <div className="payment-contentservices">
-          {/* Columna de imagen */}
-          <div className="payment-imageservices">
-            <div className="image-wrapperservices">
-              <img 
-                src={services8} 
-                alt="Servicios de pago Tkiero" 
-                className="service-image"
-              />
-            </div>
+        <div className="payment-containerservices">
+          {/* Header */}
+          <div className="payment-headerservices">
+            <h2 className="payment-titleservices">¡Recibe pagos al instante desde cualquier lugar!</h2>
+            <div className="lightning-icon">⚡</div>
           </div>
-          
-          {/* Columna de información */}
-          <div className="payment-infoservices">
-            <div className="info-card">
-              <h3 className="info-headlineservices text-center">
-                Recibe pagos directamente desde <span className="highlight-blueservices">Chivo Wallet</span>, 
-                <span className="highlight-blueservices"> Lightning</span> y otros usuarios <span className="highlight-blueservices">Tkiero</span>
-              </h3>
-              
-              <div className="instruction-step">
-                <p className="step-guide">
-                  Ve a la sección <strong className="highlight-pathservices">Billetera → Recibir</strong>
-                </p>
-                <ol className="step-list">
-                  <li className="step-item">
-                    <div className="step-marker">1</div>
-                    <div className="step-content">
-                      <strong>Tkiero</strong> - Entre usuarios de Tkiero
-                    </div>
-                  </li>
-                  <li className="step-item">
-                    <div className="step-marker">2</div>
-                    <div className="step-content">
-                      <strong>Lightning</strong> - Desde cualquier billetera Lightning (Strike, Wallet of Satoshi, Muun, etc.)
-                    </div>
-                  </li>
-                  <li className="step-item">
-                    <div className="step-marker">3</div>
-                    <div className="step-content">
-                      <strong>Chivo Wallet</strong> - Recibe directamente desde la app Chivo (en USD o BTC)
-                    </div>
-                  </li>
-                </ol>
-              </div>
 
-              <div className="payment-methodservices">
-                <h4 className="methods-title">¿Cómo te pueden enviar dinero?</h4>
-                <ul className="method-list">
-                  <li className="method-item">
-                    <span className="method-icon">✓</span>
-                    <span className="method-detail">
-                      Con tu nickname: <span className="highlight-code">tunombre@tkiero.money</span>
-                    </span>
-                  </li>
-                  <li className="method-item">
-                    <span className="method-icon">✓</span>
-                    <span className="method-detail">
-                      Con tu número internacional: <span className="highlight-code">+503xxxxxxx@tkiero.money</span>
-                    </span>
-                  </li>
-                  <li className="method-item">
-                    <span className="method-icon">✓</span>
-                    <span className="method-detail">
-                      Transferencias internas usando nick, email o número <span className="money-emoji">💸</span>
-                    </span>
-                  </li>
-                </ul>
+          {/* Contenido principal */}
+          <div className="payment-contentservices">
+            {/* Columna de imagen */}
+            <div className="payment-imageservices">
+              <div className="image-wrapperservices">
+                <img
+                  src={services8}
+                  alt="Servicios de pago Tkiero"
+                  className="service-image"
+                />
               </div>
             </div>
+
+            {/* Columna de información */}
+            <div className="payment-infoservices">
+              <div className="info-card">
+                <h3 className="info-headlineservices text-center">
+                  Con tkiero puedes recibir dinero desde chivo , tkiero y cualquier billetera lightning estés donde estes.
+                </h3>
+
+                <div className="instruction-step">
+                  <p className="step-guide">
+                    Ve a la sección <strong className="highlight-pathservices">Billetera → Recibir</strong>
+                  </p>
+                  <ol className="step-list">
+                    <li className="step-item">
+                      <div className="step-marker">1</div>
+                      <div className="step-content">
+                        <strong>Tkiero</strong> - Entre usuarios de Tkiero
+                      </div>
+                    </li>
+                    <li className="step-item">
+                      <div className="step-marker">2</div>
+                      <div className="step-content">
+                        <strong>Lightning</strong> - Desde cualquier billetera Lightning (Strike, Wallet of Satoshi, Muun, etc.)
+                      </div>
+                    </li>
+                    <li className="step-item">
+                      <div className="step-marker">3</div>
+                      <div className="step-content">
+                        <strong>Chivo Wallet</strong> - Recibe directamente desde la app Chivo (en USD o BTC)
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+
+                <div className="payment-methodservices">
+                  <h4 className="methods-title">¿Cómo te pueden enviar dinero?</h4>
+                  <ul className="method-list">
+                    <li className="method-item">
+                      <span className="method-icon">✓</span>
+                      <span className="method-detail">
+                        Con tu nickname: <span className="highlight-code">tunombre@tkiero.money</span>
+                      </span>
+                    </li>
+                    <li className="method-item">
+                      <span className="method-icon">✓</span>
+                      <span className="method-detail">
+                        Con tu número internacional: <span className="highlight-code">+503xxxxxxx@tkiero.money</span>
+                      </span>
+                    </li>
+                    <li className="method-item">
+                      <span className="method-icon">✓</span>
+                      <span className="method-detail">
+                        Transferencias internas usando nickname, email o número <span className="money-emoji">💸</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/*Bloque 2 */}
       <h2 className="text-center">Una travesía de innovación y compromiso con la inclusión financiera.</h2>
@@ -305,7 +304,7 @@ const Contacto = () => {
                       <h3 className="card-title">¿Quiénes Somos?</h3>
                     </div>
                     <p className="card-text">
-                      Tkiero es una fintech salvadoreña que busca revolucionar la manera en que las personas manejan su dinero, facilitando pagos digitales, remesas y servicios financieros de forma rápida y accesible.
+                      Tkiero es una aplicación que busca revolucionar la manera en que las personas manejan su dinero, facilitando pagos digitales, remesas y servicios financieros de forma rápida y accesible.
                     </p>
                   </div>
                 </div>

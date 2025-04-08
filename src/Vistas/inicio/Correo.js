@@ -38,18 +38,18 @@ const ContactForm = () => {
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" id="nombre" name='nombre' placeholder="Nombre" />
+                            <input type="text" className="form-control" id="nombre" name='nombre' placeholder="Nombre" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="correo" className="form-label">Email</label>
-                            <input type="email" className="form-control" id="correo" name="correo" placeholder="Email" />
+                            <input type="email" className="form-control" id="correo" name="correo" placeholder="Email" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="asunto" className="form-label">Asunto</label>
-                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder="Asunto" />
+                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder="Asunto" required/>
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="mensaje" className="form-label">Deja tu mensaje</label>
+                            <label htmlFor="mensaje" className="form-label">Escribe tu mensaje</label>
                             <textarea className="form-control" id="mensaje" name='mensaje' rows="4" placeholder="Deja tu mensaje"></textarea>
                         </div>
                         <button type="submit" className="btn btn-primary">Enviar</button>

@@ -48,13 +48,21 @@ const Header = () => {
                             <li className="nav-item">
                                 <select
                                     className="form-select nav-link bg-transparent border-0"
-                                    onChange={(e) => window.location.href = e.target.value}>
-                                    <option selected value="">&#160; Afiliate hoy &#160;</option>
-                                    <option value="https://play.google.com/store/apps/details?id=app.tkiero">&#160; Google Play &#160;</option>
-                                    <option value="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone">&#160; Apple Store &#160;</option>
+                                    name='seleccion-encabezado'
+                                    id='seleccion-encabezado'
+                                    defaultValue="" 
+                                    onChange={(e) => {
+                                        if (e.target.value) {
+                                            window.location.href = e.target.value;
+                                        }
+                                    }}
+                                >
+                                    <option className='nav-link' value="">&#160; Descárgala con &#160;</option>
+                                    <option className='nav-link' value="https://play.google.com/store/apps/details?id=app.tkiero">&#160; Google Play &#160;</option>
+                                    <option className='nav-link' value="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone">&#160; Apple Store &#160;</option>
                                 </select>
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -62,7 +70,7 @@ const Header = () => {
                     <div className={`menu-overlay ${isMenuOpen ? "active" : ""}`} onClick={closeMenu}></div>
                     <div className={`menu-circle ${isMenuOpen ? "expand" : ""}`}>
 
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav text-center">
                             <li className="nav-item text-center">
                                 <button className="close-menu-btn" onClick={closeMenu}>
                                     &times;
@@ -85,12 +93,12 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="https://play.google.com/store/apps/details?id=app.tkiero" onClick={closeMenu}>
-                                    Afiliate hoy con android
+                                    Descargala ya con android
                                 </Link>
-                            </li> 
+                            </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" onClick={closeMenu}>
-                                    Afiliate hoy con apple
+                                    Descargala ya con apple
                                 </Link>
                             </li>
                         </ul>
