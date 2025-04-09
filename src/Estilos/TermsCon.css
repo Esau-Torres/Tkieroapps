@@ -1,0 +1,232 @@
+:root {
+  --tkiero-celeste: #87CEEB;
+  --tkiero-blanco: #FFFFFF;
+  --tkiero-azul-oscuro: #1E3A8A;
+  --tkiero-azul-celeste: #0784f2;
+  --tkiero-gris-claro: #f5f5f5;
+  --tkiero-gris-medio: #e0e0e0;
+}
+
+.tkiero-cookies-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  
+ 
+}
+
+.tkiero-cookies-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--tkiero-celeste);
+}
+
+.tkiero-cookies-title {
+  color:  var(--tkiero-azul-celeste);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.tkiero-cookies-date {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.tkiero-cookies-intro {
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.tkiero-cookies-notice {
+  background-color: var(--tkiero-celeste);
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  color: var(--tkiero-azul-oscuro);
+  font-weight: 500;
+}
+
+
+.tkiero-cookies-notice-icon {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  background-color: var(--tkiero-blanco);
+  color: var(--tkiero-azul-oscuro);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tkiero-cookies-section {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  border: 1px solid var(--tkiero-gris-medio);
+}
+
+.tkiero-cookies-section-header {
+  background-color: var(--tkiero-azul-celeste);
+  color: var(--tkiero-blanco);
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.tkiero-cookies-section-header h1 {
+  color: var(--tkiero-blanco);
+}
+
+.tkiero-cookies-section-header:hover {
+  background-color: var(--tkiero-azul-celeste);
+}
+
+.tkiero-cookies-section-header h2 {
+  color: var(--tkiero-blanco);
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tkiero-cookies-toggle {
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.tkiero-cookies-expanded .tkiero-cookies-toggle {
+  transform: rotate(180deg);
+}
+
+.tkiero-cookies-section-content {
+  padding: 20px;
+  background-color: var(--tkiero-blanco);
+  border-top: 1px solid var(--tkiero-gris-medio);
+}
+
+
+.tkiero-cookies-acceptance {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--tkiero-gris-claro);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tkiero-cookies-contact {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.tkiero-cookies-link {
+  color: var(--tkiero-azul-celeste);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tkiero-cookies-link:hover {
+  text-decoration: underline;
+}
+
+.tkiero-cookies-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--tkiero-gris-medio);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tkiero-cookies-footer-link {
+  color: var(--tkiero-azul-celeste);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+.tkiero-cookies-footer-link:hover {
+  color: var(--tkiero-azul-celeste);
+  text-decoration: underline;
+}
+
+.tkiero-cookies-footer-separator {
+  color: var(--tkiero-gris-medio);
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+  .tkiero-cookies-title {
+    font-size: 1.4rem;
+  }
+  
+  .tkiero-cookies-section-header {
+    padding: 12px 15px;
+  }
+  
+  .tkiero-cookies-footer {
+    flex-direction: column;
+  }
+  
+  .tkiero-cookies-footer-separator {
+    display: none;
+  }
+  
+  .tkiero-cookies-footer-link {
+    margin: 5px 0;
+  }
+  .tkiero-logo{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tkiero-cookies-container {
+    padding: 15px;
+    border-radius: 0;
+  }
+  
+  .tkiero-cookies-title {
+    font-size: 1.6rem;
+  }
+  
+  .tkiero-cookies-section-header h2 {
+    font-size: 1rem;
+  }
+  
+  .tkiero-cookies-section-content {
+    padding: 15px;
+  }
+  
+  .tkiero-cookies-notice {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .tkiero-cookies-notice-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .tkiero-logo{
+    height: 50%;
+    width: 50%;
+  }
+}
+

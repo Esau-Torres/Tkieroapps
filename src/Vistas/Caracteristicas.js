@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../Estilos/AcercaDe.css';
 import ContactForm from "./inicio/Correo";
 
@@ -40,21 +41,23 @@ const Caracteristicas = () => {
                                             <div className="card-body5 ">
                                                 <h3 className="card-title5">Nuestro WhatsApp</h3>
                                                 <p className="card-text5">
-                                                    Escribenos al: <br/>+503 7578-1206
+                                                    Escribenos al: <br />+503 7578-1206
                                                 </p>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div className="col-12 col-md-6 mb-4 ">
-                                    <div className="card h-100 shadow-sm card6 mx-auto">
-                                        <div className="card-body5">
-                                            <h3 className="card-title5">E-mail</h3>
-                                            <p className="card-text5">
-                                                help@tkiero.app
-                                            </p>
+                                    <Link to="mailto:help@tkiero.app" className="text-decoration-none">
+                                        <div className="card h-100 shadow-sm card6 mx-auto">
+                                            <div className="card-body5">
+                                                <h3 className="card-title5">E-mail</h3>
+                                                <p className="card-text5">
+                                                    help@tkiero.app
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             </div>
 

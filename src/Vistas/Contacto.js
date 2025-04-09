@@ -340,13 +340,6 @@ const Contacto = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
     </>
   );
 };

@@ -8,6 +8,7 @@ import Footer from './componentes/Footer';
 import Inicio from "./Vistas/Inicio";
 import Contacto from "./Vistas/Contacto";
 import Caracteristicas from "./Vistas/Caracteristicas";
+import TkieroTerms from "./Vistas/Terms";
 // estilos globales
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/caracteristicas" element={<Caracteristicas />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/Terms" element={<TkieroTerms />} />
         </Routes>
       </main>
       <Footer />

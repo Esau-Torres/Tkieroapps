@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from '../img/logo.png'; 
 import footer from '../img/footer.png'; 
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaSnapchat, FaYoutube } from "react-icons/fa";
@@ -14,8 +15,8 @@ const Footer = () => {
           </div>
           
           <div className="col-md-6 text-center mb-3 mb-md-0">
-            {/* <a href="#" className="text-dark mx-2">Terms & Conditions</a>
-            <a href="#" className="text-dark mx-2">Following & Cookies</a>
+            <Link to="/Terms" className="text-dark mx-2">Terms & Conditions</Link>
+            {/* <a href="#" className="text-dark mx-2">Following & Cookies</a>
             <a href="#" className="text-dark mx-2">Crypto Policy</a>
             <a href="#" className="text-dark mx-2">Account Suspension</a>*/}
           </div>
