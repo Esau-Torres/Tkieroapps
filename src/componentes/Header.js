@@ -42,7 +42,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/caracteristicas">
-                                    Asistencia
+                                    Contáctanos
                                 </Link>
                             </li>
                             <li className="nav-item">
@@ -88,7 +88,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/caracteristicas" onClick={closeMenu}>
-                                    Asistencia
+                                    Contáctanos
                                 </Link>
                             </li>
                             <li className="nav-item">

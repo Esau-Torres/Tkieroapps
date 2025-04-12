@@ -3,6 +3,8 @@ import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../Estilos/AcercaDe.css';
 import ContactForm from "./inicio/Correo";
+// formulario
+{/*import Transaccion from "./Formulario";*/}
 
 const Caracteristicas = () => {
     /*Modal*/
@@ -117,6 +119,15 @@ const Caracteristicas = () => {
                     </Modal.Footer>
                 </Modal>
             </section>
+
+            {/*Formulario de pago*/}
+            <section className="contact-section py-5 ">
+                <div className="container">
+                   {/*  <Transaccion />*/}
+                </div>
+            </section>
+
+
             {/*Bloque 3*/}
             <section className="expandable-cards py-5">
                 <h2 className="text-center mb-5">Haciendo tu vida más fácil, una transacción a la vez.</h2>

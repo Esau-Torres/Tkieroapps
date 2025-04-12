@@ -7,226 +7,220 @@
   --tkiero-gris-medio: #e0e0e0;
 }
 
-.tkiero-cookies-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.6;
-  
- 
+/* Estilos generales */
+.tkiero-terminos-section {
+  min-height: 100vh;
 }
 
-.tkiero-cookies-header {
-  text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid var(--tkiero-celeste);
+.tkiero-terminos-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  margin: 2rem 0;
 }
 
-.tkiero-cookies-title {
-  color:  var(--tkiero-azul-celeste);
+/* Header */
+.tkiero-terminos-header {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.tkiero-terminos-title {
+  color: var(--tkiero-azul-oscuro);
   font-size: 2rem;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.tkiero-cookies-date {
-  color: #666;
-  font-size: 0.9rem;
-  font-style: italic;
+.tkiero-terminos-divider {
+  height: 4px;
+  width: 100px;
+  background: var(--tkiero-azul-celeste);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.tkiero-terminos-divider-large {
+  height: 4px;
+  width: 100%;
+  background: var(--tkiero-azul-celeste);
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
-.tkiero-cookies-intro {
-  margin-bottom: 25px;
-  padding: 0 15px;
+.tkiero-terminos-logo {
+  max-height: 80px;
+  width: auto;
 }
 
-.tkiero-cookies-notice {
-  background-color: var(--tkiero-celeste);
-  padding: 15px 20px;
+/* Introducción */
+.tkiero-terminos-intro {
+  background-color: var(--tkiero-gris-claro);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--tkiero-azul-celeste);
+}
+
+.tkiero-terminos-subtitle {
+  color: var(--tkiero-azul-oscuro);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Alert */
+.tkiero-terminos-alert {
+  background-color: rgba(135, 206, 235, 0.2);
+  border-left: 4px solid var(--tkiero-azul-celeste);
   border-radius: 8px;
-  margin: 25px 0;
-  display: flex;
-  align-items: center;
-  color: var(--tkiero-azul-oscuro);
-  font-weight: 500;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
-
-.tkiero-cookies-notice-icon {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-right: 20px;
-  background-color: var(--tkiero-blanco);
-  color: var(--tkiero-azul-oscuro);
+.tkiero-terminos-alert-icon {
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  background: var(--tkiero-blanco);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--tkiero-azul-celeste);
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.tkiero-cookies-section {
-  margin-bottom: 15px;
-  border-radius: 8px;
+/* Acordeón */
+.tkiero-terminos-accordion {
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   border: 1px solid var(--tkiero-gris-medio);
 }
 
-.tkiero-cookies-section-header {
+.tkiero-terminos-accordion-header {
   background-color: var(--tkiero-azul-celeste);
   color: var(--tkiero-blanco);
-  padding: 15px 20px;
+  padding: 1.25rem 1.5rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s ease;
-}
-.tkiero-cookies-section-header h1 {
-  color: var(--tkiero-blanco);
+  transition: all 0.3s ease;
 }
 
-.tkiero-cookies-section-header:hover {
-  background-color: var(--tkiero-azul-celeste);
-}
-
-.tkiero-cookies-section-header h2 {
-  color: var(--tkiero-blanco);
+.tkiero-terminos-accordion-header h3 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--tkiero-blanco);
 }
 
-.tkiero-cookies-toggle {
-  font-weight: bold;
-  font-size: 1.3rem;
+.tkiero-terminos-accordion-header:hover {
+  background-color: var(--tkiero-celeste);
+}
+
+.tkiero-terminos-accordion-toggle {
+  font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
 
-.tkiero-cookies-expanded .tkiero-cookies-toggle {
+.tkiero-terminos-accordion.expanded .tkiero-terminos-accordion-toggle {
   transform: rotate(180deg);
 }
 
-.tkiero-cookies-section-content {
-  padding: 20px;
+.tkiero-terminos-accordion-content {
+  padding: 1.5rem;
   background-color: var(--tkiero-blanco);
-  border-top: 1px solid var(--tkiero-gris-medio);
 }
 
+.tkiero-terminos-accordion-content p,
+.tkiero-terminos-accordion-content ul {
+  margin-bottom: 1rem;
+}
 
-.tkiero-cookies-acceptance {
-  margin-top: 40px;
-  padding: 20px;
+.tkiero-terminos-accordion-content ul {
+  padding-left: 1.5rem;
+}
+
+.tkiero-terminos-accordion-content li {
+  margin-bottom: 1.5rem;
+}
+
+/* Aceptación */
+.tkiero-terminos-acceptance {
   background-color: var(--tkiero-gris-claro);
-  border-radius: 8px;
-  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
 }
 
-.tkiero-cookies-contact {
-  margin-top: 15px;
-  font-weight: 500;
-}
-
-.tkiero-cookies-link {
+.tkiero-terminos-acceptance-icon {
   color: var(--tkiero-azul-celeste);
-  text-decoration: none;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.tkiero-terminos-link {
+  color: var(--tkiero-azul-celeste);
   font-weight: 600;
-}
-
-.tkiero-cookies-link:hover {
-  text-decoration: underline;
-}
-
-.tkiero-cookies-footer {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid var(--tkiero-gris-medio);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.tkiero-cookies-footer-link {
-  color: var(--tkiero-azul-celeste);
   text-decoration: none;
-  margin: 0 10px;
-  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
-.tkiero-cookies-footer-link:hover {
-  color: var(--tkiero-azul-celeste);
+.tkiero-terminos-link:hover {
+  color: var(--tkiero-azul-oscuro);
   text-decoration: underline;
 }
 
-.tkiero-cookies-footer-separator {
-  color: var(--tkiero-gris-medio);
-  margin: 0 5px;
-}
-
-/* Responsive Design */
-
-@media (max-width: 480px) {
-  .tkiero-cookies-title {
-    font-size: 1.4rem;
+/* Responsive */
+@media (max-width: 992px) {
+  .tkiero-terminos-card {
+    padding: 2rem;
   }
   
-  .tkiero-cookies-section-header {
-    padding: 12px 15px;
-  }
-  
-  .tkiero-cookies-footer {
-    flex-direction: column;
-  }
-  
-  .tkiero-cookies-footer-separator {
-    display: none;
-  }
-  
-  .tkiero-cookies-footer-link {
-    margin: 5px 0;
-  }
-  .tkiero-logo{
-    height: 100%;
-    width: 100%;
+  .tkiero-terminos-title {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
-  .tkiero-cookies-container {
-    padding: 15px;
+  .tkiero-terminos-card {
+    padding: 1.5rem;
     border-radius: 0;
+    margin: 0;
   }
   
-  .tkiero-cookies-title {
+  .tkiero-terminos-title {
     font-size: 1.6rem;
   }
   
-  .tkiero-cookies-section-header h2 {
+  .tkiero-terminos-accordion-header h3 {
     font-size: 1rem;
   }
   
-  .tkiero-cookies-section-content {
-    padding: 15px;
-  }
-  
-  .tkiero-cookies-notice {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .tkiero-cookies-notice-icon {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .tkiero-logo{
-    height: 50%;
-    width: 50%;
+  .tkiero-terminos-accordion-content {
+    padding: 1.25rem;
   }
 }
 
+@media (max-width: 576px) {
+  .tkiero-terminos-section {
+    padding: 1rem 0;
+  }
+  
+  .tkiero-terminos-title {
+    font-size: 1.4rem;
+  }
+  
+  .tkiero-terminos-logo {
+    max-height: 60px;
+  }
+  
+  .tkiero-terminos-accordion-header {
+    padding: 1rem;
+  }
+}

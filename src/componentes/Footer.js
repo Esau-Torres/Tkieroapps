@@ -16,9 +16,9 @@ const Footer = () => {
           
           <div className="col-md-6 text-center mb-3 mb-md-0">
             <Link to="/Terms" className="text-dark mx-2">Terms & Conditions</Link>
-            {/* <a href="#" className="text-dark mx-2">Following & Cookies</a>
-            <a href="#" className="text-dark mx-2">Crypto Policy</a>
-            <a href="#" className="text-dark mx-2">Account Suspension</a>*/}
+            <Link to="/Terms/FollowinCookies" className="text-dark mx-2">Following & Cookies</Link>
+            <Link to="/Terms/CriptoPolicy" className="text-dark mx-2">Crypto Policy</Link>
+            <Link to="/Terms/AcountSuspention" className="text-dark mx-2">Account Suspension</Link>
           </div>
             
           <div className="col-md-3 text-center text-md-end">

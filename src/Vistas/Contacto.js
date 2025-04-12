@@ -43,7 +43,7 @@ const Contacto = () => {
                 slidesPerView={1}
                 slidesPerGroup={1}
                 loop={true}
-                speed={1500} // Desplazamiento suave
+                speed={1500} 
                 autoplay={{ delay: 4000, disableOnInteraction: false }}
                 navigation
                 pagination={{ clickable: true }}
@@ -66,9 +66,7 @@ const Contacto = () => {
                       <p>Paga todas tus facturas de agua, luz, internet, cable y mucho más, en un solo lugar, desde tu teléfono y a cualquier hora del día.</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -83,9 +81,7 @@ const Contacto = () => {
                       <p className="text-center">Aceptada en miles de comercios afiliados a QuickPay.</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -100,9 +96,7 @@ const Contacto = () => {
                       <p>Conéctate con cualquier billetera Bitcoin que use Lightning Network. Envía y recibe dinero al instante, sin fronteras ni complicaciones.</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -117,9 +111,7 @@ const Contacto = () => {
                       <p>Tkiero te da acceso a todas las compañías telefónicas desde una sola app. Recarga o compra paquetes al instante, estés donde estés.</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -135,9 +127,7 @@ const Contacto = () => {
                       <p>Usa 365 para recargar o retirar desde tu billetera Tkiero, usando únicamente tu cuenta bancaria registrada a tu nombre</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -154,9 +144,7 @@ const Contacto = () => {
                         Solo necesitas una cosa: que sea tuya. Por tu seguridad, no aceptamos tarjetas de terceros.</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -171,9 +159,7 @@ const Contacto = () => {
                       <p>Solicita partidas de nacimiento, actas y más desde cualquier lugar. El proceso es 100% en línea y recibes tus documentos físicos por DHL, UPS o FedEx, incluso apostillados si lo necesitas</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -188,9 +174,7 @@ const Contacto = () => {
                       <p>Con solo el DUI o pasaporte, el dinero llega rápido y seguro desde tu app Tkiero</p>
                     </div>
                     <div className="bg-primary p-1">
-                      <a href="https://play.google.com/store/apps/details?id=app.tkiero">
-                        <p className="text-center text-light m-2">Descarga La App</p>
-                      </a>
+                      <p className="text-center text-light m-2">&#160;</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -227,7 +211,7 @@ const Contacto = () => {
             <div className="payment-infoservices">
               <div className="info-card">
                 <h3 className="info-headlineservices text-center">
-                  Con tkiero puedes recibir dinero desde chivo , tkiero y cualquier billetera lightning estés donde estes.
+                  Con Tkiero puedes recibir dinero desde Chivo Wallet, Tkiero y cualquier billetera lightning estés donde estes.
                 </h3>
 
                 <div className="instruction-step">
@@ -331,7 +315,7 @@ const Contacto = () => {
                       <li>Recargas telefónicas y compra de paquetes</li>
                       <li>Pagos con Bitcoin y Lightning Network</li>
                       <li>Transferencias entre usuarios y pagos a comercios</li>
-                      <li>Integración con plataformas como PayPal, Mercado Pago y más</li>
+                      <li>Integración con plataformas como Chivo Wallet, Mercado Pago y más</li>
                     </ul>
                   </div>
                 </div>
