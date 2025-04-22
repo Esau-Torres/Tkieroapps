@@ -34,7 +34,7 @@ const ContactForm = () => {
         <div className="col-12 col-md-6">
             <div className="card shadow-sm card5">
                 <div className="card-body5">
-                    <h3 className="card-title5">Escríbenos</h3>
+                    <h3 className="card-title5 text-center">Escríbenos</h3>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre</label>

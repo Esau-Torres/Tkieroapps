@@ -1,0 +1,341 @@
+:root {
+    --input-bg: #f8fafc;
+    --input-border: #e2e8f0;
+    --disabled-color: #f1f5f9;
+    --text-disabled: #94a3b8;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos base */
+
+
+.transaction-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+/* Loading State */
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.loading-text {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--azul-oscuro);
+}
+
+/* Form Container */
+.form-container {
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.transaction-header {
+    margin-bottom: 2rem;
+}
+
+.transaction-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    color: var(--azul-oscuro);
+}
+
+.highlight-name {
+    color: var(--azul-celeste);
+}
+
+.amount {
+    color: var(--celeste);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    display: inline-block;
+    background: var(--azul-oscuro);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--border-radius);
+}
+
+.transaction-subtitle {
+    font-size: 1.1rem;
+    color: var(--azul-oscuro);
+    opacity: 0.8;
+}
+
+/* Form Styles */
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--azul-oscuro);
+    text-align: center;
+}
+
+.form-group input {
+    margin: 0 auto;
+    background: var(--input-bg);
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid var(--input-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    display: block;
+    text-align: center;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--celeste);
+    box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.3);
+}
+
+.form-group input:disabled {
+    background: var(--disabled-color);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Button Styles */
+.btn-ibex {
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+    border: none;
+    padding: 12px 32px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    display: block;
+    margin: 1.5rem auto;
+    min-width: 200px;
+    font-size: 1rem;
+}
+
+.btn-ibex:hover:not(:disabled) {
+    background: var(--celeste);
+    color: var(--azul-oscuro);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-ibex:disabled {
+    background: var(--disabled-color);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none !important;
+    border: 1px solid var(--input-border);
+}
+
+/* Payment Section */
+.payment-section {
+    background: var(--blanco);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.payment-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--azul-celeste);
+}
+
+.payment-instruction {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--azul-oscuro);
+    opacity: 0.9;
+}
+
+.qr-instruction {
+    margin: 1.5rem 0;
+    color: var(--azul-oscuro);
+    font-size: 1rem;
+}
+
+#div-payment-link {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.paymentLink {
+    display: inline-block;
+    margin: 2rem auto;
+    background: var(--azul-oscuro);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    color: var(--blanco);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.paymentLink:hover {
+    background: var(--celeste);
+    color: var(--azul-oscuro);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.qr-container {
+    padding: 1.5rem;
+    background: var(--blanco);
+    border-radius: 12px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Not Found Section */
+#div-payment-not-found {
+    text-align: center;
+    padding: 3rem 0 5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--blanco);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+}
+
+#div-payment-not-found h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--azul-oscuro);
+    font-size: 1.8rem;
+}
+
+#div-payment-not-found p {
+    color: var(--azul-oscuro);
+    opacity: 0.8;
+    margin: 0 auto;
+    line-height: 1.6;
+    max-width: 80%;
+    font-size: 1.1rem;
+}
+
+/* Lottie Animations */
+.lottie-animation {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.success-animation {
+    max-width: 250px;
+}
+
+.error-animation {
+    max-width: 280px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .transaction-wrapper {
+        padding: 1.5rem;
+    }
+
+    .form-container,
+    .payment-section,
+    #div-payment-not-found {
+        padding: 1.5rem;
+    }
+
+    .transaction-title,
+    .payment-title,
+    #div-payment-not-found h2 {
+        font-size: 1.5rem;
+    }
+
+    .transaction-subtitle,
+    .payment-instruction,
+    #div-payment-not-found p {
+        font-size: 1rem;
+    }
+
+    .paymentLink {
+        padding: 0.9rem 2rem;
+        font-size: 0.85rem;
+    }
+
+    .amount {
+        font-size: 1.3rem;
+        padding: 0.4rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .transaction-wrapper {
+        padding: 1rem;
+    }
+
+    .form-container,
+    .payment-section,
+    #div-payment-not-found {
+        padding: 1.2rem;
+    }
+
+    .transaction-title,
+    .payment-title,
+    #div-payment-not-found h2 {
+        font-size: 1.3rem;
+    }
+
+    .lottie-animation {
+        max-width: 220px;
+    }
+
+    .qr-container {
+        padding: 1rem;
+    }
+
+    .paymentLink {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .amount {
+        font-size: 1.1rem;
+        padding: 0.3rem 1rem;
+    }
+}

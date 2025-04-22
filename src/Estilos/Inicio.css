@@ -11,7 +11,7 @@ h3 {
     /* Poppins-SemiBold */
 }
 
-h4{
+h4 {
     font-size: 1.6rem;
     text-align: center;
     line-height: 1.2;
@@ -64,26 +64,30 @@ a {
     color: var(--blanco);
 }
 
-.bg-fondo{
+.bg-fondo {
     background-image: url('../img/bg1.png');
     background-repeat: no-repeat;
-    background-size: 150% 100%; /* Reduce el tamaño al 50% */
-    background-position: center; 
+    background-size: 150% 100%;
+    /* Reduce el tamaño al 50% */
+    background-position: center;
 }
-.bg-fondo2{
+
+.bg-fondo2 {
     background-image: url('../img/bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
-    
+    background-position: center;
+
 }
-.bg-fondo3{
+
+.bg-fondo3 {
     background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: center;
-    
+
 }
+
 .size1 {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
@@ -97,15 +101,16 @@ a {
 .store-btn {
     max-width: 150px;
     transition: transform 0.3s ease;
-    background:  var(--azul-celeste);
+    background: var(--azul-celeste);
     padding: 10px;
     border-radius: 20px;
     color: #f0f8ff;
 }
+
 .store-btn:hover {
     transform: scale(1.1);
     color: #f0f8ff;
-    background:  var(--azul-celeste);
+    background: var(--azul-celeste);
 }
 
 /* Imagen */
@@ -120,16 +125,16 @@ a {
 
 .shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra suave */
 }
 
 /* Responsividad */
-@media (max-width: 992px){
-    .bg-fondo2{
+@media (max-width: 992px) {
+    .bg-fondo2 {
         background-size: contain;
         left: 50px;
     }
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -144,15 +149,14 @@ a {
         max-width: 200px;
         /* Botones más pequeños en móviles */
     }
-    .bg-fondo2{
+
+    .bg-fondo2 {
         background-size: 100% 100%;
     }
 }
 
 
 /*bloque 2*/
-/* Contenedor General */
-
 .section-container {
     padding: 50px 20px;
     text-align: center;
@@ -181,7 +185,6 @@ a {
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    /* Poppins-Regular */
     margin-bottom: 15px;
 }
 
@@ -193,15 +196,15 @@ a {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border: 2px solid var(--azul-celeste); 
+    border: 2px solid var(--azul-celeste);
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .btn-register:hover {
     transform: scale(1.07);
     color: #ffffff;
-    border-color: #f0f8ff; 
+    border-color: #f0f8ff;
     background: var(--azul-celeste);
 }
 
@@ -250,7 +253,6 @@ a {
 }
 
 /*bloque tres*/
-/* Contenedor */
 .cards-container {
     padding: 50px 20px;
 }
@@ -319,6 +321,7 @@ a {
     padding-left: 30px;
     padding-right: 20px;
 }
+
 .text-container3 {
     margin-top: 30px;
     padding-left: 10px;
@@ -335,9 +338,11 @@ a {
     background-color: #007bff;
     color: white;
 }
-.custom-card:hover h2{
+
+.custom-card:hover h2 {
     color: #f0f8ff;
 }
+
 .custom-card:hover .icon-container,
 .custom2:hover .icon-container2 {
     background-color: white;
@@ -367,10 +372,12 @@ a {
     .custom-card {
         height: 320px;
     }
-    .custom{
+
+    .custom {
         height: auto;
     }
 }
+
 @media (max-width: 768px) {
 
     .custom-card {
@@ -384,10 +391,12 @@ a {
 .block4 {
     line-height: 1.6;
 }
-.apple{
+
+.apple {
     color: #007bff;
 }
-.apple:hover{
+
+.apple:hover {
     color: #ffcc00;
 }
 
@@ -422,160 +431,164 @@ a {
     width: 100%;
     overflow: hidden;
     position: relative;
-  }
-  
-  .slider2 {
+}
+
+.slider2 {
     display: flex;
-    width: auto; 
-    animation: slide 20s linear infinite; 
-  }
-  
-  .slide2 {
-    flex: 0 0 auto; 
+    width: auto;
+    animation: slide 20s linear infinite;
+}
+
+.slide2 {
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 300px;
     transition: 0.5s ease;
-  }
-  
-  .slide2 img {
-    width: 70%; 
+}
+
+.slide2 img {
+    width: 70%;
     height: auto;
     border-radius: 20px;
-  }
-  
+}
+
 /*5.5*/
 /* Contenedor principal */
 .services-payment-container {
     max-width: 1200px;
-  }
-  
-  /* Estructura grid */
-  .services-grid {
+}
+
+/* Estructura grid */
+.services-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  /* Grupos de iconos */
-  .payment-icons-group {
+/* Grupos de iconos */
+.payment-icons-group {
     width: 100%;
-  }
-  
-  .icons-row {
+}
+
+.icons-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-  }
-  
-  /* Contenedores de iconos */
-  .payment-icon-wrapper {
+}
+
+/* Contenedores de iconos */
+.payment-icon-wrapper {
     padding: 1.2rem;
     transition: all 0.3s ease;
     flex: 0 0 auto;
-  }
-  
-  /* Imágenes de iconos */
-  .payment-icon-img {
+}
+
+/* Imágenes de iconos */
+.payment-icon-img {
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
-  }
-  
-  /* Imagen central destacada */
-  .featured-payment-image-container {
+}
+
+/* Imagen central destacada */
+.featured-payment-image-container {
     width: 100%;
     max-width: 800px;
- 
-  }
-  
-  .featured-payment-image {
+
+}
+
+.featured-payment-image {
     width: 80%;
-  }
-  
-  /* Responsive: Mobile */
-  @media (min-width: 300px) and (max-width: 767px) {
+}
+
+/* Responsive: Mobile */
+@media (min-width: 300px) and (max-width: 767px) {
     .payment-icon-wrapper {
-      padding: 0.8rem;
-      margin: 0.5rem;
+        padding: 0.8rem;
+        margin: 0.5rem;
     }
+
     .payment-icons-group {
         width: 120%;
-      }
+    }
+
     .payment-icon-img {
-      max-height: 50px;
-      max-width: 60px;
+        max-height: 50px;
+        max-width: 60px;
     }
+
     .icons-row {
-      gap: 0.4rem;
+        gap: 0.4rem;
     }
-    
+
     .payment-title {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  
-  }
-  
-  /* Responsive: Tablet */
-  @media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Responsive: Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
     .payment-icon-img {
-      max-height: 90px;
-      max-width: 110px;
+        max-height: 90px;
+        max-width: 110px;
     }
-    
+
     .icons-row {
-      gap: 1.5rem;
+        gap: 1.5rem;
     }
-  }
-  
-  /* Responsive: Desktop */
-  @media (min-width: 992px) {
+}
+
+/* Responsive: Desktop */
+@media (min-width: 992px) {
     .payment-icon-img {
-      max-height: 120px;
-      max-width: 140px;
+        max-height: 120px;
+        max-width: 140px;
     }
-    
+
     .icons-row {
-      gap: 2.5rem;
-      flex-wrap: nowrap;
+        gap: 2.5rem;
+        flex-wrap: nowrap;
     }
-    
+
     .payment-icon-wrapper {
-      padding: 1.5rem;
+        padding: 1.5rem;
     }
-  }
-  
-  /* Efectos hover */
-  @media (hover: hover) {
+}
+
+/* Efectos hover */
+@media (hover: hover) {
     .payment-icon-wrapper:hover {
-      transform: translateY(-5px);
+        transform: translateY(-5px);
     }
-    
+
     .payment-icon-img:hover {
-      transform: scale(1.05);
+        transform: scale(1.05);
     }
-  }
+}
 
 
-  /* Animación */
-  @keyframes slide {
+/* Animación */
+@keyframes slide {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     100% {
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .slide2 {
-      width: 200px; 
+        width: 200px;
     }
-  }
+}
 
 /* Animación para mover las imágenes */
 @keyframes scroll {
@@ -845,21 +858,22 @@ a {
 /* Estilo del botón */
 .download-btn {
     color: #FFFFFF;
-    background-color: transparent; 
-    border: 2px solid rgb(255, 255, 255); 
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
     margin-top: 20px;
     font-size: 1rem;
     border-radius: 30px;
-    padding: 10px 10px; 
+    padding: 10px 10px;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .download-btn:hover {
-    transform: scale(1.1); 
-    color: #f0f8ff; 
-    border-color: #f0f8ff; 
+    transform: scale(1.1);
+    color: #f0f8ff;
+    border-color: #f0f8ff;
 }
+
 /* Imagen del logo */
 .logo2-img {
     max-width: 300px;
@@ -892,52 +906,54 @@ a {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-  }
-  
-  .icon-circle {
+}
+
+.icon-circle {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    border-radius: 50%; 
-    background-color: #87CEEB; 
-    color: white; 
+    border-radius: 50%;
+    background-color: #87CEEB;
+    color: white;
     text-decoration: none;
     transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .icon-circle:hover {
-    transform: scale(1.1); 
-    background-color: #1E3A8A; 
-  }
-  
-  /* Colores específicos para cada ícono */
-  .icon-circle .fa-facebook {
-    color: #1877F2; 
-  }
-  
-  .icon-circle .fa-youtube {
-    color: #ff0000; 
-  }
-  
-  .icon-circle .fa-linkedin {
-    color: #0A66C2; 
-  }
-  
-  .icon-circle .fa-twitter {
-    color: #006AFF; 
-  }
-  
-  .icon-circle .fa-snapchat {
-    color: #FFFC00; 
-  }
-  .icon-circle .fa-tiktok {
-    color: #000000; 
-  }
-  .icon-circle .fa-instagram {
-    color: #ff00c8af; 
-  }
+}
+
+.icon-circle:hover {
+    transform: scale(1.1);
+    background-color: #1E3A8A;
+}
+
+/* Colores específicos para cada ícono */
+.icon-circle .fa-facebook {
+    color: #1877F2;
+}
+
+.icon-circle .fa-youtube {
+    color: #ff0000;
+}
+
+.icon-circle .fa-linkedin {
+    color: #0A66C2;
+}
+
+.icon-circle .fa-twitter {
+    color: #006AFF;
+}
+
+.icon-circle .fa-snapchat {
+    color: #FFFC00;
+}
+
+.icon-circle .fa-tiktok {
+    color: #000000;
+}
+
+.icon-circle .fa-instagram {
+    color: #ff00c8af;
+}
 
 /* Animaciones */
 @keyframes fadeIn {
@@ -998,4 +1014,3 @@ a {
         font-size: 20px;
     }
 }
-

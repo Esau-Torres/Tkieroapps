@@ -3,8 +3,8 @@ import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../Estilos/AcercaDe.css';
 import ContactForm from "./inicio/Correo";
-// formulario
-{/*import Transaccion from "./Formulario";*/}
+
+
 
 const Caracteristicas = () => {
     /*Modal*/
@@ -26,6 +26,8 @@ const Caracteristicas = () => {
     const toggleCard3 = () => {
         setIsCard3Open(!isCard3Open);
     };
+
+
     return (
         <>
             <section className="contact-section py-5 ">
@@ -119,14 +121,6 @@ const Caracteristicas = () => {
                     </Modal.Footer>
                 </Modal>
             </section>
-
-            {/*Formulario de pago*/}
-            <section className="contact-section py-5 ">
-                <div className="container">
-                   {/*  <Transaccion />*/}
-                </div>
-            </section>
-
 
             {/*Bloque 3*/}
             <section className="expandable-cards py-5">

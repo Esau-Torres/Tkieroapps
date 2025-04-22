@@ -13,8 +13,8 @@ import TkieroTerms from "./Vistas/inicio/Terms_Con/Terms";
 import TkieroAccount from "./Vistas/inicio/Terms_Con/AcountSuspention";
 import TkieroPolicy from "./Vistas/inicio/Terms_Con/CriptoPolicy";
 import TkieroCookies from "./Vistas/inicio/Terms_Con/FollowinCookies";
-
-
+// vista del formulario de ibex
+import IbexForm from "./Vistas/Ibex-form";
 
 // estilos globales
 import './App.css';
@@ -29,15 +29,13 @@ function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/caracteristicas" element={<Caracteristicas />} />
           <Route path="/contacto" element={<Contacto />} />
-
           {/* Rutas para las vistas de términos y condiciones */}
           <Route path="/Terms" element={<TkieroTerms />} />
           <Route path='/Terms/AcountSuspention' element={<TkieroAccount />} />
           <Route path='/Terms/CriptoPolicy' element={<TkieroPolicy />} />
-          <Route path="/Terms/FollowinCookies" element={<TkieroCookies />} />
-          
-          <Route path="/form-ibex.php" element={null} />
-         
+          <Route path='/Terms/FollowinCookies' element={<TkieroCookies />} />
+          {/* Ruta para el formulario de IBEX */}
+          <Route path='/transaction' element={<IbexForm />} />
         </Routes>
       </main>
       <Footer />
