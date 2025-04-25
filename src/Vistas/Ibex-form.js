@@ -17,13 +17,16 @@ const FormIbex = () => {
     const [isAmountEditable, setIsAmountEditable] = useState(false);
     const [link, setLink] = useState('');
 
+    const BASE_URL = window.location.hostname.includes('github.io')? 'https://api.tkiero.app': '';
+
     useEffect(() => {
         const url = window.location.href;
         const parts = url.split('/#');
         const id = parts[parts.length - 1];
         setTransactionId(id);
 
-        fetch(`/api/v1/wallet/ibex/payment-link/${id}`)
+        
+        fetch(`${BASE_URL}/api/v1/wallet/ibex/payment-link/${id}`)
             .then(res => {
                 if (res.status === 200) {
                     return res.json();
@@ -65,7 +68,7 @@ const FormIbex = () => {
         setDisabled(true);
         try {
             const response = await fetch(
-                '/api/v1/wallet/ibex/payment-link/transaction',
+                `${BASE_URL}/api/v1/wallet/ibex/payment-link/transaction`,
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
