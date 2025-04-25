@@ -328,6 +328,10 @@
     .qr-container {
         padding: 1rem;
     }
+    .qr-code {
+        width: 100%;
+        height: auto;
+    }
 
     .paymentLink {
         padding: 0.8rem 1.5rem;

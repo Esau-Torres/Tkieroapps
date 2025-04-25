@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://esau-torres.github.io/Tkieroapps/",
   "private": true,
+  "proxy": "https://api.tkiero.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
