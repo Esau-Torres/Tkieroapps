@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const cors = require("cors");
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
@@ -50,3 +50,4 @@ app.post("/api/payment-link/transaction", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Proxy server running at http://localhost:${PORT}`);
 });
+*/
