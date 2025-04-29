@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Swal from 'sweetalert2';
 import { QRCodeSVG } from "qrcode.react";
 import "../Estilos/ibex-form.css";
 
-const BASE_URL = window.location.hostname.includes('github.io')? 'https://api.tkiero.app': '';
+const BASE_URL = window.location.hostname.includes('github.io') ? 'https://api.tkiero.app' : '';
 
 const FormIbex = () => {
+
     const [transactionId, setTransactionId] = useState(null);
     const [formLoading, setFormLoading] = useState(true);
     const [formNotFound, setFormNotFound] = useState(false);
@@ -19,14 +21,27 @@ const FormIbex = () => {
     const [isAmountEditable, setIsAmountEditable] = useState(false);
     const [link, setLink] = useState('');
 
-   
+    const mostrarAlerta = (title, texto, icon) => {
+        Swal.fire({
+            title: title,
+            text: texto,
+            icon: icon,
+            showCancelButton: false,
+            color: '#007bff',
+            background: ' #e0f2ff',
+            confirmButtonColor: '#007bff',
+            confirmButtonText: 'Aceptar',
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    };
+
     useEffect(() => {
         const url = window.location.href;
         const parts = url.split('/#');
         const id = parts[parts.length - 1];
         setTransactionId(id);
 
-        
         fetch(`${BASE_URL}/api/v1/wallet/ibex/payment-link/${id}`)
             .then(res => {
                 if (res.status === 200) {
@@ -51,18 +66,29 @@ const FormIbex = () => {
             });
     }, []);
 
+    const isValidEmail = (email) => {
+        const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        const cleanEmail = email.trim().toLowerCase();
+
+        if (cleanEmail !== email) {
+            return false;
+        }
+
+        return emailRegex.test(email);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (Number(amount) <= 0) {
-            alert('Amount must be greater than zero');
+            mostrarAlerta('Warning', 'Amount must be greater than zero', 'warning');
             return;
         }
         if (name.trim() === '') {
-            alert('Please, enter your name');
+            mostrarAlerta('Warning', 'Please, enter your name', 'warning');
             return;
         }
         if (email.trim() === '') {
-            alert('Please, enter your email address');
+            mostrarAlerta('Warning', 'Please, enter your email address', 'warning');
             return;
         }
 
@@ -93,7 +119,17 @@ const FormIbex = () => {
         }
     };
 
+    // validaciones del formulario para habilidar el boton
+    const isFormValid = () => {
+        const isValidEmail = (email) => {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        };
+        return name.trim() !== '' && isValidEmail(email) && Number(amount) > 0;
+    };
+
     return (
+
         <div className="transaction-wrapper">
             {formLoading && (
                 <div id="div-form-loading">
@@ -118,7 +154,7 @@ const FormIbex = () => {
                     <div className="transaction-header">
                         <h1>
                             <span id="lbluser" className="highlight-name">{userName}</span> ha solicitado{' '}
-                            <span id="lblamount" className="amount">{amount}</span>{' '}
+                            <span id="lblamount" className="amount">{amount <= 0 ? 0 : amount}</span>{' '}
                             <span className="amount" id="lblcurrency">{currency}</span>
                         </h1>
                         <h2 className="transaction-subtitle">Completa la siguiente información con tus datos</h2>
@@ -135,14 +171,17 @@ const FormIbex = () => {
                         </div>
                         <div className="form-group">
                             <label>Nombre Completo</label>
-                            <input type="text" id="txtfullname" value={name} onChange={(e) => setName(e.target.value)} />
+                            <input type="text" id="txtfullname" value={name} onChange={(e) => setName(e.target.value)} required />
                         </div>
                         <div className="form-group">
                             <label>Email</label>
-                            <input type="email" id="txtemail" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" id="txtemail" value={email} onChange={(e) => setEmail(e.target.value.trim().toLowerCase())} required />
+                            {email && !isValidEmail(email) && (
+                                <p style={{ color: 'red', fontSize: '12px' }}>Correo electrónico no válido</p>
+                            )}
                         </div>
 
-                        <button className="paymentLink" id="btnsubmit" type="submit" disabled={disabled}>
+                        <button className="paymentLink" id="btnsubmit" type="submit" disabled={disabled || !isFormValid()}>
                             Continuar
                         </button>
                     </form>

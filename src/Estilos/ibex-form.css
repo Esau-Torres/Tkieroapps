@@ -328,6 +328,7 @@
     .qr-container {
         padding: 1rem;
     }
+
     .qr-code {
         width: 100%;
         height: auto;
@@ -342,4 +343,10 @@
         font-size: 1.1rem;
         padding: 0.3rem 1rem;
     }
+}
+
+/*Alert icono*/
+.swal2-icon.swal2-warning {
+    color: #007bff;
+    border-color: #007bff;
 }

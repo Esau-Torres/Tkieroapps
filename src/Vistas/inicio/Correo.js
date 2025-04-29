@@ -1,11 +1,66 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 const ContactForm = () => {
     const form = useRef();
+    const mostrarAlerta = (title, texto, icon) => {
+        Swal.fire({
+            title: title,
+            text: texto,
+            icon: icon,
+            showCancelButton: false,
+            color: '#007bff',
+            background: ' #e0f2ff',
+            confirmButtonColor: '#007bff',
+            confirmButtonText: 'Aceptar',
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    };
+    //validacion de correo
+    const esCorreoValido = (correo) => {
+        const regex =  /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        const cleanEmail = correo.trim().toLowerCase();
+
+        if (cleanEmail !== correo) {
+            return false;
+        }
+        return regex.test(correo);
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const nombre = form.current['nombre'].value.trim();
+        const correo = form.current['correo'].value.trim();
+        const asunto = form.current['asunto'].value.trim();
+        const mensaje = form.current['mensaje'].value.trim();
+
+        // Validaciones
+        if (nombre === '') {
+            mostrarAlerta('Nombre requerido', 'Por favor ingresa tu nombre.', 'warning');
+            form.current['nombre'].focus();
+            return;
+        }
+
+        if (!esCorreoValido(correo)) {
+            mostrarAlerta('Correo inválido', 'Por favor ingresa un correo electrónico válido.', 'warning');
+            form.current['correo'].focus();
+            return;
+        }
+
+        if (asunto === '') {
+            mostrarAlerta('Asunto requerido', 'Por favor ingresa el asunto.', 'warning');
+            form.current['asunto'].focus();
+            return;
+        }
+
+        if (mensaje === '') {
+            mostrarAlerta('Mensaje requerido', 'Por favor escribe tu mensaje.', 'warning');
+            form.current['mensaje'].focus();
+            return;
+        }
 
         // Envía el formulario usando EmailJS
         emailjs
@@ -18,11 +73,11 @@ const ContactForm = () => {
             .then(
                 (result) => {
                     console.log(result.text);
-                    alert('Mensaje enviado con éxito');
+                    mostrarAlerta('!Éxito¡', 'Mensaje enviado con éxito', 'success');
                 },
                 (error) => {
                     console.log(error.text);
-                    alert('Hubo un error al enviar el mensaje');
+                    mostrarAlerta('Error', 'Hubo un error al enviar el mensaje', 'error');
                 }
             );
 
@@ -46,7 +101,7 @@ const ContactForm = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="asunto" className="form-label">Asunto</label>
-                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder="Asunto" required/>
+                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder="Asunto" required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="mensaje" className="form-label">Escribe tu mensaje</label>

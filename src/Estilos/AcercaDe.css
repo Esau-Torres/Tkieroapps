@@ -809,3 +809,14 @@
     font-size: 0.85rem;
   }
 }
+
+/*Alert icono*/
+.swal2-icon.swal2-success {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.swal2-icon.swal2-error {
+  border-color: #f44336;
+  color: #f44336;
+}
