@@ -3,6 +3,7 @@ import Swal from 'sweetalert2';
 import { QRCodeSVG } from "qrcode.react";
 import "../Estilos/ibex-form.css";
 
+// aqui se tiene que editar el host para que funcione corractemente ya que en manera local lo trabaja como proxy
 const BASE_URL = window.location.hostname.includes('github.io') ? 'https://api.tkiero.app' : '';
 
 const FormIbex = () => {
