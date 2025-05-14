@@ -2,6 +2,7 @@
   "name": "sitio_web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://esau-torres.github.io/Tkieroapps/",
   "proxy": "https://api.tkiero.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
