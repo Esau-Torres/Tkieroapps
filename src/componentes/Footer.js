@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={logo} alt="logo" style={{ height: "40px" }} />
             <p className="small mt-2">© 2025 Copyright by Xert - All Rights Reserved.</p>
 
-            <button type="button" className="small mt-1 text-black" style={{cursor: 'pointer', textDecoration: 'none', border: 'none', background: 'none'}} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">¿Tienes un reclamo, sugerencia o comentario?</button>
+            <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer',   border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000',  fontWeight: 'bold',  padding: '6px 12px',  borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  transition: 'all 0.2s ease-in-out'}} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">Ponte en contacto con Tkiero</button>
 
             {/* modal de contacto */}
             <div className="modal fade" id="contactoModal" tabIndex="-1" aria-hidden="true">
@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="modal-content">
 
                   <div className="modal-header">
-                    <h5 className="modal-title">Contáctanos</h5>
+                    <h5 className="modal-title">Contacta con Tkiero por medio de:</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                   </div>
 
@@ -41,17 +41,17 @@ const Footer = () => {
                           href="https://wa.me/50375781206"
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ textDecoration: 'none', backgroundColor: ' #1E3A8A', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block',}}> WhatsApp
+                          style={{ textDecoration: 'none', backgroundColor: ' #1E3A8A', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block',}}><i className="fab fa-whatsapp"></i> &nbsp; WhatsApp
                         </a>
 
                         <a
                           href="mailto:soporte@tkiero.app?subject=Reclamo o Comentario"
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ textDecoration: 'none', backgroundColor: ' #0784f2', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block', }} > Correo Electrónico
+                          style={{ textDecoration: 'none', backgroundColor: ' #0784f2', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block', }} ><i className="fas fa-envelope"></i> &nbsp; Correo Electrónico
                         </a>
 
-                        <a href="https://tkiero.app/caracteristicas" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', backgroundColor: '#87CEEB', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block',}} > Formulario Web </a>
+                        <a href="https://tkiero.app/caracteristicas" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', backgroundColor: '#87CEEB', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block',}} ><i className="fas fa-file-alt"></i> &nbsp; Web Site </a>
                       </div>
                     </div>
                   </div>
