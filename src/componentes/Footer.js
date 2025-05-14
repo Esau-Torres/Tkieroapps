@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../img/logo.png'; 
 import footer from '../img/footer.png'; 
+import footer1 from '../img/footer1.png';
+import footer2 from '../img/footer2.png';
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaSnapchat, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -19,6 +21,8 @@ const Footer = () => {
             <Link to="/Terms/FollowinCookies" className="text-dark mx-2">Following & Cookies</Link>
             <Link to="/Terms/CriptoPolicy" className="text-dark mx-2">Crypto Policy</Link>
             <Link to="/Terms/AcountSuspention" className="text-dark mx-2">Account Suspension</Link>
+            <Link to="https://www.defensoria.gob.sv/contactenos/" className="text-dark mx-2">Contacta a la defensoria del consumidor</Link>
+            <Link to="https://www.defensoria.gob.sv/preguntas-frecuentes/" className="text-dark mx-2">Consulta de la defensoria del consumidor</Link>
           </div>
             
           <div className="col-md-3 text-center text-md-end">
@@ -32,7 +36,9 @@ const Footer = () => {
         </div>
 
         <div className="text-center mt-3">
-          <img src={footer} alt="footer" style={{ height: "50px" }} />
+          <a href="https://ssf.gob.sv/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px" }} /></a>
+          <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "50px" }} /></a>
+          <a href="https://www.defensoria.gob.sv/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "60px" }} /></a>
           <p className="small">
             Institución financiera supervisada por la Superintendencia del Sistema Financiero de El Salvador.
           </p>

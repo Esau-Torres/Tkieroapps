@@ -41,11 +41,10 @@ const logos = [
   require("../img/img10.png"),
 ];
 
-
 const Inicio = () => {
 
   return (
-
+    
     <div className="divprincipa row">
       <div className="bg-fondo">
         {/* bloque uno*/}

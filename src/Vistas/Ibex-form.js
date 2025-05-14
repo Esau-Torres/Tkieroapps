@@ -194,7 +194,7 @@ const FormIbex = () => {
                     <h2 className="payment-title">¡Listo para pagar!</h2>
                     <p className="payment-instruction"> Haz clic en el botón o escanea el código QR para completar tu pago </p>
                     <div id="div-payment-link">
-                        <a href={link} className="paymentLink">PAGAR AHORA </a>
+                        <a href={`lightning:${link}`} className="paymentLink">PAGAR AHORA </a>
                     </div>
                     <p className="qr-instruction">O escanea el código QR:</p>
                     <div className="qr-container">
