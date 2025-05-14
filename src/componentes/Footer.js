@@ -38,7 +38,7 @@ const Footer = () => {
 
                       <div style={{ marginTop: '15px' }}>
                         <a
-                          href="https://wa.me/50312345678"
+                          href="https://wa.me/50375781206"
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ textDecoration: 'none', backgroundColor: ' #1E3A8A', color: 'white', padding: '10px 20px', borderRadius: '8px', margin: '5px', display: 'inline-block',}}> WhatsApp
