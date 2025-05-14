@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../img/logo.png'; 
-import footer from '../img/footer.png'; 
+import logo from '../img/logo.png';
+import footer from '../img/footer.png';
 import footer1 from '../img/footer1.png';
 import footer2 from '../img/footer2.png';
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaSnapchat, FaYoutube } from "react-icons/fa";
@@ -15,16 +15,20 @@ const Footer = () => {
             <img src={logo} alt="logo" style={{ height: "40px" }} />
             <p className="small mt-2">© 2025 Copyright by Xert - All Rights Reserved.</p>
           </div>
-          
+
           <div className="col-md-6 text-center mb-3 mb-md-0">
-            <Link to="/Terms" className="text-dark mx-2">Terms & Conditions</Link>
-            <Link to="/Terms/FollowinCookies" className="text-dark mx-2">Following & Cookies</Link>
-            <Link to="/Terms/CriptoPolicy" className="text-dark mx-2">Crypto Policy</Link>
-            <Link to="/Terms/AcountSuspention" className="text-dark mx-2">Account Suspension</Link>
-            <Link to="https://www.defensoria.gob.sv/contactenos/" className="text-dark mx-2">Contacta a la defensoria del consumidor</Link>
-            <Link to="https://www.defensoria.gob.sv/preguntas-frecuentes/" className="text-dark mx-2">Consulta de la defensoria del consumidor</Link>
+            <Link to="/Terms" className="text-dark mx-2" title="Terminos y condiciones">Terms & Conditions</Link>
+            <Link to="/Terms/FollowinCookies" className="text-dark mx-2" title="seguimiento y cookies">Following & Cookies</Link>
+            <Link to="/Terms/CriptoPolicy" className="text-dark mx-2" title="politicas de criptomoneda">Crypto Policy</Link>
+            <Link to="/Terms/AcountSuspention" className="text-dark mx-2" title="Suspension de cuenta">Account Suspension</Link><br/>
+            <Link to="https://enlinea.defensoria.gob.sv/Reclamos-en-linea" className="text-dark mx-2" title="¿Deseas contactar a la Defensoría del Consumidor? Puedes presentar tu reclamo o consulta
+por los siguientes medios oficiales">Contacta a la defensoria del consumidor</Link>
+            <Link to="https://www.defensoria.gob.sv/contactenos/" className="text-dark mx-2" title="¿Deseas escalar tu consulta o reclamo? También puedes contactar a la Defensoría del
+Consumidor">Consulta con la defensoria del consumidor</Link>
+            <Link to="https://ssf.gob.sv/atencion-al-publico/" className="text-dark mx-2" title="¿Tuviste un problema y no se resolvió dentro de Tkiero? Puedes contactar directamente a la
+Superintendencia del Sistema Financiero (SSF)">Contacto a la Superintendencias del Sistema Financiero</Link>
           </div>
-            
+
           <div className="col-md-3 text-center text-md-end">
             <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={20} /></a>
             <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={20} /></a>
@@ -36,9 +40,10 @@ const Footer = () => {
         </div>
 
         <div className="text-center mt-3">
-          <a href="https://ssf.gob.sv/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px" }} /></a>
-          <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "50px" }} /></a>
-          <a href="https://www.defensoria.gob.sv/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "60px" }} /></a>
+          <a href="https://ssf.gob.sv/atencion-al-publico/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px", marginTop: 20 }} /></a>
+          <a href="https://www.defensoria.gob.sv/contactenos/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "100px" }} /></a>
+          <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "50px", marginTop: 20 }} /></a>
+
           <p className="small">
             Institución financiera supervisada por la Superintendencia del Sistema Financiero de El Salvador.
           </p>
