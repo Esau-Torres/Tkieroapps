@@ -14,10 +14,11 @@ const Footer = () => {
       <div className="container text-center text-md-start">
         <div className="row align-items-center">
           <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
-            <img src={logo} alt="logo" style={{ height: "40px" }} />
-            <p className="small mt-2">© 2025 Copyright by Xert - All Rights Reserved.</p>
+            <img src={logo} alt="logo" style={{ height: "40px" }} className="d-block mx-auto" />
+            <p className="small mt-2 text-center">© 2025 Copyright by Xert - All Rights Reserved.</p>
 
-            <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer',   border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000',  fontWeight: 'bold',  padding: '6px 12px',  borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  transition: 'all 0.2s ease-in-out'}} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">Ponte en contacto con Tkiero</button>
+           <p className="small mt-1 text-black fw-bold text-center">¿Tienes un reclamo, sugerencia o comentario?</p>
+            <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer',   border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000',  fontWeight: 'bold',  padding: '6px 12px',  borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  transition: 'all 0.2s ease-in-out'}} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">Contactate Con Tkiero</button>
 
             {/* modal de contacto */}
             <div className="modal fade" id="contactoModal" tabIndex="-1" aria-hidden="true">
