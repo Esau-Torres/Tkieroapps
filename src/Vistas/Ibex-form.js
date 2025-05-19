@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { QRCodeSVG } from "qrcode.react";
 import "../Estilos/ibex-form.css";
+import { useTranslation } from 'react-i18next';
 
 // aqui se tiene que editar el host para que funcione corractemente ya que en manera local lo trabaja como proxy
 const BASE_URL = window.location.hostname.includes('github.io') ? 'https://api.tkiero.app' : '';
 
 const FormIbex = () => {
-
+    const { t } = useTranslation();
     const [transactionId, setTransactionId] = useState(null);
     const [formLoading, setFormLoading] = useState(true);
     const [formNotFound, setFormNotFound] = useState(false);
@@ -137,7 +138,7 @@ const FormIbex = () => {
                     <dotlottie-player
                         src="https://lottie.host/aa454ed2-5fad-4511-92c9-ad281ad6f8bd/ZnXAhRs5Qq.json"
                         background="transparent" speed="1" className="lottie-animation" loop autoPlay></dotlottie-player>
-                    <p className="loading-text">Cargando transacción...</p>
+                    <p className="loading-text">{t('transaction.txt1')}</p>
                 </div>
             )}
 
@@ -145,8 +146,8 @@ const FormIbex = () => {
                 <div id="div-payment-not-found" className="not-found-section">
                     <dotlottie-player
                         src="https://lottie.host/cb8bed71-3967-4079-ae96-a95887697ca9/8xCCirBKNz.json" background="transparent" speed="1" className="lottie-animation error-animation" loop autoPlay ></dotlottie-player>
-                    <h2>Transacción no encontrada</h2>
-                    <p>Por favor, verifica el enlace o contacta al solicitante</p>
+                    <h2>{t('transaction.txt2')}</h2>
+                    <p>{t('transaction.txt3')}</p>
                 </div>
             )}
 
@@ -154,24 +155,24 @@ const FormIbex = () => {
                 <div id="div-form-payment" className="form-container">
                     <div className="transaction-header">
                         <h1>
-                            <span id="lbluser" className="highlight-name">{userName}</span> ha solicitado{' '}
+                            <span id="lbluser" className="highlight-name">{userName}</span>{t('transaction.txt13')} {' '}
                             <span id="lblamount" className="amount">{amount <= 0 ? 0 : amount}</span>{' '}
                             <span className="amount" id="lblcurrency">{currency}</span>
                         </h1>
-                        <h2 className="transaction-subtitle">Completa la siguiente información con tus datos</h2>
+                        <h2 className="transaction-subtitle">{t('transaction.txt4')}</h2>
                     </div>
 
                     <form id="payment-form" onSubmit={handleSubmit} className="transaction-form">
                         <div className="form-group">
-                            <label>Cantidad</label>
+                            <label>{t('transaction.txt5')}</label>
                             <input type="number" min="0" step="0.01" id="txtamount" value={amount} disabled={!isAmountEditable} onChange={(e) => setAmount(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label>Moneda</label>
+                            <label>{t('transaction.txt6')}</label>
                             <input type="text" id="txtcurrency" value={currency} disabled />
                         </div>
                         <div className="form-group">
-                            <label>Nombre Completo</label>
+                            <label>{t('transaction.txt7')}</label>
                             <input type="text" id="txtfullname" value={name} onChange={(e) => setName(e.target.value)} required />
                         </div>
                         <div className="form-group">
@@ -183,7 +184,7 @@ const FormIbex = () => {
                         </div>
 
                         <button className="paymentLink" id="btnsubmit" type="submit" disabled={disabled || !isFormValid()}>
-                            Continuar
+                            {t('transaction.txt8')}
                         </button>
                     </form>
                 </div>
@@ -191,12 +192,12 @@ const FormIbex = () => {
 
             {paymentLinkVisible && (
                 <div className="payment-section">
-                    <h2 className="payment-title">¡Listo para pagar!</h2>
-                    <p className="payment-instruction"> Haz clic en el botón o escanea el código QR para completar tu pago </p>
+                    <h2 className="payment-title">{t('transaction.txt9')}</h2>
+                    <p className="payment-instruction"> {t('transaction.txt10')}</p>
                     <div id="div-payment-link">
-                        <a href={`lightning:${link}`} className="paymentLink">PAGAR AHORA </a>
+                        <a href={`lightning:${link}`} className="paymentLink"> {t('transaction.txt11')}</a>
                     </div>
-                    <p className="qr-instruction">O escanea el código QR:</p>
+                    <p className="qr-instruction">{t('transaction.txt12')}</p>
                     <div className="qr-container">
                         <QRCodeSVG value={link} size={window.innerWidth < 768 ? 200 : 256} className="qr-code" />
                     </div>

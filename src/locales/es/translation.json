@@ -447,5 +447,20 @@
     "txt17": "Cifrado AES-256 • Conexiones TLS 1.3 • Protección contra DDoS •",
     "txt18": "Auditorías periódicas de seguridad • Cumplimiento GDPR",
     "txt19": "Seguriddad de datos"
+  },
+  "transaction": {
+    "txt1": "Cargando transacción...",
+    "txt2": "Transacción no encontrada",
+    "txt3": "Por favor, verifica el enlace o contacta al solicitante",
+    "txt4": "Completa la siguiente información con tus datos",
+    "txt5": "Cantidad",
+    "txt6": "Moneda",
+    "txt7": "Nombre Completo",
+    "txt8": "Continuar",
+    "txt9": "¡Listo para pagar!",
+    "txt10": "Haz clic en el botón o escanea el código QR para completar tu pago ",
+    "txt11": "PAGAR AHORA",
+    "txt12": "O escanea el código QR:",
+    "txt13": " ha solicitado "
   }
 }

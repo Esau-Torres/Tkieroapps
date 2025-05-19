@@ -447,5 +447,20 @@
     "txt17": "AES-256 Encryption • TLS 1.3 Connections • DDoS Protection •",
     "txt18": "Periodic Security Audits • GDPR Compliance",
     "txt19": "Data security"
+  },
+  "transaction": {
+    "txt1": "Loading transaction...",
+    "txt2": "Transaction not found",
+    "txt3": "Please verify the link or contact the requester",
+    "txt4": "Complete the following information with your details",
+    "txt5": "Amount",
+    "txt6": "Currency",
+    "txt7": "Full Name",
+    "txt8": "Continue",
+    "txt9": "Ready to pay!",
+    "txt10": "Click the button or scan the QR code to complete your payment",
+    "txt11": "PAY NOW",
+    "txt12": "Or scan the QR code:",
+    "txt13": " has requested "
   }
 }
