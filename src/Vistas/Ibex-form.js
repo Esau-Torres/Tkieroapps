@@ -44,6 +44,8 @@ const FormIbex = () => {
         const id = parts[parts.length - 1];
         setTransactionId(id);
 
+        alert(id);
+        
         fetch(`${BASE_URL}/api/v1/wallet/ibex/payment-link/${id}`)
             .then(res => {
                 if (res.status === 200) {

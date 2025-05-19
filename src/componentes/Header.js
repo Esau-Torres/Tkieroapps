@@ -111,27 +111,27 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/" onClick={closeMenu}>
-                                    Inicio
+                                    {t('header.txt1')}
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contacto" onClick={closeMenu}>
-                                    Nuestros Servicios
+                                     {t('header.txt2')}
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/caracteristicas" onClick={closeMenu}>
-                                    Contáctanos
+                                    {t('header.txt3')}
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="https://play.google.com/store/apps/details?id=app.tkiero" onClick={closeMenu}>
-                                    Descargala ya con android
+                                    {t('header.txt5')} android
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone" onClick={closeMenu}>
-                                    Descargala ya con apple
+                                    {t('header.txt5')} apple
                                 </Link>
                             </li>
                         </ul>
