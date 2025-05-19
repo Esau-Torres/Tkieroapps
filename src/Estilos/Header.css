@@ -145,7 +145,7 @@
   position: relative;
   width: 90px;
   height: 37px;
-  background-color: #0784f2;
+  background-color: #6cbaff;
   border-radius: 999px;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4),
               inset -5px -5px 10px rgba(255, 255, 255, 0.1);
@@ -163,7 +163,7 @@
   position: relative;
   z-index: 1;
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 0.9;
   user-select: none;
 }
 

@@ -19,9 +19,7 @@ const Footer = () => {
       <div className="container text-center text-md-start">
         <div className="row align-items-center">
           <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
-            <img src={logo} alt="logo" style={{ height: "40px" }} className="d-block mx-auto" />
-            <p className="small mt-2 text-center">© 2025 Copyright by Xert - All Rights Reserved.</p>
-
+            
             {/* modal de contacto */}
             <div className="modal fade" id="contactoModal" tabIndex="-1" aria-hidden="true">
               <div className="modal-dialog modal-dialog-centered modal-lg">
@@ -106,7 +104,8 @@ const Footer = () => {
           </div>
 
           <div className="col-md-6 text-center mb-3 mb-md-0">
-            
+            <img src={logo} alt="logo" style={{ height: "40px" }} className="d-block mx-auto" />
+            <p className="small mt-2 text-center">© 2025 Copyright by Xert - All Rights Reserved.</p>
             <p className="small mt-1 text-black fw-bold text-center">{t('footer.txt1')}</p>
             <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer', border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000', fontWeight: 'bold', padding: '6px 12px', borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', transition: 'all 0.2s ease-in-out' }} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">{t('footer.txt2')}</button>
             <br/><br/>
@@ -126,16 +125,17 @@ const Footer = () => {
             <a href="https://x.com/TkieroApp" className="text-dark mx-2"> <i className="fab fa-x fs-4"></i></a>
             <a href="https://www.youtube.com/@Tkiero_app" className="text-dark mx-2"><FaYoutube size={25} /></a>
             <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" className="text-dark mx-2"><FaSnapchat size={25} /></a>
-            <br />
+            
+          </div>
+        </div>
+
+        <div className="text-center mt-3">  
             <button data-bs-toggle="modal" style={{ all: 'unset', cursor: 'pointer' }} data-bs-target="#security_Modal" title={t('footer.txt19')}>
               <img src={aws} alt="aws" className="me-3" style={{ height: "25px", marginTop: 20 }} />
               <img src={cloudfire} alt="cloudfire" className="me-3" style={{ height: "25px", marginTop: 20 }} />
               <img src={ssl2} alt="ssl2" className="me-3" style={{ height: "25px", marginTop: 20 }} />
             </button>
-          </div>
-        </div>
-
-        <div className="text-center mt-3">
+          <br />
           <a href="https://ssf.gob.sv/atencion-al-publico/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px", marginTop: 20 }} /></a>
           <a href="https://www.defensoria.gob.sv/contactenos/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "100px" }} /></a>
           <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "50px", marginTop: 20 }} /></a>
