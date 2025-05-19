@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tkieroapps/static/css/main.cbb9c413.css",
-    "main.js": "/Tkieroapps/static/js/main.f4dd5d70.js",
+    "main.css": "/Tkieroapps/static/css/main.093e5533.css",
+    "main.js": "/Tkieroapps/static/js/main.3e5951b9.js",
     "static/js/453.fecb0d94.chunk.js": "/Tkieroapps/static/js/453.fecb0d94.chunk.js",
     "static/media/img12.png": "/Tkieroapps/static/media/img12.0a36529b2e0b57835667.png",
     "static/media/img11.PNG": "/Tkieroapps/static/media/img11.56551c754e1752e30ce1.PNG",
@@ -17,6 +17,7 @@
     "static/media/services0.jpeg": "/Tkieroapps/static/media/services0.3f1d0c59d39c0c4c3d50.jpeg",
     "static/media/services1.jpeg": "/Tkieroapps/static/media/services1.c3dfaf9246fc5d576d16.jpeg",
     "static/media/services7.jpeg": "/Tkieroapps/static/media/services7.3e207e1e343510d2cc69.jpeg",
+    "static/media/aws.png": "/Tkieroapps/static/media/aws.2737a6e130e206b2e7ac.png",
     "static/media/bg1.png": "/Tkieroapps/static/media/bg1.dff257e4f21b66a81b14.png",
     "static/media/services6.jpeg": "/Tkieroapps/static/media/services6.02a02f03bf2aee13880f.jpeg",
     "static/media/recursos2.jpg": "/Tkieroapps/static/media/recursos2.a50a8c29627cb7f4db08.jpg",
@@ -31,6 +32,7 @@
     "static/media/footer2.png": "/Tkieroapps/static/media/footer2.cd8b2eb4f8a6b4b9b3fe.png",
     "static/media/img17.jpg": "/Tkieroapps/static/media/img17.a1f29da7767c9be9a956.jpg",
     "static/media/img4.png": "/Tkieroapps/static/media/img4.265164b69cecfcd8d8f0.png",
+    "static/media/Cloudflare.png": "/Tkieroapps/static/media/Cloudflare.caa42484a9141e75fd79.png",
     "static/media/img18.jpeg": "/Tkieroapps/static/media/img18.955d7e93739b928240a1.jpeg",
     "static/media/remesa.png": "/Tkieroapps/static/media/remesa.a4cb14522df53c0f9c7e.png",
     "static/media/img20.jpeg": "/Tkieroapps/static/media/img20.962f1b7727942235544a.jpeg",
@@ -41,12 +43,12 @@
     "static/media/footer.png": "/Tkieroapps/static/media/footer.a26ff1f58f863e261705.png",
     "static/media/img8.png": "/Tkieroapps/static/media/img8.53c7b6920cff332fcc6d.png",
     "index.html": "/Tkieroapps/index.html",
-    "main.cbb9c413.css.map": "/Tkieroapps/static/css/main.cbb9c413.css.map",
-    "main.f4dd5d70.js.map": "/Tkieroapps/static/js/main.f4dd5d70.js.map",
+    "main.093e5533.css.map": "/Tkieroapps/static/css/main.093e5533.css.map",
+    "main.3e5951b9.js.map": "/Tkieroapps/static/js/main.3e5951b9.js.map",
     "453.fecb0d94.chunk.js.map": "/Tkieroapps/static/js/453.fecb0d94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbb9c413.css",
-    "static/js/main.f4dd5d70.js"
+    "static/css/main.093e5533.css",
+    "static/js/main.3e5951b9.js"
   ]
 }
