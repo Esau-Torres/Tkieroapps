@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
     const form = useRef();
@@ -85,29 +86,30 @@ const ContactForm = () => {
         e.target.reset();
     };
 
+    const { t } = useTranslation();
     return (
         <div className="col-12 col-md-6">
             <div className="card shadow-sm card5">
                 <div className="card-body5">
-                    <h3 className="card-title5 text-center">Escríbenos</h3>
+                    <h3 className="card-title5 text-center">{t('caracteristicas.bloque1.text3')}</h3>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="mb-3">
-                            <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" id="nombre" name='nombre' placeholder="Nombre" required />
+                            <label htmlFor="nombre" className="form-label">{t('caracteristicas.bloque1.text4')}</label>
+                            <input type="text" className="form-control" id="nombre" name='nombre' placeholder={t('caracteristicas.bloque1.text4')} required />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="correo" className="form-label">Email</label>
                             <input type="email" className="form-control" id="correo" name="correo" placeholder="Email" required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="asunto" className="form-label">Asunto</label>
-                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder="Asunto" required />
+                            <label htmlFor="asunto" className="form-label">{t('caracteristicas.bloque1.text5')}</label>
+                            <input type="text" className="form-control" id="asunto" name='asunto' placeholder={t('caracteristicas.bloque1.text5')} required />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="mensaje" className="form-label">Escribe tu mensaje</label>
-                            <textarea className="form-control" id="mensaje" name='mensaje' rows="4" placeholder="Deja tu mensaje"></textarea>
+                            <label htmlFor="mensaje" className="form-label">{t('caracteristicas.bloque1.text6')}</label>
+                            <textarea className="form-control" id="mensaje" name='mensaje' rows="4" placeholder={t('caracteristicas.bloque1.text6')}></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Enviar</button>
+                        <button type="submit" className="btn btn-primary">{t('caracteristicas.bloque1.text7')}</button>
                     </form>
                 </div>
             </div>

@@ -6,7 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-
+// traduccion del sitio web
+import { useTranslation } from 'react-i18next';
 import visible from "./inicio/visible";
 import '../Estilos/AcercaDe.css';
 import logo from '../img/logotipo.png';
@@ -24,7 +25,7 @@ import services8 from '../img/Services9.png';
 const Contacto = () => {
 
   visible();
-
+  const { t } = useTranslation();
   return (
     <>
       {/*Bloque 1*/}
@@ -32,7 +33,7 @@ const Contacto = () => {
         <Container>
           <div className="col-12 text-center mb-5">
             <img src={logo} alt="logo" height={"80px"} width={"auto"} />
-            <h2 className="text-center mt-4">!Tkiero cambia tu manera de manejar tu dinero¡</h2>
+            <h2 className="text-center mt-4">{t('contacto.bloque1.titulo')}</h2>
           </div>
 
           <Row>
@@ -62,8 +63,8 @@ const Contacto = () => {
                       <img src={services} alt="Pago de facturas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">¡Punto Xpress 24/7, los 365 días del año!</h4>
-                      <p>Paga todas tus facturas de agua, luz, internet, cable y mucho más, en un solo lugar, desde tu teléfono y a cualquier hora del día.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title1')}</h4>
+                      <p>{t('contacto.bloque1.card-text1')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -77,8 +78,8 @@ const Contacto = () => {
                       <img src={services2} alt="Pago con QuickPay" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Tkiero: tu billetera en cada tienda.</h4>
-                      <p className="text-center">Aceptada en miles de comercios afiliados a QuickPay.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title2')}</h4>
+                      <p className="text-center">{t('contacto.bloque1.card-text2')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -92,8 +93,8 @@ const Contacto = () => {
                       <img src={services1} alt="Lightning Network" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3 fs-5 fs-md-4 fs-lg-3">Con Tkiero, enviar y recibir por Lightning no tiene límites.</h4>
-                      <p>Conéctate con cualquier billetera Bitcoin que use Lightning Network. Envía y recibe dinero al instante, sin fronteras ni complicaciones.</p>
+                      <h4 className="mb-3 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title3')}</h4>
+                      <p>{t('contacto.bloque1.card-text3')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -107,8 +108,8 @@ const Contacto = () => {
                       <img src={services3} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3" >Nunca te quedes sin saldo</h4>
-                      <p>Tkiero te da acceso a todas las compañías telefónicas desde una sola app. Recarga o compra paquetes al instante, estés donde estés.</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3" >{t('contacto.bloque1.card-title4')}</h4>
+                      <p>{t('contacto.bloque1.card-text4')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -123,8 +124,8 @@ const Contacto = () => {
                       <img src={services4} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="fs-5 fs-md-4 fs-lg-3">Seguridad total: transacciones solo con tu cuenta personal</h4>
-                      <p>Usa 365 para recargar o retirar desde tu billetera Tkiero, usando únicamente tu cuenta bancaria registrada a tu nombre</p>
+                      <h4 className="fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title5')}</h4>
+                      <p>{t('contacto.bloque1.card-text5')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -139,9 +140,8 @@ const Contacto = () => {
                       <img src={services5} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 mt-2 fs-5 fs-md-4 fs-lg-3">Recarga tu billetera al instante y sin complicaciones</h4>
-                      <p>Usa tu tarjeta de crédito o débito, desde cualquier banco.
-                        Solo necesitas una cosa: que sea tuya. Por tu seguridad, no aceptamos tarjetas de terceros.</p>
+                      <h4 className="mb-4 mt-2 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title6')}</h4>
+                      <p>{t('contacto.bloque1.card-text6')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -155,8 +155,8 @@ const Contacto = () => {
                       <img src={services6} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-3 mt-3 fs-5 fs-md-4 fs-lg-3">Documentos legales a domicilio, estés donde estés</h4>
-                      <p>Solicita partidas de nacimiento, actas y más desde cualquier lugar. El proceso es 100% en línea y recibes tus documentos físicos por DHL, UPS o FedEx, incluso apostillados si lo necesitas</p>
+                      <h4 className="mb-3 mt-3 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title7')}</h4>
+                      <p>{t('contacto.bloque1.card-text7')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -170,8 +170,8 @@ const Contacto = () => {
                       <img src={services7} alt="Recargas telefónicas" />
                     </div>
                     <div className="text-part">
-                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">Envía dinero seguro y sin cuentas bancarias</h4>
-                      <p>Con solo el DUI o pasaporte, el dinero llega rápido y seguro desde tu app Tkiero</p>
+                      <h4 className="mb-4 fs-5 fs-md-4 fs-lg-3">{t('contacto.bloque1.card-title8')}</h4>
+                      <p>{t('contacto.bloque1.card-text8')}</p>
                     </div>
                     <div className="bg-primary p-1">
                       <p className="text-center text-light m-2">&#160;</p>
@@ -190,7 +190,7 @@ const Contacto = () => {
         <div className="payment-containerservices">
           {/* Header */}
           <div className="payment-headerservices">
-            <h2 className="payment-titleservices">¡Recibe pagos al instante desde cualquier lugar!</h2>
+            <h2 className="payment-titleservices">{t('contacto.bloque2.title1')}</h2>
             <div className="lightning-icon">⚡</div>
           </div>
 
@@ -211,54 +211,54 @@ const Contacto = () => {
             <div className="payment-infoservices">
               <div className="info-card">
                 <h3 className="info-headlineservices text-center">
-                  Con Tkiero puedes recibir dinero desde Chivo Wallet, Tkiero y cualquier billetera lightning estés donde estes.
+                  {t('contacto.bloque2.title2')}
                 </h3>
 
                 <div className="instruction-step">
                   <p className="step-guide">
-                    Ve a la sección <strong className="highlight-pathservices">Billetera → Recibir</strong>
+                    {t('contacto.bloque2.text1')} <strong className="highlight-pathservices">{t('contacto.bloque2.text2')}</strong>
                   </p>
                   <ol className="step-list">
                     <li className="step-item">
                       <div className="step-marker">1</div>
                       <div className="step-content">
-                        <strong>Tkiero</strong> - Entre usuarios de Tkiero
+                        <strong>Tkiero</strong> -  {t('contacto.bloque2.text3')}
                       </div>
                     </li>
                     <li className="step-item">
                       <div className="step-marker">2</div>
                       <div className="step-content">
-                        <strong>Lightning</strong> - Desde cualquier billetera Lightning (Strike, Wallet of Satoshi, Muun, etc.)
+                        <strong>Lightning</strong> - {t('contacto.bloque2.text4')}
                       </div>
                     </li>
                     <li className="step-item">
                       <div className="step-marker">3</div>
                       <div className="step-content">
-                        <strong>Chivo Wallet</strong> - Recibe directamente desde la app Chivo (en USD o BTC)
+                        <strong>Chivo Wallet</strong> - {t('contacto.bloque2.text5')}
                       </div>
                     </li>
                   </ol>
                 </div>
 
                 <div className="payment-methodservices">
-                  <h4 className="methods-title">¿Cómo te pueden enviar dinero?</h4>
+                  <h4 className="methods-title">{t('contacto.bloque2.title3')}</h4>
                   <ul className="method-list">
                     <li className="method-item">
                       <span className="method-icon">✓</span>
                       <span className="method-detail">
-                        Con tu nickname: <span className="highlight-code">tunombre@tkiero.money</span>
+                        {t('contacto.bloque2.text6')} <span className="highlight-code">tunombre@tkiero.money</span>
                       </span>
                     </li>
                     <li className="method-item">
                       <span className="method-icon">✓</span>
                       <span className="method-detail">
-                        Con tu número internacional: <span className="highlight-code">+503xxxxxxx@tkiero.money</span>
+                        {t('contacto.bloque2.text7')} <span className="highlight-code">+503xxxxxxx@tkiero.money</span>
                       </span>
                     </li>
                     <li className="method-item">
                       <span className="method-icon">✓</span>
                       <span className="method-detail">
-                        Transferencias internas usando nickname, email o número <span className="money-emoji">💸</span>
+                       {t('contacto.bloque2.text8')} <span className="money-emoji">💸</span>
                       </span>
                     </li>
                   </ul>
@@ -270,7 +270,7 @@ const Contacto = () => {
       </section>
 
       {/*Bloque 2 */}
-      <h2 className="text-center">Una travesía de innovación y compromiso con la inclusión financiera.</h2>
+      <h2 className="text-center">{t('contacto.bloque3.title1')}</h2>
       <section className="animated-cards py-5 bg-fondo2">
         <div className="container">
           <div className="row">
@@ -285,10 +285,10 @@ const Contacto = () => {
                   {/* Bloque 2: Texto */}
                   <div className="text-section p-4">
                     <div className="card-header p-0 mb-3">
-                      <h3 className="card-title">¿Quiénes Somos?</h3>
+                      <h3 className="card-title">{t('contacto.bloque3.title2')}</h3>
                     </div>
                     <p className="card-text">
-                      Tkiero es una aplicación que busca revolucionar la manera en que las personas manejan su dinero, facilitando pagos digitales, remesas y servicios financieros de forma rápida y accesible.
+                      {t('contacto.bloque3.text1')}
                     </p>
                   </div>
                 </div>
@@ -306,16 +306,16 @@ const Contacto = () => {
                   {/* Bloque 2: Texto */}
                   <div className="text-section p-4">
                     <div className="card-header p-0 mb-3">
-                      <h3 className="card-title">Nuestros Servicios</h3>
+                      <h3 className="card-title">{t('contacto.bloque3.title3')}</h3>
                     </div>
-                    <p className="card-text">En Tkiero, nos especializamos en:</p>
+                    <p className="card-text">{t('contacto.bloque3.text2')}</p>
                     <ul className="card-text">
-                      <li>Envío y recepción de remesas</li>
-                      <li>Pagos de facturas y servicios básicos</li>
-                      <li>Recargas telefónicas y compra de paquetes</li>
-                      <li>Pagos con Bitcoin y Lightning Network</li>
-                      <li>Transferencias entre usuarios y pagos a comercios</li>
-                      <li>Integración con plataformas como Chivo Wallet, Mercado Pago y más</li>
+                      <li>{t('contacto.bloque3.text3')}</li>
+                      <li>{t('contacto.bloque3.text4')}</li>
+                      <li>{t('contacto.bloque3.text5')}</li>
+                      <li>{t('contacto.bloque3.text6')}</li>
+                      <li>{t('contacto.bloque3.text7')}</li>
+                      <li>{t('contacto.bloque3.text8')}</li>
                     </ul>
                   </div>
                 </div>

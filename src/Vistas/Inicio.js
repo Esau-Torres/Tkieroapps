@@ -1,4 +1,8 @@
 import React from "react";
+
+// traduccion del sitio web
+import { useTranslation } from 'react-i18next';
+
 import '../Estilos/Inicio.css';
 import Modal from './inicio/Modal';
 import { FaWallet, FaBalanceScale, FaReceipt, FaRegAddressCard, FaApple, FaGooglePlay, FaHandPointLeft, FaHandPointRight, FaFacebook, FaInstagram, FaTiktok, FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -43,6 +47,7 @@ const logos = [
 
 const Inicio = () => {
 
+  const { t } = useTranslation();
   return (
     
     <div className="divprincipa row">
@@ -55,11 +60,11 @@ const Inicio = () => {
             {/* Primera columna - Texto y botones */}
             <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
               <h1 className="fw-bold text-md-start text-center">
-                Envia Remesas a tus familiares  en El Salvador sin pagar comisiones<br /><br />
+                 {t('inicio.bloque1.titulo')}
+                <br /><br />
               </h1>
-
               <p className="size1 text-md-start text-center">
-                Envia remesas al instante sin pagar comisiones desde tu <br /> teléfono. Regístrate únicamente con el DUI.
+               {t('inicio.bloque1.texto1')}
               </p>
 
               {/* Botones de descarga */}
@@ -77,13 +82,12 @@ const Inicio = () => {
             <div className="col-12 col-md-6 d-flex justify-content-center align-items-center div1">
               <img src={Img0} alt="img0" className="img-fluid" />
             </div>
-
           </div>
 
           {/* Tercera fila - Botón centrado */}
           <div className="col-12 text-center mt-4 div3">
             <a href="https://play.google.com/store/apps/details?id=app.tkiero" style={{ fontSize: '1.3rem' }} className="btn btn-register" target="_blank" rel="noopener noreferrer">
-              ¿Qué esperas?, Únete !Ya¡
+              {t('inicio.bloque1.boton1')}
             </a>
           </div>
         </div>
@@ -99,16 +103,16 @@ const Inicio = () => {
               {/* Texto y Botón */}
               <div className="col-12 col-md-6">
                 <h2 className="title">
-                  Transferencias instantáneas, documentos <br /> legales y más en tu bolsillo.
+                  {t('inicio.bloque2.titulo1')} <br /> {t('inicio.bloque2.titulo2')}
                 </h2>
                 <p className="highlight-text text-start">
-                  Tramita partidas de nacimiento, actas de matrimonio y más, apostilladas, entregadas a tiempo con DHL.
+                  {t('inicio.bloque2.text1')}
                 </p>
                 <p className="highlight-text text-start">
-                  Monitorea tu envío en tiempo real desde El Salvador a cualquier parte del mundo. ¡Rápido, seguro y fácil con Tkiero app!
+                  {t('inicio.bloque2.text2')}
                 </p>
                 <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register fs-5 fs-md-4 fs-lg-3" target="_blank" rel="noopener noreferrer">
-                  Descargala Ahora!!
+                  {t('inicio.bloque2.boton')}
                 </a>
                 {/*Iconos de Envío */}
                 <div className="shipping-icons">
@@ -119,7 +123,7 @@ const Inicio = () => {
 
             {/* Mensaje Inferior */}
             <p className="footer-text">
-              Olvídate de largas esperas. Nosotros llevamos tus documentos por ti.
+              {t('inicio.bloque2.footer')}
             </p>
           </div>
         </div>
@@ -127,8 +131,8 @@ const Inicio = () => {
       {/* bloque tres*/}
       <div className="container cards-container">
         <h2 className="title text-center">
-          Descubre todo lo que puedes hacer con
-          <a className="text-primary" href="https://play.google.com/store/apps/details?id=app.tkiero&pcampaignid=web_share"> Tkiero App</a>
+          {t('inicio.bloque3.titulo1')}
+          <a className="text-primary" href="https://play.google.com/store/apps/details?id=app.tkiero&pcampaignid=web_share"> {t('inicio.bloque3.titulo2')}</a>
         </h2>
 
         <div className="row row0">
@@ -139,8 +143,8 @@ const Inicio = () => {
                 <FaWallet className="icon" />
               </div>
               <div className="text-container">
-                <h2>Wallet</h2>
-                <p>Envia y récibe transferencias al instante en tu wallet Tkiero 24/7 <br /><br /> !Sin Comisiones¡</p>
+                <h2>{t('inicio.bloque3.card1')}</h2>
+                <p>{t('inicio.bloque3.card-text1')} <br /><br />{t('inicio.bloque3.card-text2')}</p>
               </div>
             </div>
           </div>
@@ -152,8 +156,8 @@ const Inicio = () => {
                 <FaBalanceScale className="icon" />
               </div>
               <div className="text-container3">
-                <h2>Retiros</h2>
-                <p>Retira tu dinero de Tkiero wallet en efectivo o transfierelo a tu banco. <br /><br /> !Con la tasa de comisión más baja¡ </p>
+                <h2>{t('inicio.bloque3.card2')}</h2>
+                <p>{t('inicio.bloque3.card-text3')}<br /><br />{t('inicio.bloque3.card-text4')}</p>
               </div>
             </div>
           </div>
@@ -165,8 +169,8 @@ const Inicio = () => {
                 <FaReceipt className="icon" />
               </div>
               <div className="text-container">
-                <h2>Pagos</h2>
-                <p>Paga tus recibos de servicios básicos desde Tkiero Wallet.</p>
+                <h2>{t('inicio.bloque3.card3')}</h2>
+                <p>{t('inicio.bloque3.card-text5')}</p>
               </div>
             </div>
           </div>
@@ -174,12 +178,12 @@ const Inicio = () => {
         <div className="col-12 col-md-12 col-auto me-4">
           <div className="card custom-card custom2">
             <div className="text-container2">
-              <h2 className="h2">Crea tu cuenta </h2>
-              <p>Para registrarse llena el formulario, unicamente necesitarás tener tu DUI a la mano y ser mayor de 18 años para commenzar a disfrutar de todos los beneficios que Tkiero.app tiene para ti.</p>
+              <h2 className="h2">{t('inicio.bloque3.card4')}</h2>
+              <p>{t('inicio.bloque3.card-text6')}</p>
               <ul>
-                <li>Recibe pagos y remesas del exterior a tu Wallet Tkiero al instante sin comisiones.</li>
-                <li>Compra en cualquier comercio y paga con tu teléfono usando el sistema QR Lightning. </li>
-                <li>Solicita documentos como partidas, actas y apostillas, y recibelos hasta la puerta de tu casa.</li>
+                <li>{t('inicio.bloque3.card-text7')}</li>
+                <li>{t('inicio.bloque3.card-text8')}</li>
+                <li>{t('inicio.bloque3.card-text9')}</li>
               </ul>
             </div>
             <div className="icon-container2">
@@ -190,11 +194,11 @@ const Inicio = () => {
         <div className="col-12 col-md-12 col-auto">
           <div className="footer_blocl_3">
             <p className="highlight-text text-center">
-              Miles de Salvadoreños prefieren Tkiero Wallet para enviar, recibir y administrar su dinero. <br />
-              ¿A que esperas? Haz tu cuenta en Tkiero y toma el control de tu dinero.
+               {t('inicio.bloque3.card-text10')}<br />
+              {t('inicio.bloque3.card-text11')}
             </p>
             <a href="https://play.google.com/store/apps/details?id=app.tkiero" className="btn btn-register" target="_blank" rel="noopener noreferrer">
-              Descargala ¡Ya!
+              {t('inicio.bloque3.boton')}
             </a>
           </div>
         </div>
@@ -205,22 +209,16 @@ const Inicio = () => {
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-8 order-2 order-md-1">
-            <h2 className="mb-4 text-center">Recibe pagos y remesas internacionales</h2>
+            <h2 className="mb-4 text-center">{t('inicio.bloque4.titulo')}</h2>
             <p className="highlight-text block4">
-              Recibe pagos y remesas del extranjero a tu Wallet Tkiero sin
-              comisiones. Para transferir tu dinero a tu cuenta bancaria
-              ó retirar en efectivo en comercios afiliados a PuntoXpress
-              pagando la tasa de comisión más baja de todo El Salvador.
+              {t('inicio.bloque4.text1')}
               <br /><br />
-              ¿Cuánto ahorras? Usa nuestra calculadora y compárala
-              con PayPal u otras plataformas de transferencias
-              internacionales.
+              {t('inicio.bloque4.text2')}
               <br /><br />
-              Olvídate de los días de espera. Con Tkiero, tu dinero cae
-              al instante.
+              {t('inicio.bloque4.text3')}
             </p>
             <div className="d-flex flex-row gap-4">
-              <button className="btn btn-register mt-3"> Crea tu cuenta &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
+              <button className="btn btn-register mt-3"> {t('inicio.bloque4.boton')} &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
               <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple className="mt-3 apple" size={45} /></a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
             </div>
@@ -236,17 +234,15 @@ const Inicio = () => {
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-12 order-2 order-md-2">
-            <h2 className="mb-4 text-center">Retira tu dinero de Tkiero Wallet en efectivo</h2>
+            <h2 className="mb-4 text-center">{t('inicio.bloque5.titulo')}</h2>
             <p className="highlight-text block4">
-              Retira tu dinero en efectivo de Tkiero Wallet con la tasa
-              de comisión más baja en los comercios afiliados de
-              Puntxpress a nivel nacional. Elige el que esté más
-              cerca de ti. <br />
+              {t('inicio.bloque5.text1')}
+              <br />
             </p>
             <div className="d-flex flex-column gap-4 align-items-center mb-5 order-1 order-md-1">
               <div>
                 <h2 className="text-center text-dark">
-                  Todo en un solo lugar <span style={{ color: '#007bff' }}>Tkiero App</span> tu vida más fácil
+                  {t('inicio.bloque5.text2')} <span style={{ color: '#007bff' }}>Tkiero App</span> {t('inicio.bloque5.text3')} 
                 </h2>
               </div>
               <div className="slider-container2 mt-5">
@@ -283,7 +279,7 @@ const Inicio = () => {
                 <div className="services-grid">
                   <div className="payment-header text-center">
                     <h2>
-                      !Paga todos tus servicios básicos en un solo lugar¡
+                      {t('inicio.bloque5-5.titulo')}
                     </h2>
                   </div>
                   <div className="payment-icons-group">
@@ -326,8 +322,8 @@ const Inicio = () => {
           </div>
         </div>
         <div className="text-center col-auto me-4 alianza-container">
-          <h3 className="text-primary">NUESTRAS ALIANZAS ESTRATEGICAS</h3>
-          <h4>Paga todos <span className="text-primary">TUS SERVICIOS</span> Desde la comodidad de tu casa u oficina</h4>
+          <h3 className="text-primary">{t('inicio.bloque5-5.titulo2')}</h3>
+          <h4>{t('inicio.bloque5-5.text1')}<span className="text-primary">{t('inicio.bloque5-5.text2')}</span> {t('inicio.bloque5-5.text3')}</h4>
         </div>
         <div className="carousel-container">
           <div className="carousel-track">
@@ -343,10 +339,9 @@ const Inicio = () => {
         <div className="row align-items-center">
           {/* Columna de Texto */}
           <div className="col-12 col-md-12 order-2 order-md-1">
-            <h2 className="mb-4 text-center">Vende, Compra y paga con Tetecnología Lightning</h2>
+            <h2 className="mb-4 text-center">{t('inicio.bloque6.titulo')}</h2>
             <p className="highlight-text block4">
-              Lightning la forma más rápida de pagar o cobrar al instante con solo
-              escanear un QR desde tu celular.
+              {t('inicio.bloque6.text1')}
             </p>
 
 
@@ -356,7 +351,7 @@ const Inicio = () => {
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdQrCode size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
-                    El vendedor genera un QR de cobro con el monto $$$ a recibir desde la app.
+                    {t('inicio.bloque6.card1')}
                   </p>
                 </div>
               </div>
@@ -366,7 +361,7 @@ const Inicio = () => {
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdCheckCircle size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
-                    El comprador abre su app Tkiero, escanea el QR y confirma el pago.
+                    {t('inicio.bloque6.card2')}
                   </p>
                 </div>
               </div>
@@ -376,7 +371,7 @@ const Inicio = () => {
                 <div className="card text-center p-4 shadow rounded-4 block6" style={{ height: "100%" }}>
                   <MdSwapHoriz size={50} className="mx-auto mb-3 icon2" />
                   <p className="highlight-text block4">
-                    ¡Listo! El dinero se transfiere al instante de una cuenta a otra.
+                    {t('inicio.bloque6.card3')}
                   </p>
                 </div>
               </div>
@@ -386,7 +381,7 @@ const Inicio = () => {
             <div className="d-flex flex-row gap-4 justify-content-center space">
               <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple className="mt-3 apple" size={45} /></a>
               <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay className="mt-3 apple" size={45} /></a>
-              <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; Descarga la apps</button>
+              <button className="btn btn-register mt-3"><FaHandPointLeft color="#FFFFFF" size={25} />&nbsp; {t('inicio.bloque6.boton')}</button>
             </div>
           </div>
 
@@ -396,7 +391,7 @@ const Inicio = () => {
       {/*Bloque 7*/}
       <div className="container my-5">
         <div>
-          <h2 className="text-center">Aprende a usar <span className="text-primary" >Tkiero</span> en minutos con <br /> nuestros tutoriales en TikTok</h2>
+          <h2 className="text-center">{t('inicio.bloque7.titulo')} <span className="text-primary" >Tkiero</span>{t('inicio.bloque7.titulo2')} <br />{t('inicio.bloque7.titulo3')}</h2>
         </div>
         <div className="slider-container mt-5">
           <div className="slider">
@@ -422,7 +417,7 @@ const Inicio = () => {
         </div>
         <div className="row mt-5">
           <div className="col-12 col-md-8 block7">
-            <p>¿Alguna Duda?<br />
+            <p>{t('inicio.bloque7.text1')}<br />
               <Modal />
             </p>
           </div>
@@ -454,14 +449,13 @@ const Inicio = () => {
           {/* Columna de Texto */}
           <div className="col-12 col-md-6 d-flex flex-column justify-content-end order-2 order-md-1">
             <div className="col-md-12 text-white p-3">
-              <h2 className="fw-bold title3 text-md-start text-center">Fácil, rápido y seguro</h2>
+              <h2 className="fw-bold title3 text-md-start text-center">{t('inicio.bloque9.titulo')}</h2>
               <p className="description text-md-start text-center">
-                Hacemos tu vida más fácil para ti y los tuyos. <br /><br />
-                Te apoyamos con los trámites legales, realizar pagos y wallet integrada.
-                Nuestra plataforma está disponible 24/7 los 365 días del año.
+                {t('inicio.bloque9.text1')} <br /><br />
+                {t('inicio.bloque9.text2')} 
               </p>
               <div className="text-md-start text-center">
-                <button className="btn download-btn mt-3"> Descarga la app &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
+                <button className="btn download-btn mt-3"> {t('inicio.bloque9.boton')}  &nbsp; <FaHandPointRight color="#FFFFFF" size={25} /></button>
                 <a href="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone"><FaApple color="#FFFFFF" className="mt-3 mx-3 " size={40} /></a>
                 <a href="https://play.google.com/store/apps/details?id=app.tkiero"><FaGooglePlay color="#FFFFFF" className="mt-3 " size={40} /></a>
               </div>

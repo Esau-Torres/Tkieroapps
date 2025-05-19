@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import '../../Estilos/Inicio.css';
 import logotipo from '../../img/logotipo.png'; // Ajusta la ruta de tu logotipo
-
+import { useTranslation } from 'react-i18next';
 
 const Seccion = () => {
     const seccionRef = useRef(null);
-  
     useEffect(() => {
       const observer = new IntersectionObserver(
         (entries) => {
@@ -27,19 +26,18 @@ const Seccion = () => {
         };
       }
     }, []);
-  
+   const { t } = useTranslation();
     return (
       <section id="mi-seccion" className="container-fluid bg-fondo2" ref={seccionRef}>
         <div className="container">
-          <h3 className="titulo1">Tu dinero siempre protegido</h3>
+          <h3 className="titulo1">{t('inicio.bloque8.titulo')}</h3>
   
           <div className="row row1">
             <div className="col-12 col-md-4">
               <div className="card p-3 shadow rounded card3">
                 <img src={logotipo} alt="Logotipo" className="img-fluid mb-3 logo" />
                 <p>
-                  En Tkiero la seguridad es nuestra prioridad.
-                  Monitoreamos cada movimiento en tiempo real para proteger tu dinero siempre.
+                  {t('inicio.bloque8.text1')}
                 </p>
               </div>
             </div>
@@ -48,8 +46,7 @@ const Seccion = () => {
               <div className="card p-3 shadow rounded card3">
               <img src={logotipo} alt="Logotipo" className="img-fluid mb-3 logo" />
                 <p>
-                  Estamos supervisados por la Superintendencia del Sistema Financiero de El Salvador,
-                  garantizando transferencias rápidas, seguras y sin riesgos.
+                  {t('inicio.bloque8.text2')}
                 </p>
               </div>
             </div>
@@ -58,7 +55,7 @@ const Seccion = () => {
               <div className="card p-3 shadow rounded card3">
               <img src={logotipo} alt="Logotipo" className="img-fluid mb-3 logo" />
                 <p>
-                  Empleamos encriptación de grado bancario y autenticación de dos factores para proteger tus fondos.
+                  {t('inicio.bloque8.text3')}
                 </p>
               </div>
             </div>
