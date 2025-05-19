@@ -9,7 +9,7 @@ import cloudfire from '../img/Cloudflare.png';
 import ssl2 from '../img/SSL2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaSnapchat, FaYoutube, FaShieldAlt, FaLock } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaSnapchat, FaYoutube, FaShieldAlt, FaLock } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
@@ -21,9 +21,6 @@ const Footer = () => {
           <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
             <img src={logo} alt="logo" style={{ height: "40px" }} className="d-block mx-auto" />
             <p className="small mt-2 text-center">© 2025 Copyright by Xert - All Rights Reserved.</p>
-
-            <p className="small mt-1 text-black fw-bold text-center">{t('footer.txt1')}</p>
-            <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer', border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000', fontWeight: 'bold', padding: '6px 12px', borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', transition: 'all 0.2s ease-in-out' }} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">{t('footer.txt2')}</button>
 
             {/* modal de contacto */}
             <div className="modal fade" id="contactoModal" tabIndex="-1" aria-hidden="true">
@@ -109,6 +106,10 @@ const Footer = () => {
           </div>
 
           <div className="col-md-6 text-center mb-3 mb-md-0">
+            
+            <p className="small mt-1 text-black fw-bold text-center">{t('footer.txt1')}</p>
+            <button type="button" className="small mt-1 text-black d-block mx-auto" style={{ cursor: 'pointer', border: 'none', backgroundColor: 'rgb(214, 238, 248)', color: '#000', fontWeight: 'bold', padding: '6px 12px', borderRadius: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', transition: 'all 0.2s ease-in-out' }} data-bs-toggle="modal" data-bs-target="#contactoModal" title="Contáctanos">{t('footer.txt2')}</button>
+            <br/><br/>
             <Link to="/Terms" className="text-dark mx-2" title="Terminos y condiciones">Terms & Conditions</Link>
             <Link to="/Terms/FollowinCookies" className="text-dark mx-2" title="seguimiento y cookies">Following & Cookies</Link>
             <Link to="/Terms/CriptoPolicy" className="text-dark mx-2" title="politicas de criptomoneda">Crypto Policy</Link>
@@ -119,17 +120,17 @@ const Footer = () => {
           </div>
 
           <div className="col-md-3 text-center ">
-            <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={20} /></a>
-            <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={20} /></a>
-            <a href="https://www.tiktok.com/@tkiero_app?is_from_webapp=1&sender_device=pc" className="text-dark mx-2"><FaTiktok size={20} /></a>
-            <a href="https://x.com/TkieroApp" className="text-dark mx-2"><FaTwitter size={20} /></a>
-            <a href="https://www.youtube.com/@Tkiero_app" className="text-dark mx-2"><FaYoutube size={20} /></a>
-            <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" className="text-dark mx-2"><FaSnapchat size={20} /></a>
+            <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={25} /></a>
+            <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={25} /></a>
+            <a href="https://www.tiktok.com/@tkiero_app?is_from_webapp=1&sender_device=pc" className="text-dark mx-2"><FaTiktok size={25} /></a>
+            <a href="https://x.com/TkieroApp" className="text-dark mx-2"> <i className="fab fa-x fs-4"></i></a>
+            <a href="https://www.youtube.com/@Tkiero_app" className="text-dark mx-2"><FaYoutube size={25} /></a>
+            <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" className="text-dark mx-2"><FaSnapchat size={25} /></a>
             <br />
             <button data-bs-toggle="modal" style={{ all: 'unset', cursor: 'pointer' }} data-bs-target="#security_Modal" title={t('footer.txt19')}>
-              <img src={aws} alt="aws" className="me-3" style={{ height: "20px", marginTop: 20 }} />
-              <img src={cloudfire} alt="cloudfire" className="me-3" style={{ height: "20px", marginTop: 20 }} />
-              <img src={ssl2} alt="ssl2" className="me-3" style={{ height: "20px", marginTop: 20 }} />
+              <img src={aws} alt="aws" className="me-3" style={{ height: "25px", marginTop: 20 }} />
+              <img src={cloudfire} alt="cloudfire" className="me-3" style={{ height: "25px", marginTop: 20 }} />
+              <img src={ssl2} alt="ssl2" className="me-3" style={{ height: "25px", marginTop: 20 }} />
             </button>
           </div>
         </div>
