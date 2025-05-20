@@ -119,17 +119,19 @@ const Footer = () => {
           </div>
 
           <div className="col-md-3 text-center ">
-            <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={25} /></a>
+          </div>
+        </div>
+
+        <div className="text-center mt-4">  
+          
+          <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={25} /></a>
             <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={25} /></a>
             <a href="https://www.tiktok.com/@tkiero_app?is_from_webapp=1&sender_device=pc" className="text-dark mx-2"><FaTiktok size={25} /></a>
             <a href="https://x.com/TkieroApp" className="text-dark mx-2"> <i className="fab fa-x fs-4"></i></a>
             <a href="https://www.youtube.com/@Tkiero_app" className="text-dark mx-2"><FaYoutube size={25} /></a>
             <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" className="text-dark mx-2"><FaSnapchat size={25} /></a>
             
-          </div>
-        </div>
-
-        <div className="text-center mt-3">  
+          <br/>
             <button data-bs-toggle="modal" style={{ all: 'unset', cursor: 'pointer' }} data-bs-target="#security_Modal" title={t('footer.txt19')}>
               <img src={aws} alt="aws" className="me-3" style={{ height: "25px", marginTop: 20 }} />
               <img src={cloudfire} alt="cloudfire" className="me-3" style={{ height: "25px", marginTop: 20 }} />
