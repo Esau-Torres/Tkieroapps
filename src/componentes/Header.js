@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -61,8 +61,7 @@ const Header = () => {
                                         if (e.target.value) {
                                             window.location.href = e.target.value;
                                         }
-                                    }}
-                                >
+                                    }}>
                                     <option className='nav-link' value="">&#160; {t('header.txt4')} &#160;</option>
                                     <option className='nav-link' value="https://play.google.com/store/apps/details?id=app.tkiero">&#160; Google Play &#160;</option>
                                     <option className='nav-link' value="https://apps.apple.com/sv/app/tkiero-app/id6446649743?l=en-GB&platform=iphone">&#160; Apple Store &#160;</option>
@@ -71,7 +70,7 @@ const Header = () => {
                         </ul>
                     </div>
 
-                    <div className="d-none d-lg-block">
+                    <div className="d-none d-lg-block pos">
                         <label className="lenguaje-toggle">
                             <input
                                 type="checkbox" onChange={(e) => changeLanguage(e.target.checked ? 'en' : 'es')} checked={i18n.language === 'en'} />
@@ -84,6 +83,7 @@ const Header = () => {
                             </div>
                         </label>
                     </div>
+
 
                     {/* Overlay y menú circular para móvil */}
                     <div className={`menu-overlay ${isMenuOpen ? "active" : ""}`} onClick={closeMenu}></div>
@@ -116,7 +116,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contacto" onClick={closeMenu}>
-                                     {t('header.txt2')}
+                                    {t('header.txt2')}
                                 </Link>
                             </li>
                             <li className="nav-item">

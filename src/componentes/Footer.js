@@ -133,12 +133,12 @@ const Footer = () => {
             <button data-bs-toggle="modal" style={{ all: 'unset', cursor: 'pointer' }} data-bs-target="#security_Modal" title={t('footer.txt19')}>
               <img src={aws} alt="aws" className="me-3" style={{ height: "25px", marginTop: 20 }} />
               <img src={cloudfire} alt="cloudfire" className="me-3" style={{ height: "25px", marginTop: 20 }} />
-              <img src={ssl2} alt="ssl2" className="me-3" style={{ height: "25px", marginTop: 20 }} />
+              <img src={ssl2} alt="ssl2" className="me-3" style={{ height: "30px", marginTop: 20 }} />
             </button>
           <br />
           <a href="https://ssf.gob.sv/atencion-al-publico/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px", marginTop: 20 }} /></a>
           <a href="https://www.defensoria.gob.sv/contactenos/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "100px" }} /></a>
-          <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "50px", marginTop: 20 }} /></a>
+          <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "70px",width: "85px", marginTop: 20 }} /></a>
           <p className="small">
             {t('footer.txt13')}
           </p>

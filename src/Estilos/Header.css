@@ -130,6 +130,11 @@
   }
 
   /* estilo checkbox*/
+.pos{
+   position: absolute;
+    top: 10px;
+    left: 88%;
+}
 
 .lenguaje-toggle-wrapper {
   display: flex;
