@@ -7,6 +7,7 @@ import footer2 from '../img/footer2.png';
 import aws from '../img/aws.png'
 import cloudfire from '../img/Cloudflare.png';
 import ssl2 from '../img/SSL2.png';
+import x from '../img/x.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FaFacebook, FaInstagram, FaTiktok, FaSnapchat, FaYoutube, FaShieldAlt, FaLock } from "react-icons/fa";
@@ -127,7 +128,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/Tkieroapp" className="text-dark mx-2"><FaFacebook size={25} /></a>
             <a href="https://www.instagram.com/tkiero_app/" className="text-dark mx-2"><FaInstagram size={25} /></a>
             <a href="https://www.tiktok.com/@tkiero_app?is_from_webapp=1&sender_device=pc" className="text-dark mx-2"><FaTiktok size={25} /></a>
-            <a href="https://x.com/TkieroApp" className="text-dark mx-2"> <i className="fab fa-x fs-4"></i></a>
+            <a href="https://x.com/TkieroApp" className="text-dark mx-2"><img src={x} alt="x_twitter" style={{ height: "33px" }} /></a>
             <a href="https://www.youtube.com/@Tkiero_app" className="text-dark mx-2"><FaYoutube size={25} /></a>
             <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" className="text-dark mx-2"><FaSnapchat size={25} /></a>
             

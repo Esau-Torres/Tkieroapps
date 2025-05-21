@@ -3,6 +3,7 @@ import { Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../Estilos/AcercaDe.css';
 import ContactForm from "./inicio/Correo";
+import x from "../img/x.png";
 // traduccion del sitio web
 import { useTranslation } from 'react-i18next';
 
@@ -103,7 +104,7 @@ const Caracteristicas = () => {
                                 <i className="fab fa-linkedin"></i>
                             </a>
                             <a href="https://x.com/TkieroApp" target="_blank" rel="noopener noreferrer" className="icon-circle2">
-                                <i className="fab fa-x"></i>
+                                <img src={x} alt="x_twitter" style={{ height: "33px" }} />
                             </a>
                             <a href="https://www.snapchat.com/add/tkieroapp?sender_web_id=3ab5da15-e7ae-454f-87dc-b98afa9bca2d&device_type=desktop&is_copy_url=true" target="_blank" rel="noopener noreferrer" className="icon-circle2">
                                 <i className="fab fa-snapchat"></i>
