@@ -5,7 +5,7 @@ import "../Estilos/ibex-form.css";
 import { useTranslation } from 'react-i18next';
 
 // aqui se tiene que editar el host para que funcione corractemente ya que en manera local lo trabaja como proxy
-const BASE_URL = window.location.hostname.includes('github.io') ? 'https://api.tkiero.app' : '';
+//const BASE_URL = window.location.hostname.includes('github.io') ? 'https://api.tkiero.app' : '';
 
 const FormIbex = () => {
     const { t } = useTranslation();
@@ -43,10 +43,9 @@ const FormIbex = () => {
         const parts = url.split('/#');
         const id = parts[parts.length - 1];
         setTransactionId(id);
-
-        alert(id);
         
-        fetch(`${BASE_URL}/api/v1/wallet/ibex/payment-link/${id}`)
+        
+        fetch(`https://api.tkiero.app/api/v1/wallet/ibex/payment-link/${id}`)
             .then(res => {
                 if (res.status === 200) {
                     return res.json();
@@ -99,7 +98,7 @@ const FormIbex = () => {
         setDisabled(true);
         try {
             const response = await fetch(
-                `${BASE_URL}/api/v1/wallet/ibex/payment-link/transaction`,
+                `https://api.tkiero.app/api/v1/wallet/ibex/payment-link/transaction`,
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
