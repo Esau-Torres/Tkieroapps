@@ -146,8 +146,22 @@ const AcountSuspention = () => {
                 return (
                     <div className="text-justify text-sm space-y-4">
                         <p>
-                            {t('acount.bloque1.txt10')}
+                            {t('acount.bloque1.txt10')} <br /><br />
+                            {t('acount.bloque1.txt11')}
                         </p>
+                        <p className='text-center'>
+                            <strong>{t('acount.bloque1.txt12')}</strong>
+                            
+                        </p>
+                        <p>{t('acount.bloque1.txt13')}</p> 
+                        <p className='text-center'>
+                            <strong>{t('acount.bloque1.txt14')}</strong>
+                        </p>
+                        <p>{t('acount.bloque1.txt15')}</p> 
+                        <p className='text-center'>
+                            <strong>{t('acount.bloque1.txt16')}</strong>
+                        </p>
+                        <p>{t('acount.bloque1.txt17')}</p> 
                     </div>
                 );
             default:

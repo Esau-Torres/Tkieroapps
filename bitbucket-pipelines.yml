@@ -9,7 +9,7 @@ definitions:
         caches:
           - node
         script:
-          - npm install
+          - npm install --legacy-peer-deps
 
     - step: &build
         name: Building-app
@@ -57,7 +57,7 @@ pipelines:
 
     staging:
       - stage:
-          name: Build and deploy Staging
+          name: Build and deploy dev
           deployment: Staging
           steps: 
             - step: *install

@@ -114,6 +114,7 @@ const TkieroTermsConditions = () => {
             </ul>
           </div>
           <p>
+            <br />
             {t('Terms.bloque1.txt39')}
           </p>
         </div>
@@ -262,7 +263,65 @@ const TkieroTermsConditions = () => {
                 onToggle={() => toggleSection(`section${section.id}`)}
               />
             ))}
+            <div className="tkiero-terminos-divider-large mb-4"></div>
+            <div className="tkiero-terminos-intro mb-5">
+              <h4 className="tkiero-terminos-subtitle text">{t('Terms.bloque3.title1')}</h4>
+              <p>
+                {t('Terms.bloque3.txt1')}
+                <br /><br />
+                {t('Terms.bloque3.txt2')}
+                <br /><br />
+                {t('Terms.bloque3.txt3')}
+                <br /><br />
+                {t('Terms.bloque3.txt4')}
+                <br /><br />
+                {t('Terms.bloque3.txt5')}
+                <br /><br />
+                {t('Terms.bloque3.txt6')}
+                <Link to="mailto:help@tkiero.app" className="tkiero-terminos-link">help@tkiero.app</Link>
+              </p>
+            </div>
+            <div className="tkiero-terminos-divider-large mb-4"></div>
+            <div className="tkiero-terminos-alert alert alert-info">
+              <h5 className='text-center'>{t('Terms.bloque3.title2')} <br />  {t('Terms.bloque3.txt7')}</h5>
+              <p>
+                <br />
+                {t('Terms.bloque3.txt8')}
+              </p>
+              <p>
+                {t('Terms.bloque3.txt9')}
+                <br /><br />
+                {t('Terms.bloque3.txt10')}
+                <br /><br />
+                {t('Terms.bloque3.txt11')}
+                <br /><br />
+                {t('Terms.bloque3.txt12')}
+                <br /><br />
+                {t('Terms.bloque3.txt13')}
+                <br /><br />
+                {t('Terms.bloque3.txt14')}
+              </p>
+            </div>
+            <div className="tkiero-terminos-divider-large mb-4"></div>
 
+            <header className="tkiero-terminos-header text-center mb-5">
+              <img src={logo} alt='Logo de Tkiero' className='tkiero-terminos-logo mb-4' />
+              <h1 className="tkiero-terminos-title">{t('Terms.bloque3.title3')}</h1>
+              <div className="tkiero-terminos-divider"></div>
+            </header>
+
+            {/* Introducción */}
+            <div className="tkiero-terminos-intro mb-5">
+              <p>
+                {t('Terms.bloque3.txt15')}
+                <br /><br />
+                {t('Terms.bloque3.txt16')}
+                <br /><br />
+                {t('Terms.bloque3.txt17')}
+                <Link to="mailto:help@tkiero.app" className="tkiero-terminos-link">help@tkiero.app</Link>
+                {t('Terms.bloque3.txt18')}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -340,12 +399,19 @@ const TkieroTermsConditions = () => {
         return (
           <div className="text-justify text-sm space-y-4">
             <p>
+              <strong>{t('Terms.bloque2.txt23-5')}</strong>
               {t('Terms.bloque2.txt24')}
               <br /><br />
+              <p className="text-center"><strong>{t('Terms.bloque2.txt24-5')}</strong> </p>
               {t('Terms.bloque2.txt25')}
               <br /><br />
               {t('Terms.bloque2.txt26')}
               <br /><br />
+              {t('Terms.bloque2.txt26-1')}
+              <br /><br />
+              {t('Terms.bloque2.txt26-2')}
+              <br /><br />
+              {t('Terms.bloque2.txt26-3')}
             </p>
           </div>
         );
@@ -356,6 +422,8 @@ const TkieroTermsConditions = () => {
               {t('Terms.bloque2.txt27')}
               <br /><br />
               {t('Terms.bloque2.txt28')}
+              <br /><br />
+              {t('Terms.bloque2.txt28-1')}
             </p>
           </div>
         );
@@ -377,6 +445,13 @@ const TkieroTermsConditions = () => {
             <p>
               {t('Terms.bloque2.txt32')}
             </p>
+            <p className="text-center"><strong>{t('Terms.bloque2.txt32-1')}</strong> </p>
+
+            <p>
+              {t('Terms.bloque2.txt32-2')}
+              <br /><br />
+              {t('Terms.bloque2.txt32-3')}
+            </p>
           </div>
         );
       case 6:
@@ -384,6 +459,10 @@ const TkieroTermsConditions = () => {
           <div className="text-justify text-sm space-y-4">
             <p>
               {t('Terms.bloque2.txt33')}
+              <br /><br />
+              {t('Terms.bloque2.txt33-1')}
+              <br /><br />
+              {t('Terms.bloque2.txt33-2')}
             </p>
           </div>
         );
@@ -423,6 +502,14 @@ const TkieroTermsConditions = () => {
             <p>
               {t('Terms.bloque2.txt53')}
             </p>
+            <p className="text-center">
+              <strong>{t('Terms.bloque2.txt53-1')}</strong>
+            </p>
+            <p>
+              {t('Terms.bloque2.txt53-2')}
+              <br /><br />
+              {t('Terms.bloque2.txt53-3')}
+            </p>
           </div>
         );
       case 9:
@@ -432,7 +519,7 @@ const TkieroTermsConditions = () => {
               {t('Terms.bloque2.txt54')}
               <br /><br />
               {t('Terms.bloque2.txt55')}
-              <br /><br /> 
+              <br /><br />
               {t('Terms.bloque2.txt55-2')}
             </p>
           </div>
@@ -464,7 +551,7 @@ const TkieroTermsConditions = () => {
           <div className="text-justify text-sm space-y-4">
             <p>
               {t('Terms.bloque2.txt60')}
-              <br /><br /> 
+              <br /><br />
               {t('Terms.bloque2.txt60-2')}
             </p>
           </div>
@@ -474,11 +561,21 @@ const TkieroTermsConditions = () => {
           <div className="text-justify text-sm space-y-4">
             <p>
               {t('Terms.bloque2.txt61')}
-              <br /><br />
+            </p>
+            <p className="text-center">
+              <strong>{t('Terms.bloque2.txt61-1')}</strong>
+            </p>
+            <p>
               {t('Terms.bloque2.txt62')}
-              <Link to="mailto:help@tkiero.app" className="tkiero-cookies-link">help@tkiero.app</Link>
               <br /><br />
               {t('Terms.bloque2.txt63')}
+              <br /><br />
+              {t('Terms.bloque2.txt63-1')}
+              <br /><br />
+              {t('Terms.bloque2.txt63-2')}
+              <Link to="mailto:help@tkiero.app" className="tkiero-cookies-link">help@tkiero.app</Link>
+              <br /><br />
+              {t('Terms.bloque2.txt63-3')}
             </p>
           </div>
         );
@@ -487,6 +584,14 @@ const TkieroTermsConditions = () => {
           <div className="text-justify text-sm space-y-4">
             <p>
               {t('Terms.bloque2.txt64')}
+            </p>
+            <p className="text-center">
+              <strong>{t('Terms.bloque2.txt64-1')}</strong>
+            </p>
+            <p>
+              {t('Terms.bloque2.txt64')}
+              <br /><br />
+              {t('Terms.bloque2.txt64-2')}
             </p>
           </div>
         );
