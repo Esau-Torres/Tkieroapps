@@ -8,6 +8,8 @@ import aws from '../img/aws.png'
 import cloudfire from '../img/Cloudflare.png';
 import ssl2 from '../img/SSL2.png';
 import x from '../img/x.png';
+import bcr from '../img/BCR.png';
+import rui from '../img/RUI.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { FaFacebook, FaInstagram, FaTiktok, FaSnapchat, FaYoutube, FaShieldAlt, FaLock, FaBalanceScale, FaFileContract, FaUniversity, FaLandmark, FaSearchDollar, FaCheckCircle } from "react-icons/fa";
@@ -205,6 +207,8 @@ const Footer = () => {
           <a href="https://ssf.gob.sv/atencion-al-publico/" title="superintendencia del sistema financiero"><img src={footer1} alt="footer1" style={{ height: "50px", marginTop: 20 }} /></a>
           <a href="https://www.defensoria.gob.sv/contactenos/" title="Defensoria del consumidor"><img src={footer} alt="footer" style={{ height: "100px" }} /></a>
           <a href="https://www.defensoria.gob.sv/guia-de-servicios/" title="defensoria del consumidor servicios"><img src={footer2} alt="footer2" style={{ height: "70px", width: "85px", marginTop: 20 }} /></a>
+          <a href="https://www.bcr.gob.sv/" title="Banco Central de Reserva SV"><img src={bcr} alt="bcr" style={{ height: "50px", marginTop: 20 }} /></a>
+          <a href="https://www.uif.gob.sv/" title="Registro Unico de Inversiones"><img src={rui} alt="rui" style={{ height: "50px", marginTop: 20 }} /></a>
           <p className="small">
             {t('footer.txt13')}
           </p>
